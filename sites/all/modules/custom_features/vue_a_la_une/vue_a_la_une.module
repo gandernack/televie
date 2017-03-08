@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vue A la une feature.
+ */
+
+include_once 'vue_a_la_une.features.inc';

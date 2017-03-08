@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Primary module file.
+ */
+
+/**
+ * Implement hook_views_ajax_data_alter().
+ */
+function nrb_views_scroll_views_ajax_data_alter(&$commands, $view) {
+  if ($view->name == 'events') {
+    foreach ($commands as $key => $command) {
+      if ($command['command'] == 'viewsScrollTop') {
+        unset($commands[$key]);
+        break;
+      }
+    }
+  }
+}

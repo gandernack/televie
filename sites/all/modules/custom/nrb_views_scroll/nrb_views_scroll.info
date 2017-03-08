@@ -1,0 +1,6 @@
+name = NRB Views Scroll
+description = Agenda Views Scroll Customizations.
+core = 7.x
+package = NRB
+dependencies[] = views
+dependencies[] = nrb_televie

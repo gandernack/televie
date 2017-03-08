@@ -1,0 +1,7 @@
+name = NRB Télévie
+description = Custom module pour le site Télévie
+core = 7.x
+package = NRB
+version = 7.x-1.0
+
+
