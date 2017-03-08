@@ -215,7 +215,6 @@
             
         });
 
-
         $("#block-views-a-la-une-block-a-la-une .event-home-x").click(function () {
             $("#block-views-a-la-une-block-a-la-une").toggle("slide", {direction: 'right'}, 500);
             $("#block-views-a-la-une-block-link-open").toggle("slide", {direction: 'right'}, 500);
