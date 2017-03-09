@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vue Events feature.
+ */
+
+include_once 'vue_events.features.inc';
