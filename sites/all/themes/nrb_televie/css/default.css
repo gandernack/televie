@@ -3816,7 +3816,7 @@ a.link-type-search:hover {
 .infos-total #infos-utiles .slide7 .wrapper .content .view-header .view-header { font-size: 3em; margin-bottom: 30px; font-family: proxima-excn-semibold; }
 .infos-total #infos-utiles .slide7 .nombre-chercheurs { font-size: 2.5em; padding: 30px 0 0px; display: block; font-family: proxima-excn-light; }
 
-span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn-semibold;} 
+span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn-semibold;}
 
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li { display: inline-block; list-style: none; margin: 0; color: #3a4f5e; padding: 10px 20px 10px 35px; position: relative; font-size: 1.2em; }
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li:before { display: inline-block; content:''; border-radius: 50px; width: 30px; height: 30px; position: absolute; left: 0; top:4px; }
@@ -6501,13 +6501,13 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   margin: 20px auto;
   text-align: left;
   position: relative;
-  padding: 15px 8px;
+  padding: 15px 15px;
 }
 
 .page-soutenir-le-televie #block-system-main .view-facons-d-aider .views-row a .link .field-content:after {
   content: '>';
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 8px;
   font-family: 'symbolesnrbregular';
   line-height: 52px;
