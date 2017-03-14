@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   overflow: hidden;
   -webkit-transition: opacity 400ms;
@@ -6,7 +7,9 @@ body, html {
   transition: opacity 400ms;
 }
 
-body, .onepage-wrapper, html {
+body,
+.onepage-wrapper,
+html {
   display: block;
   position: static;
   padding: 0;
@@ -37,29 +40,31 @@ body, .onepage-wrapper, html {
   margin: 0;
   padding: 0;
 }
+
 .onepage-pagination li {
   padding: 0;
   text-align: center;
 }
-.onepage-pagination li a{
+
+.onepage-pagination li a {
   padding: 10px;
   width: 4px;
   height: 4px;
   display: block;
-  
 }
-.onepage-pagination li a:before{
+
+.onepage-pagination li a:before {
   content: '';
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
 
-.onepage-pagination li a.active:before{
+.onepage-pagination li a.active:before {
   width: 10px;
   height: 10px;
   background: none;

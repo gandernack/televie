@@ -1,7 +1,21 @@
-.tablet #start .video-fond { display: none !important; }
+.tablet #start .video-fond {
+  display: none !important;
+}
 
+.tablet #page-emotional #section-emo-1 .bullet a p {
+  width: 100%;
+}
 
-.tablet #page-emotional #section-emo-1 .bullet a p { width: 100%; }
-.tablet #page-emotional #section-emo-2 .section-emo-2-par .wrapper, .tablet #page-emotional #section-emo-3 .section-emo-3-par .wrapper, .tablet #page-emotional #slide4 .intro, .tablet #page-factual .section-fac .content, .tablet #page-factual #section-fac-6 .section-fac-6-par .wrapper, .tablet #page-factual #section-fac-7 .section-fac-7-par .wrapper { width: 95%; margin: auto; }
-.tablet #page-factual #section-fac-8.section-fac .content { float: none; }
+.tablet #page-emotional #section-emo-2 .section-emo-2-par .wrapper,
+.tablet #page-emotional #section-emo-3 .section-emo-3-par .wrapper,
+.tablet #page-emotional #slide4 .intro,
+.tablet #page-factual .section-fac .content,
+.tablet #page-factual #section-fac-6 .section-fac-6-par .wrapper,
+.tablet #page-factual #section-fac-7 .section-fac-7-par .wrapper {
+  width: 95%;
+  margin: auto;
+}
 
+.tablet #page-factual #section-fac-8.section-fac .content {
+  float: none;
+}
