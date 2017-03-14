@@ -83,7 +83,7 @@ function vue_chercheurs_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'Répartition des chercheurs Télévie';
+  $handler->display->display_options['header']['area']['content'] = '<span class="header-view">Répartition des chercheurs Télévie</span>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Entête: Global : PHP */
   $handler->display->display_options['header']['php']['id'] = 'php';
