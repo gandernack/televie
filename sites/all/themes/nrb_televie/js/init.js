@@ -212,7 +212,7 @@
             $("#block-views-a-la-une-block-a-la-une").toggle("slide", {direction: 'right'}, 500);
             $("#block-views-a-la-une-block-link-open").toggle("slide", {direction: 'right'}, 500);
             Drupal.viewsSlideshow.action({ "action": 'play', "slideshowID": "a_la_une-block_a_la_une", "force": true });
-            
+
         });
 
         $("#block-views-a-la-une-block-a-la-une .event-home-x").click(function () {
@@ -321,9 +321,19 @@
          *
          *************************************************************/
 
-        $('.page-soutenir-le-televie .views-row .title').equalHeights();
-        $('.page-soutenir-le-televie .views-row .desc').equalHeights();
-        $('.page-soutenir-le-televie .views-row .link').equalHeights();
+        // #soutenir-block-1
+        $('.page-soutenir-le-televie #soutenir-block-1 .views-row .title').equalHeights();
+        $('.page-soutenir-le-televie #soutenir-block-1 .views-row .desc').equalHeights();
+        $('.page-soutenir-le-televie #soutenir-block-1 .views-row .link').equalHeights();
+
+        $('.page-soutenir-le-televie .view-display-id-block_2 .views-row .title').equalHeights();
+        $('.page-soutenir-le-televie .view-display-id-block_2 .views-row .desc').equalHeights();
+        $('.page-soutenir-le-televie .view-display-id-block_2 .views-row .link').equalHeights();
+
+        $('.page-soutenir-le-televie .view-display-id-block_3 .views-row .title').equalHeights();
+        $('.page-soutenir-le-televie .view-display-id-block_3 .views-row .desc').equalHeights();
+        $('.page-soutenir-le-televie .view-display-id-block_3 .views-row .link').equalHeights();
+
         $('.node-type-article ul#node-navigation li a .cadre').equalHeights();
 
         $('.block-inline').equalHeights();
@@ -363,6 +373,3 @@
 
 
 })(jQuery);
-
-
-
