@@ -3793,6 +3793,7 @@ a.link-type-search:hover {
   font-family: proxima-excn-light;
 }
 
+<<<<<<< HEAD
 .infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span.subtitle {
   font-size: 2.3em;
   font-family: 'proxima-excn-semibold';
@@ -3810,6 +3811,16 @@ a.link-type-search:hover {
   top: -35px;
   left: 0;
 }
+=======
+.infos-total #infos-utiles .slide7 { position: relative; top: -350px; padding-top: 100px; }
+.infos-total #infos-utiles .slide7 .wrapper .content .view-header .view-header { font-size: 3em; margin-bottom: 30px; font-family: proxima-excn-semibold; }
+.infos-total #infos-utiles .slide7 .nombre-chercheurs { font-size: 2.5em; padding: 30px 0 0px; display: block; font-family: proxima-excn-light; }
+
+span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn-semibold;} 
+
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li { display: inline-block; list-style: none; margin: 0; color: #3a4f5e; padding: 10px 20px 10px 35px; position: relative; font-size: 1.2em; }
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li:before { display: inline-block; content:''; border-radius: 50px; width: 30px; height: 30px; position: absolute; left: 0; top:4px; }
+>>>>>>> fcede2fc01bbc097323cff788cfd24fbec42b68a
 
 .infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row.views-row-even .text {
   top: -35px;
