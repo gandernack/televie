@@ -1,0 +1,180 @@
+.node-article {
+  width: 95%;
+  max-width: 870px;
+  margin: auto;
+}
+
+.node-article #block-addthis-addthis-block {
+  max-width: 870px;
+}
+
+.node-article h2 {
+  color: #dc3a4d;
+  font-size: 42px;
+  margin: 20px 0;
+  font-family: 'proxima-excn-semibold';
+}
+
+.node-article .field-type-image {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.node-type-article #block-system-main:before {
+  position: relative;
+  top: -50px;
+  content: '';
+  height: 250px;
+  width: 100%;
+  display: block;
+  background: url(../img/article.jpg) no-repeat;
+  background-size: cover;
+  -moz-transform: skewX(0deg) skewY(-2deg);
+  -webkit-transform: skewX(0deg) skewY(-2deg);
+  -o-transform: skewX(0deg) skewY(-2deg);
+  -ms-transform: skewX(0deg) skewY(-2deg);
+  transform: skewX(0deg) skewY(-2deg);
+}
+
+.node-type-article #block-system-main:after {
+  position: absolute;
+  top: 50px;
+  content: '';
+  height: 250px;
+  width: 100%;
+  display: block;
+  background: url(../img/tele.png) repeat;
+  -moz-transform: skewX(0deg) skewY(-2deg);
+  -webkit-transform: skewX(0deg) skewY(-2deg);
+  -o-transform: skewX(0deg) skewY(-2deg);
+  -ms-transform: skewX(0deg) skewY(-2deg);
+  transform: skewX(0deg) skewY(-2deg);
+}
+
+.node-type-article #block-system-main a.node-article-back {
+  color: #dc3a4d;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  margin: 0;
+  top: -15px;
+  padding-left: 15px;
+}
+
+.node-type-article #block-system-main a.node-article-back:before {
+  font-family: 'symbolesnrbregular';
+  color: #dc3a4d;
+  content: '<';
+  position: absolute;
+  left: 0px;
+  line-height: 22px;
+}
+
+.node-type-article #block-system-main .node-article-date {
+  color: #7a7982;
+  font-size: 1.5em;
+  margin: 10px 0;
+  display: block;
+  font-family: proxima-cn-regular;
+}
+
+.node-type-article #block-system-main .field-name-body {
+  font-size: 1.2em;
+}
+
+.node-type-article #block-system-main .field-name-body p {
+  margin: 15px 0;
+}
+
+.node-type-article #block-system-main .field-name-body i {
+  color: #dc3a4d;
+  font-family: proxima-excn-semibold-italic;
+}
+
+.node-type-article ul#node-navigation {
+  width: 95%;
+  max-width: 870px;
+  margin: 30px auto;
+  height: 180px;
+}
+
+.node-type-article ul#node-navigation li {
+  display: inline-block;
+  list-style: none;
+  width: 48%;
+}
+
+.node-type-article ul#node-navigation li.prev {
+  float: right;
+}
+
+.node-type-article ul#node-navigation li a {
+  display: block;
+  font-family: 'proxima-regular';
+  text-decoration: none;
+}
+
+.node-type-article ul#node-navigation li a .cadre {
+  display: block;
+  position: relative;
+  max-height: 140px;
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.node-type-article ul#node-navigation li a:hover .cadre {
+  background: transparent;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.node-type-article ul#node-navigation li.next a .cadre:before {
+  font-family: 'symbolesnrbregular';
+  position: absolute;
+  content: '<';
+  font-size: 3em;
+  color: #494756;
+  left: -40px;
+  top: 35%;
+}
+
+.node-type-article ul#node-navigation li.prev a .cadre:after {
+  font-family: 'symbolesnrbregular';
+  position: absolute;
+  content: '>';
+  font-size: 3em;
+  color: #494756;
+  right: -40px;
+  top: 35%;
+}
+
+.node-type-article ul#node-navigation li a .cadre .titre {
+  display: block;
+  font-size: 1.6em;
+  font-family: 'proxima-excn-bold';
+  margin: 0 0 10px 0;
+}
+
+.node-type-article ul#node-navigation li a .cadre .visu {
+  width: 90px;
+  text-align: center;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.node-type-article ul#node-navigation li a .cadre .desc {
+  width: auto;
+  font-size: 1.1em;
+  max-height: 114px;
+  overflow: hidden;
+  display: block;
+}

@@ -1,0 +1,107 @@
+a.link-type-1 {
+  font-family: proxima-excn-light;
+  font-size: 1.5em;
+  background: #dc3a4d;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 12px 10px 12px;
+  margin: 0 10px 10px 0;
+  border-bottom: 4px solid #dc3a4d;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+a.link-type-1:after {
+  content: '>';
+  padding-left: 10px;
+  font-family: 'symbolesnrbregular';
+  position: relative;
+  top: 4px;
+}
+
+a.link-type-1:hover {
+  border-bottom: 4px solid #99333e;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+a.link-type-2 {
+  font-family: proxima-excn-light;
+  font-size: 1.5em;
+  background: #166e9b;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 12px 10px 12px;
+  margin: 0 10px 10px 0;
+  border-bottom: 4px solid #166e9b;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+a.link-type-2:after {
+  content: '>';
+  padding-left: 10px;
+  font-family: 'symbolesnrbregular';
+  position: relative;
+  top: 4px;
+}
+
+a.link-type-2:hover {
+  border-bottom: 4px solid #1c2d47;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+a.link-type-search {
+  background: #47bf82;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 12px 10px 12px;
+  margin: 0 10px 10px 0;
+  border-bottom: 4px solid #47bf82;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+a.link-type-search:after {
+  content: '';
+  position: absolute;
+  background: url(../img/picto/search.png) no-repeat;
+  background-size: contain;
+  display: block;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+a.link-type-search:hover {
+  border-bottom: 4px solid #2c8055;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}

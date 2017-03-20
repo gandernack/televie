@@ -1,0 +1,213 @@
+
+.contact-wrapper {
+  width: 95%;
+  max-width: 870px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.contact-banner {
+  background: url(../img/basic-page.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+  position: relative;
+  top: -30px;
+  -moz-transform: skewX(0deg) skewY(-2deg);
+  -webkit-transform: skewX(0deg) skewY(-2deg);
+  -o-transform: skewX(0deg) skewY(-2deg);
+  -ms-transform: skewX(0deg) skewY(-2deg);
+  transform: skewX(0deg) skewY(-2deg);
+}
+
+.contact-banner:after {
+  position: absolute;
+  top: 0px;
+  content: '';
+  height: 230px;
+  width: 100%;
+  display: block;
+  background: url(../img/tele.png) repeat;
+}
+
+.contact-block-1 {
+  background: #f6f5f4;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-block-1 .intro01 {
+  margin-bottom: 0;
+}
+
+.contact-total {
+  position: relative;
+  z-index: 0;
+}
+
+.contact-total .contact-wrapper {}
+
+.contact-total .resizable-textarea {
+  width: 95%;
+}
+
+.contact-total .form-actions-total {
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
+.contact-total .form-actions {
+  cursor: pointer;
+  position: relative;
+  padding: 21px 80px 12px 10px;
+  display: inline;
+  background: #47bf82;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 4px solid #47bf82;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.contact-total .form-actions:after {
+  content: '>';
+  font-size: 1.5em;
+  font-family: 'symbolesnrbregular';
+  position: absolute;
+  display: block;
+  right: 15px;
+  top: 50%;
+  margin-top: -7px;
+}
+
+.contact-total .form-actions:hover {
+  border-bottom: 4px solid #2c8055;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.contact-total .form-actions input {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-size: 1.5em;
+  color: white;
+  font-family: proxima-cn-light;
+  text-transform: uppercase;
+}
+
+.contact-total label {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.contact-total input {
+  font-size: 1.2em;
+  max-width: 90%;
+}
+
+.contact-total label.option,
+.webform-component--etat-civil label {
+  position: relative;
+  top: 4px;
+}
+
+.contact-total input.form-checkbox,
+.contact-total input.form-radio {
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+
+.contact-total .form-required {
+  color: #dc4d2d;
+  font-size: 1.2em;
+}
+
+.contact-total select {
+  padding: 0px;
+  width: 98%;
+  font-size: 1.2em;
+}
+
+.contact-total select option {
+  padding: 6px;
+  margin: 0;
+}
+
+.contact-result {
+  color: #43bf8d;
+  font-size: 3em;
+  margin: 20px 0;
+  font-family: 'proxima-excn-semibold';
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-result:before {
+  content: '';
+  background: url(../img/validate-big.png) no-repeat center;
+  width: 100%;
+  display: block;
+  height: 120px;
+}
+
+.webform-component--fieldset-1--fieldset-2--nom,
+.webform-component--fieldset-1--fieldset-2--prenom,
+.webform-component--fieldset-1--fieldset-3--rue,
+.webform-component--fieldset-1--fieldset-3--numero,
+.webform-component--fieldset-1--fieldset-4--boite,
+.webform-component--fieldset-1--fieldset-4--code-postal,
+.webform-component--fieldset-1--fieldset-5--ville,
+.webform-component--fieldset-1--fieldset-5--pays,
+.webform-component--fieldset-1--fieldset-6--telephone,
+.webform-component--fieldset-1--fieldset-6--email,
+.webform-component--fieldset-1--fieldset-7--organisation {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+.form-radios .form-item-submitted-fieldset-1-fieldset-7-newsletter {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contact-block-2-total {
+  font-size: 1.1em;
+}
+
+.contact-block-2-total .contact-block-2 .contact-block-2-col {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.contact-block-2-total .contact-block-2 .contact-block-2-col:first-child {
+  border-right: 1px solid #acabb0;
+  padding-right: 50px;
+}
+
+.contact-block-2-total .contact-block-2 .contact-block-2-col span {
+  display: block;
+}
+
+.contact-block-2-total .contact-block-2 .contact-block-2-col .title {
+  font-family: proxima-semibold;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.contact-block-2-total .contact-block-2 .contact-block-2-col .subtitle {
+  color: #166e9b;
+}

@@ -1,0 +1,111 @@
+.basic-page:before {
+  position: relative;
+  top: -50px;
+  content: '';
+  height: 250px;
+  width: 100%;
+  display: block;
+  background: url(../img/basic-page.jpg) no-repeat;
+  background-size: cover;
+  -moz-transform: skewX(0deg) skewY(-2deg);
+  -webkit-transform: skewX(0deg) skewY(-2deg);
+  -o-transform: skewX(0deg) skewY(-2deg);
+  -ms-transform: skewX(0deg) skewY(-2deg);
+  transform: skewX(0deg) skewY(-2deg);
+}
+
+.basic-page:after {
+  background: url(../img/tele.png) repeat;
+  top: 50px;
+  height: 250px;
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  -moz-transform: skewX(0deg) skewY(-2deg);
+  -webkit-transform: skewX(0deg) skewY(-2deg);
+  -o-transform: skewX(0deg) skewY(-2deg);
+  -ms-transform: skewX(0deg) skewY(-2deg);
+  transform: skewX(0deg) skewY(-2deg);
+}
+
+.node-page .field-name-body ol:first-child li {
+  margin-top: 0;
+}
+
+.node-page .field-name-body ol:first-child li ol li {
+  margin-top: 40px;
+}
+
+.node-page .field-name-body ol:first-child ol li ul li {
+  margin-top: 0;
+}
+
+.node-page .field-name-body ol li {
+  margin: 40px 0;
+}
+
+.node-page .field-name-body ol li ol li {
+  margin: 20px 0 20px 25px;
+}
+
+.node-page .field-name-body ul li {
+  margin: 5px 0 5px 40px;
+}
+
+.node-page .field-name-body ol ul {
+  margin: 15px 25px;
+}
+
+.node-page .field-name-body ol li span {
+  font-family: 'proxima-excn-semibold';
+  font-size: 1.8em;
+}
+
+.node-page .field-name-body ol ol li span {
+  font-family: 'proxima-excn-semibold';
+  font-size: 1.3em;
+}
+
+.node-page .field-name-body .cookies01 {
+  font-family: 'proxima-excn-semibold';
+  color: #dc3a4d;
+  margin-top: 40px;
+  font-size: 1.4em;
+}
+
+.node-page .field-name-body blockquote {
+  display: block;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.node-page .field-name-body table {
+  margin: 40px auto;
+}
+
+.node-page .field-name-body table {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+.node-page .field-name-body table td {
+  padding: 6px;
+  vertical-align: middle;
+}
+
+.node-page .field-name-body thead tr td {
+  background: #dc3a4d;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'proxima-excn-semibold';
+  font-size: 1.2em;
+}
+
+.node-page .field-name-body table tbody tr:nth-child(odd) td {
+  background: white;
+}
+
+.node-page .field-name-body table.basic-page-table-01 td:first-child {
+  min-width: 10%;
+}

@@ -1,0 +1,368 @@
+body.page-node-2599 {
+  background: #f9fafa;
+}
+
+.soiree #block-system-main {
+  display: none;
+}
+
+.soiree-storify {
+  max-height: 762px;
+  margin: auto;
+  overflow: hidden;
+  width: 900px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.soiree-storify iframe {
+  margin: auto;
+}
+
+.page-node-2599 .basic-page:before,
+.page-node-2599 .basic-page:after,
+.page-node-2599 #footer .region-footer-first {
+  display: none;
+}
+
+.soiree {
+  text-align: center;
+}
+
+.soiree-bloc-1 {
+  height: 930px;
+  background: url(../img/soiree/branding.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.soiree-bloc-1 .soiree-tele {
+  background: url(../img/tele.png) repeat rgba(0, 0, 0, 0.2);
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.soiree-bloc-1 .soiree-tele:after {
+  background: rgba(42, 29, 66, 0.8);
+  top: 0px;
+  height: 36%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  content: '';
+}
+
+.soiree-bloc-1 .soiree-title {
+  display: block;
+  padding: 24px 0 20px 0;
+  position: relative;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'proxima-excn-semibold';
+  line-height: 1.7em;
+}
+
+.soiree-bloc-1 .soiree-title div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.soiree-bloc-1 .soiree-title strong {
+  display: block;
+  font-size: 2.5em;
+  font-family: 'proxima-excn-black';
+}
+
+.soiree-bloc-1 .soiree-title:before {
+  background: url(../img/soiree/logo.png) no-repeat center top;
+  background-size: contain;
+  width: 210px;
+  height: 191px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.soiree-bloc-1 .soiree-subtitle {
+  font-size: 3.3em;
+  position: relative;
+  font-family: 'proxima-excn-regular';
+}
+
+.soiree-bloc-1 .soiree-subtitle strong {
+  font-family: 'proxima-excn-semibold';
+}
+
+.soiree-bloc-1 .soiree-compteur {
+  background: #a32a3c;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #a32a3c 0%, #d75357 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a32a3c 0%, #d75357 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a32a3c 0%, #d75357 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a32a3c', endColorstr='#d75357', GradientType=1);
+  /* IE6-9 */
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: auto;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  font-family: 'graduateregular';
+  padding: 25px 80px;
+}
+
+.soiree-bloc-1 .soiree-compteur span {
+  vertical-align: bottom;
+  line-height: 99px;
+  font-size: 66pt;
+  margin: 0 0.1%;
+  font-size-adjust: auto;
+}
+
+.soiree-bloc-1 .soiree-compteur span.soiree-compteur-chiffre {
+  background: url(../img/soiree/compteur-chiffre.png) no-repeat center top;
+  background-size: contain;
+  padding: 5px;
+}
+
+.soiree-bloc-1 .soiree-link-direct {
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  margin: auto;
+  width: 100%;
+}
+
+.soiree-bloc-1 .soiree-link-direct a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: 'proxima-excn-semibold';
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+.soiree-bloc-1 .soiree-link-direct a:before {
+  background: url(../img/soiree/play.png) no-repeat center top;
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-size: contain;
+  content: '';
+}
+
+.soiree-bloc-2 {
+  background: url(../img/soiree/soutenir.jpg) no-repeat center;
+  padding: 60px 0 0 0;
+  width: 100%;
+  height: 740px;
+  display: block;
+  position: relative;
+  background-size: cover;
+  top: -38px;
+  -moz-transform: skewX(0deg) skewY(2deg);
+  -webkit-transform: skewX(0deg) skewY(2deg);
+  -o-transform: skewX(0deg) skewY(2deg);
+  -ms-transform: skewX(0deg) skewY(2deg);
+  transform: skewX(0deg) skewY(2deg);
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper {
+  -moz-transform: skewX(0deg) skewY(-2deg);
+  -webkit-transform: skewX(0deg) skewY(-2deg);
+  -o-transform: skewX(0deg) skewY(-2deg);
+  -ms-transform: skewX(0deg) skewY(-2deg);
+  transform: skewX(0deg) skewY(-2deg);
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper .soiree-bloc-2-title {
+  font-size: 3.3em;
+  position: relative;
+  font-family: 'proxima-excn-regular';
+  color: white;
+  margin-bottom: 35px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper .soiree-bloc-2-title strong {
+  font-family: 'proxima-excn-semibold';
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a {
+  display: block;
+  font-family: 'proxima-excn-regular';
+  font-size: 1.7em;
+  color: white;
+  text-decoration: none;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a strong {
+  display: block;
+  font-family: 'proxima-excn-semibold';
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a .visu {
+  background: transparent;
+  display: block;
+  width: 141px;
+  height: 141px;
+  padding: 4px;
+  border: 3px solid white;
+  position: relative;
+  border-radius: 100px;
+  margin: 0 60px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .visu {
+  margin: 0 60px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a:hover .visu {
+  background: white;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a .visu span {
+  display: block;
+  width: 133px;
+  height: 133px;
+  padding: 0;
+  background: white;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 100px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-1 a .visu:after {
+  background: url(../img/soiree/picto-tel.png) no-repeat center;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  content: '';
+  background-size: contain;
+  left: 32px;
+  top: 28px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-2 a .visu:after {
+  background: url(../img/soiree/picto-don.png) no-repeat center;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  content: '';
+  background-size: contain;
+  left: 32px;
+  top: 28px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-3 a .visu:after {
+  background: url(../img/soiree/picto-sms.png) no-repeat center;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  content: '';
+  background-size: contain;
+  left: 32px;
+  top: 28px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-4 a .visu:after {
+  background: url(../img/soiree/picto-virement.png) no-repeat center;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  content: '';
+  background-size: contain;
+  left: 19px;
+  top: 19px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-5 a .visu:after {
+  background: url(../img/soiree/picto-enchere.png) no-repeat center;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  content: '';
+  background-size: contain;
+  left: 19px;
+  top: 19px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a .content {
+  position: relative;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 0.95em;
+  display: block;
+  width: 70%;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-1 li a .content {
+  background: #902946;
+  text-transform: uppercase;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .content {
+  font-family: 'proxima-excn-bold';
+  font-size: 1em;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .visu {
+  width: 120px;
+  height: 120px;
+}
+
+.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .visu span {
+  width: 112px;
+  height: 112px;
+  top: 8px;
+  left: 8px;
+}
+
+.soiree-bloc-4 {
+  background: #f1f0ef;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: -100px;
+  padding-top: 60px;
+}
+
+.soiree-bloc-4 .soiree-storify-title {
+  color: #dc3a4d;
+  font-size: 3em;
+  font-family: 'proxima-excn-regular';
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.soiree-bloc-4 .soiree-storify-title strong {
+  display: block;
+  font-family: 'proxima-excn-semibold';
+}

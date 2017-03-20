@@ -1,0 +1,142 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 12;
+  display: none;
+  color: white;
+}
+
+.overlay-video {
+  background: url(../img/bg-overlay-video.png) repeat;
+}
+
+.overlay-article {
+  background: url(../img/bg-overlay-article.png) repeat;
+}
+
+.overlay .wrapper .overlay-content {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.overlay .wrapper .close-overlay {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  color: white;
+  top: -40px;
+  right: 0px;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  font-size: 2.0em;
+  font-family: 'symbolesnrbregular';
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.overlay .wrapper .close-overlay:before {
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  left: 7px;
+  border: 4px solid white;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.overlay .wrapper .close-overlay:hover:before {
+  border: 6px solid white;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.overlay .overlay-wrapper .close-overlay {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  color: white;
+  top: -60px;
+  right: 0px;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  font-size: 2.0em;
+  font-family: 'symbolesnrbregular';
+  text-align: center;
+  line-height: 1.3;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.overlay .overlay-wrapper .close-overlay:before {
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  top: -8px;
+  left: 7px;
+  border: 4px solid white;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.overlay .overlay-wrapper .close-overlay:hover:before {
+  border: 6px solid white;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.overlay .overlay-wrapper iframe {
+  max-width: 100%;
+  height: 350px;
+}
+
+.overlay h2 {
+  font-size: 2.5em;
+  font-family: proxima-excn-semibold;
+}
+
+.overlay p {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.IE #infos-utiles #slide2 .overlay {
+  top: 220px;
+}
+
+.IE #infos-utiles .slide3 .overlay {
+  top: 220px;
+}

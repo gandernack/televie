@@ -1,0 +1,42 @@
+.soroptimist h1 {
+  color: #DC3A4D;
+  margin: 25px 0 0 0;
+  font-size: 42px;
+  font-family: proxima-excn-regular;
+}
+
+.soroptimist h2 {
+  color: #DC3A4D;
+  margin: 25px 0 0 0;
+  font-size: 2em;
+  font-family: proxima-excn-regular;
+}
+
+.soroptimist ul.contact-soroptimist li {
+  padding: 15px 0;
+  color: #dc3a4d;
+  font-family: 'proxima-cn-semibold';
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.soroptimist ul.contact-soroptimist li:before {
+  content: '>';
+  margin-right: 5px;
+  font-family: 'symbolesnrbregular';
+  color: #dc3a4d;
+  font-size: 0.6em;
+}
+
+.soroptimist ul.contact-soroptimist li ul li {
+  padding: 5px 0;
+  color: inherit;
+  font-family: 'proxima-regular';
+  list-style: disc;
+  font-size: 0.7em;
+  color: #3A4F5E;
+}
+
+.soroptimist ul.contact-soroptimist li ul li:before {
+  display: none;
+}

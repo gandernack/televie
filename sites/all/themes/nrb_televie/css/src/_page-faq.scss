@@ -1,0 +1,92 @@
+.bloc-faq-wrapper {
+  width: 95%;
+  max-width: 870px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.bloc-faq .item-list>ul {
+  margin: 0;
+}
+
+.bloc-faq .ui-widget {
+  font-family: inherit;
+}
+
+.bloc-faq .ui-state-active,
+.bloc-faq .ui-widget-content .ui-state-active,
+.bloc-faq .ui-widget-header .ui-state-active {
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #dc3a4d;
+}
+
+.bloc-faq .ui-state-active.ui-accordion-header a,
+.bloc-faq .ui-state-active.ui-accordion-header a:link,
+.bloc-faq .ui-state-active.ui-accordion-header a:visited {
+  color: #dc3a4d;
+}
+
+.bloc-faq .ui-state-default a,
+.bloc-faq .ui-state-default a:link,
+.bloc-faq .ui-state-default a:visited {
+  color: #dc3a4d;
+}
+
+.bloc-faq-wrapper .more-link {
+  display: none;
+}
+
+.bloc-faq .ui-accordion .ui-accordion-icons {
+  padding: 0;
+}
+
+.bloc-faq .ui-state-default,
+.bloc-faq .ui-widget-content .ui-state-default,
+.bloc-faq .ui-widget-header .ui-state-default {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.bloc-faq .ui-widget-content {
+  background: none;
+  border: 0;
+}
+
+.bloc-faq .item-list ul li.views-row .ui-accordion-header:before {
+  content: '';
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #dc3a4d;
+  border-radius: 50px;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: 3px;
+  left: -8px;
+  box-sizing: border-box;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.bloc-faq .item-list ul li.views-row .ui-accordion-header:hover:before,
+.bloc-faq .item-list ul li.views-row .ui-accordion-header.ui-state-active:before {
+  border: 5px solid #dc3a4d;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.bloc-faq .ui-widget-content {
+  color: #3a4f5e;
+}

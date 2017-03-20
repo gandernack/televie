@@ -1,0 +1,231 @@
+
+
+
+
+
+.infos-total .wrapper {
+  max-width: 890px;
+}
+
+.infos-total #block-addthis-addthis-block {
+  max-width: 890px;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------   style de l'interface'   --------------------------------------------------------------------- */
+
+.node-article h2.titre01,
+.titre01 {
+  color: #dc3a4d;
+  font-size: 42px;
+  margin: 20px 0;
+  font-family: 'proxima-excn-semibold';
+}
+
+.node-article h2.titre02-noir,
+.titre02-noir {
+  color: #3a4f5e;
+  font-size: 26px;
+  margin: 20px 0;
+  font-family: 'proxima-excn-semibold';
+}
+
+.node-article h2.titre02-rouge,
+.titre02-rouge {
+  color: #dc3a4d;
+  font-size: 26px;
+  margin: 20px 0;
+  font-family: 'proxima-excn-semibold';
+}
+
+.node-article h2 span {
+  font-family: 'proxima-excn-semibold';
+}
+
+.intro01 {
+  font-size: 2em;
+  margin: 20px 0;
+  font-family: 'proxima-excn-thin';
+}
+
+.intro01 strong {
+  font-family: 'proxima-excn-semibold';
+}
+
+.intro02 {
+  color: #dc3a4d;
+  font-size: 2em;
+  margin: 20px 0;
+  font-family: 'proxima-excn-thin';
+}
+
+.intro02 strong {
+  font-family: 'proxima-excn-semibold';
+}
+
+.txt01 {
+  color: #877b7d;
+}
+
+.txt02 {
+  color: #dc3a4d;
+}
+
+.txt03 {
+  color: #166e9b;
+}
+
+.txt01b {
+  color: #877b7d;
+  font-family: 'proxima-semibold';
+}
+
+.txt02b {
+  color: #dc3a4d;
+  font-family: 'proxima-semibold';
+}
+
+.txt03b {
+  color: #166e9b;
+  font-family: 'proxima-semibold';
+}
+
+.cita01 {
+  color: #dc3a4d;
+  font-family: 'regular-italic';
+  font-size: 1.5em;
+  margin: 20px;
+  display: block;
+}
+
+.cita01:before {
+  content: '"';
+  color: #dc3a4d;
+  font-family: 'bold';
+  font-size: 1.5em;
+}
+
+.cita01:after {
+  content: '"';
+  color: #dc3a4d;
+  font-family: 'bold';
+  font-size: 1.5em;
+}
+
+
+
+
+.li01 {
+  padding: 15px 0;
+  list-style: none;
+  position: relative;
+}
+
+.li01:before {
+  content: '>';
+  font-family: 'symbolesnrbregular';
+  color: #dc3a4d;
+  font-size: 1.0em;
+  position: absolute;
+  left: -15px;
+  top: 17px;
+}
+
+.block-inline {
+  display: inline-block;
+  width: 42%;
+  padding: 19px;
+  margin: 10px;
+  background: rgba(111, 69, 28, 0.1);
+  vertical-align: top;
+}
+
+.mobile .block-inline {
+  display: block;
+  width: 90%;
+  padding: 5px;
+  margin: 15px auto;
+  background: rgba(111, 69, 28, 0.1);
+}
+
+.block-inline--large {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.block-inline--medium {
+  box-sizing: border-box;
+  width: 49%;
+  margin: 10px 0px;
+}
+
+.bmr {
+  float: right;
+}
+
+.bml {
+  margin-right: 1.5%;
+}
+
+.mobile .bmr,
+.mobile .bml {
+  float: none;
+  width: 100%;
+}
+
+.mobile .block-inline--large {
+  margin: 0px;
+  width: 100%;
+}
+
+
+/* ---------------------------------------------------------------------   header   --------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------   page-emotional   --------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------   infos utiles   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------   agenda   --------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------   footer   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------   soutenir    --------------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------------   article    --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------   article    --------------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------------   contact    --------------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
+
+#user-login {
+  width: 100%;
+  max-width: 780px;
+  margin: 30px auto;
+}

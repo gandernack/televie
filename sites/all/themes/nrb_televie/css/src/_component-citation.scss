@@ -1,0 +1,44 @@
+.citation .visu,
+.citation .content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.citation .visu {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.citation .content {
+  width: 85%;
+  padding-left: 20px;
+}
+
+.citation .cita {
+  font-size: 2em;
+  margin-bottom: 15px;
+  font-family: proxima-excn-semibold-italic;
+  position: relative;
+}
+
+.citation .cita:before {
+  font-family: 'symbolesnrbregular';
+  content: '"';
+  display: block;
+  position: absolute;
+  left: -15px;
+}
+
+.citation .cita:after {
+  font-family: 'symbolesnrbregular';
+  content: '"';
+  display: inline;
+  position: relative;
+}
+
+.citation .title {
+  font-size: 1.8em;
+  font-family: proxima-excn-light;
+}
