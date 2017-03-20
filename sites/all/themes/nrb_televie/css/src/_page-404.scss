@@ -1,0 +1,109 @@
+// Reset
+.page-404
+{
+  .basic-page
+  {
+    display: none;
+
+    &::before,
+    &::after
+    {
+      content: none;
+    }
+  }
+
+  .node-page
+  {
+    width: 100%;
+    max-width: initial;
+  }
+}
+body .page-404 + #footer
+{
+  margin-top: 0;
+}
+
+// Page 404
+.page-404
+{
+  .first
+  {
+    position: relative;
+    background: url("/sites/all/themes/nrb_televie/img/404/bg01.jpg");
+    background-size: cover;
+    background-position: left;
+    height: 557px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 0 9px rgba(0, 0, 0, .35);
+    z-index: 1;
+
+    &::after
+    {
+      content: "";
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+
+      background: url("/sites/all/themes/nrb_televie/img/tele.png");
+    }
+
+    .heading1,
+    .heading2
+    {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0;
+
+      font-family: 'proxima-excn-regular';
+    }
+
+    .heading1
+    {
+      font-size: 90px;
+
+      padding-top: 145px;
+      line-height: 90px;
+    }
+    .heading2
+    {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+
+  .second
+  {
+    position: relative;
+    background: url("/sites/all/themes/nrb_televie/img/404/bg02.jpg");
+    background-size: cover;
+    background-position: left;
+
+    margin-top: -60px;
+    padding-top: 60px;
+    z-index: 0;
+
+    height: 800px;
+
+    .heading
+    {
+      font-size: 40px;
+      color: #ffffff;
+      font-family: 'proxima-excn-light';
+      text-align: center;
+
+      strong
+      {
+        font-family: 'proxima-excn-semibold';
+      }
+    }
+  }
+
+}

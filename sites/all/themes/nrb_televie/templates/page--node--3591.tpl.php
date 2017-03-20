@@ -89,7 +89,7 @@
         </div></div> <!-- /.section, /#navigation -->
     <?php endif; ?>
 
-    <div class="404">
+    <div class="page-404">
     <?php print render($page['content']); ?>
     </div>
 

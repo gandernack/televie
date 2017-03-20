@@ -410,3 +410,14 @@ body.not-front.page-soutenir-le-televie #footer {
   max-width: 780px;
   margin: 30px auto;
 }
+
+/* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
+
+.skew-negative
+{
+  transform: skewY(-1.5deg);
+}
+.skew-positive
+{
+  transform: skewY(1.5deg);
+}
