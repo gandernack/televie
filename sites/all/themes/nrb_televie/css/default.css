@@ -6563,8 +6563,8 @@ body .page-404 + #footer {
 .page-404 .first {
   position: relative;
   background: url("/sites/all/themes/nrb_televie/img/404/bg01.jpg");
-  background-size: 100% auto;
-  background-position: left;
+  background-size: cover;
+  background-position: center;
   height: 557px;
   margin-top: -30px;
   margin-bottom: 30px;
