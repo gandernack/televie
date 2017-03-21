@@ -360,6 +360,12 @@ body.not-front.page-soutenir-le-televie #footer {
 .skew-positive {
   transform: skewY(1.5deg); }
 
+.text-center {
+  text-align: center; }
+
+.inline-block {
+  display: inline-block; }
+
 @font-face {
   font-family: 'proxima-cn-light';
   src: url("../fonts/proximanovacond-light-webfont.eot");
@@ -6593,14 +6599,56 @@ body .page-404 + #footer {
   background-position: left;
   margin-top: -60px;
   padding-top: 60px;
-  z-index: 0;
-  height: 800px; }
+  z-index: 0; }
   .page-404 .second .heading {
     font-size: 40px;
     color: #ffffff;
-    font-family: 'proxima-excn-light';
-    text-align: center; }
+    font-family: 'proxima-excn-light'; }
     .page-404 .second .heading strong {
       font-family: 'proxima-excn-semibold'; }
+  .page-404 .second .link-help {
+    display: inline-block;
+    margin: 30px 0 100px 0;
+    text-decoration: none; }
+    .page-404 .second .link-help:hover .visu {
+      background: #ffffff; }
+    .page-404 .second .link-help .visu {
+      width: 170px;
+      min-width: 170px;
+      height: 170px;
+      min-height: 170px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 0px 2px #ffffff;
+      border: 10px solid transparent;
+      background: transparent;
+      transition: background .3s; }
+      .page-404 .second .link-help .visu img {
+        background: #fff;
+        border-radius: 100%;
+        padding: 35px 31px 25px 30px;
+        margin: 0 auto; }
+    .page-404 .second .link-help .title {
+      font-size: 40px;
+      color: #ffffff;
+      font-family: 'proxima-excn-light'; }
+  .page-404 .second .link {
+    position: relative;
+    display: inline-block;
+    padding: 12px 22px 12px 44px;
+    background: #902946;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: 'proxima-excn-light';
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none; }
+    .page-404 .second .link::before {
+      content: "<";
+      position: absolute;
+      font-family: 'symbolesnrbregular';
+      left: 15px;
+      top: 16px; }
 
 /*# sourceMappingURL=default.css.map */
