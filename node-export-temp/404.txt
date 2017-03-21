@@ -1,0 +1,122 @@
+array(
+  (object) array(
+      'vid' => '3591',
+      'uid' => '1',
+      'title' => '404',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'a04c465c-1c8c-4a74-b10f-e402c806e540',
+      'nid' => '3591',
+      'type' => 'page',
+      'language' => 'fr',
+      'created' => '1490004649',
+      'changed' => '1490081192',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '63e6b5a8-3cc0-42c7-80be-42982f8425d7',
+      'revision_timestamp' => '1490081192',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "<section class=\"first skew-negative\">\r\n  <div class=\"inner skew-positive\">\r\n    <div class=\"heading1\">Oups...</div>\r\n    <div class=\"heading2\">Nous n'avons pas trouvé la page que vous recherchez.</div>\r\n  </div>\r\n</section>\r\n\r\n<section class=\"second text-center\">\r\n  <div class=\"inner\">\r\n    <div class=\"row\">\r\n      <div class=\"heading\">Nos chercheurs non plus <br>n’ont pas encore trouvé comment guérir le cancer… <br> <strong>mais vous pouvez les aider !</strong></div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <a class=\"link-help\" href=\"/je-fais-un-don\">\r\n        <div class=\"visu\">\r\n          <img typeof=\"foaf:Image\" src=\"/sites/default/files/styles/pictos_soutenir_le_t_l_vie/public/pic01-neg.png?itok=pbw9Sbim\" width=\"90\" height=\"90\" alt=\"Je fais un don\" title=\"Je fais un don\">\r\n        </div>\r\n        <div class=\"title\">Je fais un don</div>\r\n      </a>\r\n    </div>\r\n    <div class=\"row\">\r\n      <a href=\"#\" class=\"link back\">Retour à l'accueil</a>\r\n    </div>\r\n  </div>\r\n</section>",
+            'summary' => '',
+            'format' => 'full_html',
+            'safe_value' => "<section class=\"first skew-negative\">\n  <div class=\"inner skew-positive\">\n    <div class=\"heading1\">Oups...</div>\n    <div class=\"heading2\">Nous n'avons pas trouvé la page que vous recherchez.</div>\n  </div>\n</section>\n\n<section class=\"second text-center\">\n  <div class=\"inner\">\n    <div class=\"row\">\n      <div class=\"heading\">Nos chercheurs non plus <br>n’ont pas encore trouvé comment guérir le cancer… <br> <strong>mais vous pouvez les aider !</strong></div>\n    </div>\n    <div class=\"row\">\n      <a class=\"link-help\" href=\"/je-fais-un-don\">\n        <div class=\"visu\">\n          <img typeof=\"foaf:Image\" src=\"/sites/default/files/styles/pictos_soutenir_le_t_l_vie/public/pic01-neg.png?itok=pbw9Sbim\" width=\"90\" height=\"90\" alt=\"Je fais un don\" title=\"Je fais un don\">\n        </div>\n        <div class=\"title\">Je fais un don</div>\n      </a>\n    </div>\n    <div class=\"row\">\n      <a href=\"#\" class=\"link back\">Retour à l'accueil</a>\n    </div>\n  </div>\n</section>",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '4787',
+        'source' => 'node/3591',
+        'alias' => '404',
+        'language' => 'fr',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1490004649',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'opengraph_meta' => array(
+        'title' => '',
+        'description' => '',
+        'image' => '',
+        'type' => '',
+        'url' => '',
+        'latitude' => '',
+        'longitude' => '',
+        'street-address' => '',
+        'locality' => '',
+        'region' => '',
+        'postal-code' => '',
+        'country-name' => '',
+        'email' => '',
+        'phone_number' => '',
+        'fax_number' => '',
+        'site_name' => 'Télévie',
+      ),
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'a:5:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";}',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)
