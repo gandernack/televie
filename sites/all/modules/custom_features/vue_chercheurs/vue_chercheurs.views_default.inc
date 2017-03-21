@@ -45,6 +45,10 @@ function vue_chercheurs_views_default_views() {
     'thousand_separator' => ' ',
     'prefix_suffix' => 1,
   );
+  /* Critère de tri: Contenu : Groupe (field_groupement) */
+  $handler->display->display_options['sorts']['field_groupement_value']['id'] = 'field_groupement_value';
+  $handler->display->display_options['sorts']['field_groupement_value']['table'] = 'field_data_field_groupement';
+  $handler->display->display_options['sorts']['field_groupement_value']['field'] = 'field_groupement_value';
   /* Critère de tri: Contenu : Nombre (field_nombre) */
   $handler->display->display_options['sorts']['field_nombre_value']['id'] = 'field_nombre_value';
   $handler->display->display_options['sorts']['field_nombre_value']['table'] = 'field_data_field_nombre';
@@ -64,6 +68,12 @@ function vue_chercheurs_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'chercheurs' => 'chercheurs',
   );
+  /* Critère de filtrage: Contenu : Nombre (field_nombre) */
+  $handler->display->display_options['filters']['field_nombre_value']['id'] = 'field_nombre_value';
+  $handler->display->display_options['filters']['field_nombre_value']['table'] = 'field_data_field_nombre';
+  $handler->display->display_options['filters']['field_nombre_value']['field'] = 'field_nombre_value';
+  $handler->display->display_options['filters']['field_nombre_value']['operator'] = '>';
+  $handler->display->display_options['filters']['field_nombre_value']['value']['value'] = '0';
 
   /* Display: Bloc images */
   $handler = $view->new_display('block', 'Bloc images', 'block_chercheurs_images');
@@ -143,6 +153,12 @@ print $total . " chercheurs";;
   $handler->display->display_options['filters']['type']['value'] = array(
     'chercheurs' => 'chercheurs',
   );
+  /* Critère de filtrage: Contenu : Nombre (field_nombre) */
+  $handler->display->display_options['filters']['field_nombre_value']['id'] = 'field_nombre_value';
+  $handler->display->display_options['filters']['field_nombre_value']['table'] = 'field_data_field_nombre';
+  $handler->display->display_options['filters']['field_nombre_value']['field'] = 'field_nombre_value';
+  $handler->display->display_options['filters']['field_nombre_value']['operator'] = '>';
+  $handler->display->display_options['filters']['field_nombre_value']['value']['value'] = '0';
 
   /* Display: Bloc Titres */
   $handler = $view->new_display('block', 'Bloc Titres', 'block_chercheurs_titres');
