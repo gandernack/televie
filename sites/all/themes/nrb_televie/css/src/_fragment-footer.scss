@@ -462,6 +462,18 @@
   display: block;
 }
 
+#footer .region-footer-fourth #block-block-3 .content ul li.youtube a:before {
+  content: '';
+  background: url(../img/footer/youtube.png) no-repeat center;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  background-size: contain;
+  display: block;
+}
+
 #footer .region-footer-fifth {
   background: #1c2d47;
   color: white;
