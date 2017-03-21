@@ -1,0 +1,7 @@
+name = Block Social networks
+core = 7.x
+package = Custom features
+version = 7.x-1.0
+dependencies[] = fe_block
+features[fe_block_boxes][] = social_networks_footer
+features[features_api][] = api:2
