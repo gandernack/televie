@@ -3934,6 +3934,9 @@ span.header-view {
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li.type16:before {
   background: #dcc2a9; }
 
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li.type17:before { 
+  background: #86b2c3; 
+} 
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes {
   margin-top: 30px; }
 
@@ -3990,6 +3993,9 @@ span.header-view {
 
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes img.type16 {
   background: #dcc2a9; }
+
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes img.type17 { 
+  background: #86b2c3; } 
 
 .agenda-wrapper #agenda .agenda-header {
   background: url(../img/agenda/header.jpg) no-repeat fixed center;
