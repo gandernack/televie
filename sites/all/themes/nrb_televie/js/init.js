@@ -255,7 +255,7 @@
          *
          *************************************************************/
 
-        enquire.register("screen and (max-width:835px)", {
+        enquire.register("screen and (max-width:885px)", {
             match: function () {
                 $("body").addClass("mobile");
             },
