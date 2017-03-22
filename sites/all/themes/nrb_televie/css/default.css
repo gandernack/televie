@@ -1346,7 +1346,8 @@ a.link-type-search:hover {
     display: flex;
     height: 100%; }
     #header #block-system-main-menu ul.menu {
-      margin: 0; }
+      margin: 0;
+      font-size: 0; }
       #header #block-system-main-menu ul.menu li {
         padding: 0;
         margin: 0; }
@@ -1354,16 +1355,22 @@ a.link-type-search:hover {
         display: inline-block; }
         #header #block-system-main-menu ul.menu .leaf a {
           display: inline-block;
-          padding: 40px 32px 40px 8px;
+          padding: 40px 24px 36px 24px;
+          border-bottom: 4px solid transparent;
           font-family: proxima-light;
           color: #877b7d;
           font-size: 16px;
           text-transform: uppercase;
-          text-decoration: none; }
-          #header #block-system-main-menu ul.menu .leaf a.active-trail::before {
-            border-width: 4px; }
-          #header #block-system-main-menu ul.menu .leaf a.active-trail, #header #block-system-main-menu ul.menu .leaf a.active-trail:hover {
-            border-bottom: 4px solid #dc3a4d; }
+          text-decoration: none;
+          transition: all .3s; }
+          #header #block-system-main-menu ul.menu .leaf a.active-trail {
+            border-bottom: 4px solid #dc3a4d;
+            padding: 40px 24px 36px 24px; }
+            #header #block-system-main-menu ul.menu .leaf a.active-trail::before {
+              border-width: 4px; }
+          #header #block-system-main-menu ul.menu .leaf a:hover {
+            border-bottom: 4px solid #dc3a4d;
+            padding: 40px 24px 36px 24px; }
           #header #block-system-main-menu ul.menu .leaf a::before {
             content: '';
             display: inline-block;
@@ -1380,6 +1387,7 @@ a.link-type-search:hover {
         #header #block-system-main-menu ul.menu .leaf.last a {
           color: white;
           background: #dc3a4d;
+          border: none;
           padding: 40px 64px 40px 32px; }
           #header #block-system-main-menu ul.menu .leaf.last a::before {
             content: none; }

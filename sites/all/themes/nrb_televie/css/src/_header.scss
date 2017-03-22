@@ -33,6 +33,7 @@
     ul.menu
     {
       margin: 0;
+      font-size: 0;
 
       li
       {
@@ -47,7 +48,8 @@
         a
         {
           display: inline-block;
-          padding: 40px 32px 40px 8px;
+          padding: 40px 24px 36px 24px;
+          border-bottom: 4px solid transparent;
 
           font-family: proxima-light;
           color: #877b7d;
@@ -55,18 +57,24 @@
           text-transform: uppercase;
           text-decoration: none;
 
+          transition: all .3s;
+
           &.active-trail
           {
+
             &::before
             {
               border-width: 4px;
             }
 
-            &,
-            &:hover
-            {
-              border-bottom: 4px solid #dc3a4d;
-            }
+            border-bottom: 4px solid #dc3a4d;
+            padding: 40px 24px 36px 24px;
+          }
+
+          &:hover
+          {
+            border-bottom: 4px solid #dc3a4d;
+            padding: 40px 24px 36px 24px;
           }
 
           &::before
@@ -92,6 +100,7 @@
           {
             color: white;
             background: #dc3a4d;
+            border: none;
 
             padding: 40px 64px 40px 32px;
 
