@@ -28,10 +28,6 @@ body.not-front.page-soutenir-le-televie.mobile #block-system-main .view-facons-d
   display: none;
 }
 
-.mobile #header div.menu {
-  display: none;
-}
-
 body.body-start.mobile {
   overflow: visible;
 }
@@ -233,7 +229,7 @@ body.mobile.not-front #footer {
   width: 13px;
   height: 13px;
   position: relative;
-  top: 0px;
+  top: -3px;
   left: -8px;
   box-sizing: border-box;
   -webkit-transition: all 250ms ease;

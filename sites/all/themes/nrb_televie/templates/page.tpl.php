@@ -77,9 +77,7 @@
     <?php print $messages;  ?>
 
     <div id="header">
-      <div class="section clearfix">
-        <?php print render($page['header']); ?>
-      </div>
+      <?php print render($page['header']); ?>
     </div> <!-- /.section, /#header -->
 
     <?php if ($main_menu || $secondary_menu): ?>
@@ -104,4 +102,3 @@
 
   </div>
 </div> <!-- /#page, /#page-wrapper -->
-
