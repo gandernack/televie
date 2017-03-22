@@ -1,0 +1,12 @@
+name = Vue Au jour le jour
+core = 7.x
+package = Custom features
+version = 7.x-1.0
+dependencies[] = freepager
+dependencies[] = views
+dependencies[] = views_data_export
+dependencies[] = views_rss
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = articles
+features_exclude[dependencies][ctools] = ctools

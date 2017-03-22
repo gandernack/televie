@@ -151,8 +151,11 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['fieldset']['children'] = array(
     0 => 'field_complet',
     1 => 'fieldset_1',
-    2 => 'field_localite',
-    3 => 'field_nom_du_lieu',
+    2 => 'field_numero',
+    3 => 'field_rue',
+    4 => 'field_code_postal',
+    5 => 'field_localite',
+    6 => 'field_nom_du_lieu',
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'detail row-height equalheight-row';
@@ -168,6 +171,7 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset_1']['label'] = 'hours';
+  $handler->display->display_options['fields']['fieldset_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['fieldset_1']['children'] = array(
     0 => 'field_heure_debut',
     1 => 'field_heure_fin',
@@ -188,11 +192,37 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['field_heure_fin']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_heure_fin']['alter']['text'] = '&nbsp;- [field_heure_fin]';
   $handler->display->display_options['fields']['field_heure_fin']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Numéro */
+  $handler->display->display_options['fields']['field_numero']['id'] = 'field_numero';
+  $handler->display->display_options['fields']['field_numero']['table'] = 'field_data_field_numero';
+  $handler->display->display_options['fields']['field_numero']['field'] = 'field_numero';
+  $handler->display->display_options['fields']['field_numero']['label'] = '';
+  $handler->display->display_options['fields']['field_numero']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_numero']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_numero']['alter']['text'] = ', [field_numero-value]';
+  $handler->display->display_options['fields']['field_numero']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Rue */
+  $handler->display->display_options['fields']['field_rue']['id'] = 'field_rue';
+  $handler->display->display_options['fields']['field_rue']['table'] = 'field_data_field_rue';
+  $handler->display->display_options['fields']['field_rue']['field'] = 'field_rue';
+  $handler->display->display_options['fields']['field_rue']['label'] = '';
+  $handler->display->display_options['fields']['field_rue']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_rue']['alter']['text'] = '[field_rue-value] [field_numero]';
+  $handler->display->display_options['fields']['field_rue']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Code postal */
+  $handler->display->display_options['fields']['field_code_postal']['id'] = 'field_code_postal';
+  $handler->display->display_options['fields']['field_code_postal']['table'] = 'field_data_field_code_postal';
+  $handler->display->display_options['fields']['field_code_postal']['field'] = 'field_code_postal';
+  $handler->display->display_options['fields']['field_code_postal']['label'] = '';
+  $handler->display->display_options['fields']['field_code_postal']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_code_postal']['element_label_colon'] = FALSE;
   /* Champ: Contenu : Localité */
   $handler->display->display_options['fields']['field_localite']['id'] = 'field_localite';
   $handler->display->display_options['fields']['field_localite']['table'] = 'field_data_field_localite';
   $handler->display->display_options['fields']['field_localite']['field'] = 'field_localite';
   $handler->display->display_options['fields']['field_localite']['label'] = '';
+  $handler->display->display_options['fields']['field_localite']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_localite']['alter']['text'] = '[field_code_postal] [field_localite] ';
   $handler->display->display_options['fields']['field_localite']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_localite']['element_wrapper_type'] = 'span';
   $handler->display->display_options['fields']['field_localite']['element_wrapper_class'] = 'commune';
@@ -224,7 +254,7 @@ function vue_events_views_default_views() {
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['relationship'] = 'field_date_horaire_value';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Filtre contextuel: Contenu : ID pour regrouper les activités (field_groupement) */
+  /* Filtre contextuel: Contenu : Groupe (field_groupement) */
   $handler->display->display_options['arguments']['field_groupement_value']['id'] = 'field_groupement_value';
   $handler->display->display_options['arguments']['field_groupement_value']['table'] = 'field_data_field_groupement';
   $handler->display->display_options['arguments']['field_groupement_value']['field'] = 'field_groupement_value';
@@ -926,10 +956,11 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Champ: Contenu : ID pour regrouper les activités */
+  /* Champ: Contenu : Groupe */
   $handler->display->display_options['fields']['field_groupement']['id'] = 'field_groupement';
   $handler->display->display_options['fields']['field_groupement']['table'] = 'field_data_field_groupement';
   $handler->display->display_options['fields']['field_groupement']['field'] = 'field_groupement';
+  $handler->display->display_options['fields']['field_groupement']['label'] = 'ID pour regrouper les activités';
   /* Champ: Contenu : Top */
   $handler->display->display_options['fields']['field_top']['id'] = 'field_top';
   $handler->display->display_options['fields']['field_top']['table'] = 'field_data_field_top';
@@ -1029,7 +1060,7 @@ mois+6|Dans 6 mois';
     5 => 0,
     6 => 0,
   );
-  /* Critère de filtrage: Contenu : ID pour regrouper les activités (field_groupement) */
+  /* Critère de filtrage: Contenu : Groupe (field_groupement) */
   $handler->display->display_options['filters']['field_groupement_value']['id'] = 'field_groupement_value';
   $handler->display->display_options['filters']['field_groupement_value']['table'] = 'field_data_field_groupement';
   $handler->display->display_options['filters']['field_groupement_value']['field'] = 'field_groupement_value';
@@ -1236,6 +1267,127 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['order'] = 'DESC';
   $handler->display->display_options['path'] = 'rss/events.xml';
+
+  /* Display: Bloc Prochaines activités HP */
+  $handler = $view->new_display('block', 'Bloc Prochaines activités HP', 'block_3');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Contenu : Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => 'content',
+  );
+  /* Champ: Contenu : Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Champ: Contenu : Chemin */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Date */
+  $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
+  $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
+  $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
+  $handler->display->display_options['fields']['field_date']['label'] = '';
+  $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_date']['settings'] = array(
+    'format_type' => 'medium',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Champ: Contenu : Localité */
+  $handler->display->display_options['fields']['field_localite']['id'] = 'field_localite';
+  $handler->display->display_options['fields']['field_localite']['table'] = 'field_data_field_localite';
+  $handler->display->display_options['fields']['field_localite']['field'] = 'field_localite';
+  $handler->display->display_options['fields']['field_localite']['label'] = '';
+  $handler->display->display_options['fields']['field_localite']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Province */
+  $handler->display->display_options['fields']['field_province']['id'] = 'field_province';
+  $handler->display->display_options['fields']['field_province']['table'] = 'field_data_field_province';
+  $handler->display->display_options['fields']['field_province']['field'] = 'field_province';
+  $handler->display->display_options['fields']['field_province']['label'] = '';
+  $handler->display->display_options['fields']['field_province']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_province']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '150',
+  );
+  /* Champ: Contenu : Date */
+  $handler->display->display_options['fields']['field_date_1']['id'] = 'field_date_1';
+  $handler->display->display_options['fields']['field_date_1']['table'] = 'field_data_field_date';
+  $handler->display->display_options['fields']['field_date_1']['field'] = 'field_date';
+  $handler->display->display_options['fields']['field_date_1']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_date_1']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Champ: Global : PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_value'] = '$datetime1 = new DateTime("now");
+$datetime2 = $row->field_date_1;
+$interval = date_diff($datetime1, $datetime2);
+dsm($datetime2);
+$output = $interval;
+';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Critère de filtrage: Contenu : Publié */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Critère de filtrage: Contenu : Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'event' => 'event',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Critère de filtrage: Contenu : Date (field_date) */
+  $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
+  $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
+  $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
+  $handler->display->display_options['filters']['field_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_date_value']['default_date'] = 'now';
   $export['events'] = $view;
 
   return $export;

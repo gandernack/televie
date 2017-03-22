@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vue Au jour le jour feature.
+ */
+
+include_once 'vue_au_jour_le_jour.features.inc';
