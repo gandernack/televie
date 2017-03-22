@@ -26,6 +26,11 @@ body .page-404 + #footer
 // Page 404
 .page-404
 {
+  .action-links
+  {
+    display: none;
+  }
+
   .first
   {
     position: relative;

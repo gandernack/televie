@@ -1335,7 +1335,7 @@ a.link-type-search:hover {
   margin: 0;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   height: 100px;
   font-family: 'proxima-regular';
   font-size: 1.3em; }
@@ -6507,6 +6507,8 @@ body.page-node-2599 {
 body .page-404 + #footer {
   margin-top: 0; }
 
+.page-404 .action-links {
+  display: none; }
 .page-404 .first {
   position: relative;
   background: url("/sites/all/themes/nrb_televie/img/404/bg01.jpg");
