@@ -1352,19 +1352,6 @@ mois+6|Dans 6 mois';
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Champ: Global : PHP */
-  $handler->display->display_options['fields']['php']['id'] = 'php';
-  $handler->display->display_options['fields']['php']['table'] = 'views';
-  $handler->display->display_options['fields']['php']['field'] = 'php';
-  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
-  $handler->display->display_options['fields']['php']['php_value'] = '$datetime1 = new DateTime("now");
-$datetime2 = $row->field_date_1;
-$interval = date_diff($datetime1, $datetime2);
-dsm($datetime2);
-$output = $interval;
-';
-  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
-  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Contenu : Publié */
