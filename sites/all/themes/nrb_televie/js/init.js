@@ -73,7 +73,7 @@
             $("#footer .region-footer-first .blockfooterfirst-part2").slideUp();
             $("#footer .region-footer-first .blockfooterfirst-part1").slideDown();
             $(".main #slide5").addClass("emo-active");
-            $(".main .block-close").toggle(1500);
+            $(".main .block-close").slideToggle(500);
             $(".main #footer").addClass("active");
             $(".main").animate({
                     top: 0
@@ -91,7 +91,7 @@
             $("#footer .region-footer-first .blockfooterfirst-part1").slideDown();
             $(".main #slide5").addClass("active");
             $(".main #slide5").addClass("fac-active");
-            $(".main .block-close").toggle(1500);
+            $(".main .block-close").slideToggle(500);
             $(".main #footer").addClass("active");
             $(".main").animate({
                     top: 0
@@ -116,7 +116,7 @@
             $(".main #slide5").removeClass("active");
             $(".main #slide5").removeClass("emo-active");
             $(".main #slide5").removeClass("fac-active");
-            $(".main .block-close").toggle(1500);
+            $(".main .block-close").slideToggle(500);
             $(".main #footer").removeClass("active");
             $("body").addClass("body-start");
         });
