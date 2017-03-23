@@ -2270,19 +2270,16 @@ a.link-type-search:hover {
   z-index: 15; }
 
 .main .close a {
-  color: #dc3a4d;
   display: block;
-  text-decoration: none;
   width: 60px;
   height: 60px;
-  font-size: 2.0em;
+  color: #dc3a4d;
+  text-decoration: none;
+  font-size: 1.8em;
   font-family: 'symbolesnrbregular';
   text-align: center;
-  line-height: 1.3;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
+  line-height: 2;
+  text-indent: 2px;
   transition: all 250ms ease; }
 
 .main .close a:before {
@@ -2293,7 +2290,7 @@ a.link-type-search:hover {
   border-radius: 100px;
   width: 50px;
   height: 50px;
-  top: -8px;
+  top: 0;
   left: 5px;
   border: 4px solid #dc3a4d;
   -webkit-transition: all 250ms ease;
