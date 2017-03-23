@@ -104,6 +104,12 @@
 
             padding: 40px 64px 40px 32px;
 
+            &:hover
+            {
+              border-bottom: 4px solid #ffffff;
+              padding: 40px 64px 36px 32px;
+            }
+
             &::before
             {
               content: none;
