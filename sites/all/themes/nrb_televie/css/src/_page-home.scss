@@ -1667,11 +1667,21 @@
 #block-views-articles-block-1
 {
   background: #341c38;
+  position: relative;
+  top: -30px;
+
+  @extend .skew-positive;
+
+  .content
+  {
+    @extend .skew-negative;
+  }
 
   .view-content
   {
     max-width: 940px;
     margin: auto;
+    padding: 125px 0;
 
     display: flex;
   }
@@ -1695,6 +1705,14 @@
 
       position: relative;
 
+
+      .aujourlejour__title
+      {
+        color: #ffffff;
+        font-size: 30px;
+        font-family: proxima-cn-light;
+      }
+
       .aujourlejour__normal
       {
         position: relative;
@@ -1705,16 +1723,59 @@
           padding: 20px;
           background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
           width: 100%;
-          
+
           position: absolute;
           bottom: 0;
-
-          color: #ffffff;
         }
       }
+
       .aujourlejour__hover
       {
-        display: none;
+        // display: none;
+        display: block;
+        background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
+        padding: 40px;
+        overflow: hidden;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        color: #ffffff;
+
+        &::before
+        {
+          content: "";
+
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: calc(100% - 40px);
+          height: calc(100% - 40px);
+
+          border: 1px solid #ffffff;
+
+        }
+        &::after{}
+
+        .aujourlejour__title
+        {
+          margin-bottom: 30px;
+        }
+
+        time
+        {
+          font-size: 16px;
+          font-family: proxima-bold;
+        }
+
+        .except
+        {
+          font-family: proxima-regular;
+          font-size: 14px;
+        }
       }
     }
   }

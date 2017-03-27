@@ -351,10 +351,10 @@ body.not-front.page-soutenir-le-televie #footer {
   margin: 30px auto; }
 
 /* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
-.skew-negative {
+.skew-negative, #block-views-articles-block-1 .content {
   transform: skewY(-1.5deg); }
 
-.skew-positive {
+.skew-positive, #block-views-articles-block-1 {
   transform: skewY(1.5deg); }
 
 .text-center {
@@ -3279,10 +3279,13 @@ a.link-type-search:hover {
       font-size: 15px; }
 
 #block-views-articles-block-1 {
-  background: #341c38; }
+  background: #341c38;
+  position: relative;
+  top: -30px; }
   #block-views-articles-block-1 .view-content {
     max-width: 940px;
     margin: auto;
+    padding: 125px 0;
     display: flex; }
   #block-views-articles-block-1 .views-row {
     display: inline-block;
@@ -3295,6 +3298,10 @@ a.link-type-search:hover {
       height: 290px;
       width: 100%;
       position: relative; }
+      #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__title {
+        color: #ffffff;
+        font-size: 30px;
+        font-family: proxima-cn-light; }
       #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__normal {
         position: relative;
         height: 100%; }
@@ -3303,10 +3310,34 @@ a.link-type-search:hover {
           background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.5) 100%);
           width: 100%;
           position: absolute;
-          bottom: 0;
-          color: #ffffff; }
+          bottom: 0; }
       #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover {
-        display: none; }
+        display: block;
+        background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.5) 100%);
+        padding: 40px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #ffffff; }
+        #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover::before {
+          content: "";
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: calc(100% - 40px);
+          height: calc(100% - 40px);
+          border: 1px solid #ffffff; }
+        #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover .aujourlejour__title {
+          margin-bottom: 30px; }
+        #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover time {
+          font-size: 16px;
+          font-family: proxima-bold; }
+        #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover .except {
+          font-family: proxima-regular;
+          font-size: 14px; }
 
 .infos-total {
   background: #f1f0ef;
