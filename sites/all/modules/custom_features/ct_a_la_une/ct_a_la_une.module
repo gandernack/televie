@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CT A la une feature.
+ */
+
+include_once 'ct_a_la_une.features.inc';
