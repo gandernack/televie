@@ -453,7 +453,7 @@ print_r(intval(($view->row_index+8)/12));
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['max_length'] = '35';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '80';
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
