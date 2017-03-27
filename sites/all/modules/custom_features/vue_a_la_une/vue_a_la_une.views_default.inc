@@ -370,6 +370,10 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '35';
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
@@ -378,6 +382,7 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['field_sous_titre']['table'] = 'field_data_field_sous_titre';
   $handler->display->display_options['fields']['field_sous_titre']['field'] = 'field_sous_titre';
   $handler->display->display_options['fields']['field_sous_titre']['label'] = '';
+  $handler->display->display_options['fields']['field_sous_titre']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_sous_titre']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_sous_titre']['element_default_classes'] = FALSE;
   /* Champ: Contenu : Description */
@@ -385,11 +390,16 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '150',
+    'trim_length' => '200',
   );
   /* Champ: Contenu : Lien à la une */
   $handler->display->display_options['fields']['field_lien_la_une']['id'] = 'field_lien_la_une';
