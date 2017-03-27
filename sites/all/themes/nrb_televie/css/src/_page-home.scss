@@ -1565,3 +1565,225 @@
   margin: 0;
   font-size: 42px;
 }
+
+/////////////////////////////////////////////
+//
+//   A la une
+//
+#block-views-a-la-une-block-1
+{
+  min-height: 260px;
+
+  background: #dc3a4d;
+
+  > h2
+  {
+    display: none;
+  }
+
+  .view-content
+  {
+    display: flex;
+    max-width: 940px;
+    margin: auto;
+  }
+
+  .views-row
+  {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: -120px;
+
+    &:last-child
+    {
+      margin-right: 0;
+    }
+  }
+
+  .alaune__item
+  {
+    display: inline-block;
+
+    text-decoration: none;
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease-in-out;
+
+    &:hover
+    {
+      transform: translateY(-50px);
+    }
+
+    .item__header
+    {
+      padding: 20px;
+
+      position: relative;
+      border-top: 8px solid #dc3a4d;
+
+      &::after
+      {
+        content: "";
+
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
+      }
+
+      h2
+      {
+        position: relative;
+        z-index: 1;
+
+        font-size: 30px;
+        color: #ffffff;
+        font-family: proxima-cn-regular;
+      }
+    }
+
+    .item__body
+    {
+      padding: 20px;
+
+      background: #ffffff;
+      font-family: proxima-light;
+      color: #494756;
+      font-size: 15px;
+    }
+
+  }
+}
+
+
+/////////////////////////////////////////////
+//
+//   Au jour le jour
+//
+#block-views-articles-block-1
+{
+  background: #341c38;
+  position: relative;
+  top: -30px;
+
+  @extend .skew-positive;
+
+  .content
+  {
+    @extend .skew-negative;
+  }
+
+  .view-content
+  {
+    max-width: 940px;
+    margin: auto;
+    padding: 125px 0;
+
+    display: flex;
+  }
+
+  .views-row
+  {
+    display: inline-block;
+    margin-right: 20px;
+    width: 50%;
+
+    &:last-child
+    {
+      margin-right: 0;
+    }
+
+    .aujourlejour__item
+    {
+      display: inline-block;
+      height: 290px;
+      width: 100%;
+
+      position: relative;
+
+
+      .aujourlejour__title
+      {
+        color: #ffffff;
+        font-size: 30px;
+        font-family: proxima-cn-light;
+      }
+
+      .aujourlejour__normal
+      {
+        position: relative;
+        height: 100%;
+
+        .aujourlejour__title
+        {
+          padding: 20px;
+          background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
+          width: 100%;
+
+          position: absolute;
+          bottom: 0;
+        }
+      }
+
+      .aujourlejour__hover
+      {
+        // display: none;
+        display: block;
+        background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
+        padding: 40px;
+        overflow: hidden;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        color: #ffffff;
+
+        &::before
+        {
+          content: "";
+
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: calc(100% - 40px);
+          height: calc(100% - 40px);
+
+          border: 1px solid #ffffff;
+
+        }
+        &::after{}
+
+        .aujourlejour__title
+        {
+          margin-bottom: 30px;
+        }
+
+        time
+        {
+          font-size: 16px;
+          font-family: proxima-bold;
+        }
+
+        .except
+        {
+          font-family: proxima-regular;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+/////////////////////////////////////////////
+//
+//   Prochaines activités
+//
+#block-views-events-block-3{}
