@@ -351,10 +351,11 @@ body.not-front.page-soutenir-le-televie #footer {
   margin: 30px auto; }
 
 /* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
-.skew-negative, #block-views-articles-block-1 .content {
+.skew-negative, #block-views-articles-block-1 .content, #block-views-events-block-3 {
   transform: skewY(-1.5deg); }
 
-.skew-positive, #block-views-articles-block-1 {
+.skew-positive, #block-views-articles-block-1, #block-views-events-block-3 > h2,
+#block-views-events-block-3 .content {
   transform: skewY(1.5deg); }
 
 .text-center {
@@ -3277,6 +3278,13 @@ a.link-type-search:hover {
       font-family: proxima-light;
       color: #494756;
       font-size: 15px; }
+      #block-views-a-la-une-block-1 .alaune__item .item__body .item__description {
+        margin-bottom: 30px; }
+      #block-views-a-la-une-block-1 .alaune__item .item__body .item__action {
+        color: #dc3a4d;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-align: right; }
 
 #block-views-articles-block-1 {
   background: #341c38;
@@ -3338,6 +3346,26 @@ a.link-type-search:hover {
         #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover .except {
           font-family: proxima-regular;
           font-size: 14px; }
+
+#block-views-events-block-3 {
+  background: #f6f5f4; }
+  #block-views-events-block-3 > h2 {
+    max-width: 940px;
+    margin: auto;
+    padding-top: 75px;
+    font-family: proxima-excn-light;
+    font-size: 60px;
+    color: #dc3a4d; }
+  #block-views-events-block-3 .view-content {
+    max-width: 940px;
+    margin: auto;
+    padding: 125px 0;
+    display: flex; }
+  #block-views-events-block-3 .views-row {
+    width: 33.3333333%;
+    margin-right: 20px; }
+    #block-views-events-block-3 .views-row:last-child {
+      margin-right: 0; }
 
 .infos-total {
   background: #f1f0ef;

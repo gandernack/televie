@@ -1654,6 +1654,18 @@
       font-family: proxima-light;
       color: #494756;
       font-size: 15px;
+
+      .item__description
+      {
+        margin-bottom: 30px;
+      }
+      .item__action
+      {
+        color: #dc3a4d;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-align: right;
+      }
     }
 
   }
@@ -1786,4 +1798,46 @@
 //
 //   Prochaines activités
 //
-#block-views-events-block-3{}
+#block-views-events-block-3
+{
+  @extend .skew-negative;
+
+  background: #f6f5f4;
+
+  >h2,
+  .content
+  {
+    @extend .skew-positive;
+  }
+
+  > h2
+  {
+    max-width: 940px;
+    margin: auto;
+    padding-top: 75px;
+
+    font-family: proxima-excn-light;
+    font-size: 60px;
+    color: #dc3a4d;
+  }
+
+  .view-content
+  {
+    max-width: 940px;
+    margin: auto;
+    padding: 125px 0;
+
+    display: flex;
+  }
+
+  .views-row
+  {
+    width: 33.3333333%;
+    margin-right: 20px;
+
+    &:last-child
+    {
+      margin-right: 0;
+    }
+  }
+}
