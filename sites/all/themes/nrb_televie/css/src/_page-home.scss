@@ -1568,6 +1568,20 @@
 
 /////////////////////////////////////////////
 //
+//   Proper setup
+//
+#block-views-a-la-une-block-1,
+#block-views-a-la-une-block-1 *,
+#block-views-articles-block-1,
+#block-views-articles-block-1 *,
+#block-views-events-block-3,
+#block-views-events-block-3 *
+{
+  box-sizing: border-box;
+}
+
+/////////////////////////////////////////////
+//
 //   A la une
 //
 #block-views-a-la-une-block-1
@@ -1593,6 +1607,7 @@
     display: inline-block;
     margin-right: 20px;
     margin-top: -120px;
+    width: 33.33333%;
 
     &:last-child
     {
@@ -1607,7 +1622,7 @@
     text-decoration: none;
 
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    transition: transform .3s ease-in-out;
+    transition: transform .3s;
 
     &:hover
     {
@@ -1651,6 +1666,8 @@
       padding: 20px;
 
       background: #ffffff;
+      box-sizing: border-box;
+
       font-family: proxima-light;
       color: #494756;
       font-size: 15px;
@@ -1658,6 +1675,7 @@
       .item__description
       {
         margin-bottom: 30px;
+        height: 72px;
       }
       .item__action
       {
@@ -1717,7 +1735,6 @@
 
       position: relative;
 
-
       .aujourlejour__title
       {
         color: #ffffff;
@@ -1729,23 +1746,24 @@
       {
         position: relative;
         height: 100%;
+        overflow: hidden;
 
         .aujourlejour__title
         {
           padding: 20px;
-          background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
+          background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.8) 100%);
           width: 100%;
 
           position: absolute;
           bottom: 0;
+
+          transition: transform .3s;
         }
       }
 
       .aujourlejour__hover
       {
-        // display: none;
-        display: block;
-        background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.5) 100%);
+        background: linear-gradient(to bottom, rgba(50,44,65,1) 0%,rgba(50,44,65,0.8) 100%);
         padding: 40px;
         overflow: hidden;
 
@@ -1755,8 +1773,13 @@
         bottom: 0;
         left: 0;
 
+        opacity: 0;
+        transform: scale(0);
+        transition: transform .3s, opacity .3s;
+
         color: #ffffff;
 
+        // Frame
         &::before
         {
           content: "";
@@ -1768,13 +1791,26 @@
           height: calc(100% - 40px);
 
           border: 1px solid #ffffff;
-
         }
-        &::after{}
+
+        // Arrow
+        &::after
+        {
+          content: '>';
+
+          position: absolute;
+          bottom: 30px;
+          right: 40px;
+
+          font-family: symbolesnrbregular;
+          color: #ffffff;
+          font-size: 2em;
+        }
 
         .aujourlejour__title
         {
           margin-bottom: 30px;
+          height: 72px;
         }
 
         time
@@ -1785,8 +1821,25 @@
 
         .except
         {
-          font-family: proxima-regular;
+          font-family: proxima-light;
           font-size: 14px;
+        }
+      }
+
+      &:hover
+      {
+        .aujourlejour__normal
+        {
+          .aujourlejour__title
+          {
+            transform: translateY(100%);
+          }
+        }
+
+        .aujourlejour__hover
+        {
+          opacity: 1;
+          transform: scale(1);
         }
       }
     }
@@ -1802,7 +1855,9 @@
 {
   @extend .skew-negative;
 
+  position: relative;
   background: #f6f5f4;
+  top: -80px;
 
   >h2,
   .content

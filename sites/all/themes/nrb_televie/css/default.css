@@ -3231,6 +3231,14 @@ a.link-type-search:hover {
   margin: 0;
   font-size: 42px; }
 
+#block-views-a-la-une-block-1,
+#block-views-a-la-une-block-1 *,
+#block-views-articles-block-1,
+#block-views-articles-block-1 *,
+#block-views-events-block-3,
+#block-views-events-block-3 * {
+  box-sizing: border-box; }
+
 #block-views-a-la-une-block-1 {
   min-height: 260px;
   background: #dc3a4d; }
@@ -3243,14 +3251,15 @@ a.link-type-search:hover {
   #block-views-a-la-une-block-1 .views-row {
     display: inline-block;
     margin-right: 20px;
-    margin-top: -120px; }
+    margin-top: -120px;
+    width: 33.33333%; }
     #block-views-a-la-une-block-1 .views-row:last-child {
       margin-right: 0; }
   #block-views-a-la-une-block-1 .alaune__item {
     display: inline-block;
     text-decoration: none;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    transition: transform .3s ease-in-out; }
+    transition: transform .3s; }
     #block-views-a-la-une-block-1 .alaune__item:hover {
       transform: translateY(-50px); }
     #block-views-a-la-une-block-1 .alaune__item .item__header {
@@ -3275,11 +3284,13 @@ a.link-type-search:hover {
     #block-views-a-la-une-block-1 .alaune__item .item__body {
       padding: 20px;
       background: #ffffff;
+      box-sizing: border-box;
       font-family: proxima-light;
       color: #494756;
       font-size: 15px; }
       #block-views-a-la-une-block-1 .alaune__item .item__body .item__description {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        height: 72px; }
       #block-views-a-la-une-block-1 .alaune__item .item__body .item__action {
         color: #dc3a4d;
         text-decoration: underline;
@@ -3312,16 +3323,17 @@ a.link-type-search:hover {
         font-family: proxima-cn-light; }
       #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__normal {
         position: relative;
-        height: 100%; }
+        height: 100%;
+        overflow: hidden; }
         #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__normal .aujourlejour__title {
           padding: 20px;
-          background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.5) 100%);
+          background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.8) 100%);
           width: 100%;
           position: absolute;
-          bottom: 0; }
+          bottom: 0;
+          transition: transform .3s; }
       #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover {
-        display: block;
-        background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.5) 100%);
+        background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.8) 100%);
         padding: 40px;
         overflow: hidden;
         position: absolute;
@@ -3329,6 +3341,9 @@ a.link-type-search:hover {
         right: 0;
         bottom: 0;
         left: 0;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform .3s, opacity .3s;
         color: #ffffff; }
         #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover::before {
           content: "";
@@ -3338,17 +3353,33 @@ a.link-type-search:hover {
           width: calc(100% - 40px);
           height: calc(100% - 40px);
           border: 1px solid #ffffff; }
+        #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover::after {
+          content: '>';
+          position: absolute;
+          bottom: 30px;
+          right: 40px;
+          font-family: symbolesnrbregular;
+          color: #ffffff;
+          font-size: 2em; }
         #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover .aujourlejour__title {
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          height: 72px; }
         #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover time {
           font-size: 16px;
           font-family: proxima-bold; }
         #block-views-articles-block-1 .views-row .aujourlejour__item .aujourlejour__hover .except {
-          font-family: proxima-regular;
+          font-family: proxima-light;
           font-size: 14px; }
+      #block-views-articles-block-1 .views-row .aujourlejour__item:hover .aujourlejour__normal .aujourlejour__title {
+        transform: translateY(100%); }
+      #block-views-articles-block-1 .views-row .aujourlejour__item:hover .aujourlejour__hover {
+        opacity: 1;
+        transform: scale(1); }
 
 #block-views-events-block-3 {
-  background: #f6f5f4; }
+  position: relative;
+  background: #f6f5f4;
+  top: -80px; }
   #block-views-events-block-3 > h2 {
     max-width: 940px;
     margin: auto;
