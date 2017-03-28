@@ -1895,4 +1895,66 @@
       margin-right: 0;
     }
   }
+
+  .prochactivites__item
+  {
+    text-decoration: none;
+
+    .prochactivites__normal
+    {
+      .prochactivites__first
+      {
+        height: 173px;
+        width: 100%;
+
+        position: relative;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .prochactivites__time
+        {
+          display: block;
+          background: #dc3a4d;
+          opacity:.9;
+          padding: 20px;
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          text-align: center;
+          font-size: 20px;
+          font-family: proxima-cn-light;
+          color: #ffffff;
+        }
+      }
+
+      .prochactivites__second
+      {
+        background: #ffffff;
+        padding: 20px;
+
+        .prochactivites__title
+        {
+          font-family: proxima-cn-bold;
+          font-size: 17px;
+          color: #dc3a4d;
+        }
+
+        .prochactivites__desc
+        {
+          font-family: proxima-cn-light;
+          font-size: 15px;
+          color: #494756;
+        }
+      }
+
+    }
+
+    .prochactivites__hover
+    {
+      display: none;
+    }
+  }
 }
