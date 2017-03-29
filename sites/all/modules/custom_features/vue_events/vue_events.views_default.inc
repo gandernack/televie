@@ -1272,6 +1272,8 @@ mois+6|Dans 6 mois';
 
   /* Display: Bloc Prochaines activités HP */
   $handler = $view->new_display('block', 'Bloc Prochaines activités HP', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Prochaines activités';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -1344,6 +1346,10 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
@@ -1354,17 +1360,43 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['field_date_1']['id'] = 'field_date_1';
   $handler->display->display_options['fields']['field_date_1']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date_1']['field'] = 'field_date';
+  $handler->display->display_options['fields']['field_date_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_date_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_date_1']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_date_1']['type'] = 'date_plain';
   $handler->display->display_options['fields']['field_date_1']['settings'] = array(
-    'format_type' => 'short',
-    'fromto' => 'both',
+    'format_type' => 'long',
+    'fromto' => '',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
     'show_remaining_days' => 0,
-    'show_repeat_rule' => 'show',
   );
+  /* Champ: Global : PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['label'] = '';
+  $handler->display->display_options['fields']['php']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_value'] = '$todayts = new DateTime();;
+$today = $todayts->format(\'Y-m-d\');
+$todayts = new DateTime($today . " 00:00");
+$load = new DateTime($data->field_data_field_date_field_date_value);
+$diff = $load->diff($todayts);
+$nbJours = $diff->format(\'%a \');
+if ($nbJours == 0) {
+  $result = "Aujourd\'hui";
+}
+elseif ($nbJours == 1) {
+  $result = "Dans 1 jour";
+} else {
+  $result = "Dans " . $nbJours . " jours"; 
+}
+return $result;';
+  $handler->display->display_options['fields']['php']['php_output'] = '<?php print $value; ?>';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Contenu : Publié */
@@ -1388,6 +1420,7 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_date_value']['default_date'] = 'now';
+  $handler->display->display_options['block_description'] = 'Prochaines activités HP';
   $export['events'] = $view;
 
   return $export;

@@ -439,6 +439,8 @@ print_r(intval(($view->row_index+8)/12));
 
   /* Display: Bloc Dernières news HP */
   $handler = $view->new_display('block', 'Bloc Dernières news HP', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Dernières news';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu : Chemin */
   $handler->display->display_options['fields']['path']['id'] = 'path';
@@ -496,6 +498,7 @@ print_r(intval(($view->row_index+8)/12));
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '200',
   );
+  $handler->display->display_options['block_description'] = 'Dernières news HP';
   $export['articles'] = $view;
 
   return $export;
