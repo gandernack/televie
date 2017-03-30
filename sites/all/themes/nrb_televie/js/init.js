@@ -60,7 +60,7 @@
          *************************************************************/
 
         $("body.front").addClass("body-start");
-        $(".front .block-close").after($("#footer"));
+        // $(".front .block-close").after($("#footer"));
 
         $(".front.body-start > #page-wrapper").fadeIn(2000);
 

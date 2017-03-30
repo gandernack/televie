@@ -351,7 +351,7 @@ body.not-front.page-soutenir-le-televie #footer {
   margin: 30px auto; }
 
 /* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
-.skew-negative, #block-views-articles-block-1 .content, #block-views-events-block-3 {
+.skew-negative, #block-views-articles-block-1 .content, #block-views-articles-block-1 > h2, #block-views-events-block-3 {
   transform: skewY(-1.5deg); }
 
 .skew-positive, #block-views-articles-block-1, #block-views-events-block-3 > h2,
@@ -1428,9 +1428,6 @@ a.link-type-search:hover {
   background: #dc3a4d;
   position: relative; }
 
-.front .main #footer {
-  display: none; }
-
 .front .main #footer.active {
   display: block;
   z-index: 16; }
@@ -1863,6 +1860,9 @@ a.link-type-search:hover {
   text-align: center;
   max-width: 870px; }
 
+.messages.error {
+  display: none; }
+
 .front.body-start > #page-wrapper,
 .front.body-start #page,
 .front.body-start #page #block-system-main,
@@ -1936,7 +1936,7 @@ a.link-type-search:hover {
   display: table-cell;
   width: 50%;
   max-width: 50%;
-  height: 100vh;
+  height: calc(100vh - 100px);
   text-decoration: none;
   overflow: hidden;
   position: relative;
@@ -3301,10 +3301,17 @@ a.link-type-search:hover {
   background: #341c38;
   position: relative;
   top: -30px; }
+  #block-views-articles-block-1 > h2 {
+    max-width: 940px;
+    margin: auto;
+    padding: 70px 0 40px 0;
+    font-size: 60px;
+    font-family: proxima-excn-light;
+    color: #ffffff; }
   #block-views-articles-block-1 .view-content {
     max-width: 940px;
     margin: auto;
-    padding: 125px 0;
+    padding: 0 0 125px 0;
     display: flex; }
   #block-views-articles-block-1 .views-row {
     display: inline-block;
@@ -3378,7 +3385,7 @@ a.link-type-search:hover {
 
 #block-views-events-block-3 {
   position: relative;
-  background: #f6f5f4;
+  background: #f1f0ef;
   top: -80px; }
   #block-views-events-block-3 > h2 {
     max-width: 940px;
@@ -3390,7 +3397,7 @@ a.link-type-search:hover {
   #block-views-events-block-3 .view-content {
     max-width: 940px;
     margin: auto;
-    padding: 125px 0;
+    padding: 10px 0 40px;
     display: flex; }
   #block-views-events-block-3 .views-row {
     width: 33.3333333%;
@@ -3398,6 +3405,8 @@ a.link-type-search:hover {
     #block-views-events-block-3 .views-row:last-child {
       margin-right: 0; }
   #block-views-events-block-3 .prochactivites__item {
+    display: block;
+    position: relative;
     text-decoration: none; }
     #block-views-events-block-3 .prochactivites__item .prochactivites__normal .prochactivites__first {
       height: 173px;
@@ -3421,15 +3430,58 @@ a.link-type-search:hover {
       background: #ffffff;
       padding: 20px; }
       #block-views-events-block-3 .prochactivites__item .prochactivites__normal .prochactivites__second .prochactivites__title {
+        min-height: 40px;
+        margin-bottom: 30px;
         font-family: proxima-cn-bold;
         font-size: 17px;
         color: #dc3a4d; }
       #block-views-events-block-3 .prochactivites__item .prochactivites__normal .prochactivites__second .prochactivites__desc {
+        min-height: 51px;
         font-family: proxima-cn-light;
         font-size: 15px;
         color: #494756; }
     #block-views-events-block-3 .prochactivites__item .prochactivites__hover {
-      display: none; }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(to bottom, #322c41 0%, rgba(50, 44, 65, 0.7) 100%);
+      padding: 40px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform .3s, opacity .3s;
+      color: #ffffff;
+      text-align: center; }
+      #block-views-events-block-3 .prochactivites__item .prochactivites__hover::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        border: 1px solid #ffffff; }
+      #block-views-events-block-3 .prochactivites__item .prochactivites__hover::after {
+        content: '>';
+        font-family: symbolesnrbregular;
+        color: #ffffff;
+        font-size: 2em; }
+      #block-views-events-block-3 .prochactivites__item .prochactivites__hover .prochactivites__cta {
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+        font-family: proxima-cn-light;
+        font-size: 26px; }
+        #block-views-events-block-3 .prochactivites__item .prochactivites__hover .prochactivites__cta strong {
+          display: block;
+          font-family: proxima-cn-semibold; }
+    #block-views-events-block-3 .prochactivites__item:hover .prochactivites__hover {
+      opacity: 1;
+      transform: scale(1); }
 
 .infos-total {
   background: #f1f0ef;

@@ -3,10 +3,6 @@
   position: relative;
 }
 
-.front .main #footer {
-  display: none;
-}
-
 .front .main #footer.active {
   display: block;
   z-index: 16;
