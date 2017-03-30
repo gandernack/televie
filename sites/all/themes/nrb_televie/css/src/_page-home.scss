@@ -1594,6 +1594,9 @@
   min-height: 260px;
 
   background: #dc3a4d;
+  background-image: url('/sites/all/themes/nrb_televie/img/home/soutenir.jpg');
+  background-size: cover;
+  background-position: top right;
 
   > h2
   {
@@ -1701,9 +1704,13 @@
 //
 #block-views-articles-block-1
 {
-  background: #341c38;
   position: relative;
   top: -30px;
+
+  background: #341c38;
+  background-image: url('/sites/all/themes/nrb_televie/img/home/bg-block2.jpg');
+  background-size: cover;
+  background-position: center;
 
   @extend .skew-positive;
 
