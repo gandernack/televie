@@ -66,7 +66,7 @@
           funnel = funnel;
           var funnel = jQuery(funnel);
 
-          jQuery("#block-views-a-la-une-block-1").addClass("inactive");
+          jQuery("#block-views-a-la-une-block-1, #block-views-articles-block-1, #block-views-events-block-3").addClass("inactive");
           funnel.addClass("active");
           jQuery(".main .block-close").slideDown(500);
 
@@ -76,7 +76,7 @@
         function closeFunnel()
         {
           funnel = null;
-          jQuery("#block-views-a-la-une-block-1").removeClass("inactive");
+          jQuery("#block-views-a-la-une-block-1, #block-views-articles-block-1, #block-views-events-block-3").removeClass("inactive");
 
           jQuery(".main .block-close").slideUp(500);
 

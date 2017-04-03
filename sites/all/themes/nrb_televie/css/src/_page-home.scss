@@ -1505,6 +1505,14 @@
   box-sizing: border-box;
 }
 
+
+#block-views-a-la-une-block-1.inactive,
+#block-views-articles-block-1.inactive,
+#block-views-events-block-3.inactive
+{
+  display: none;
+}
+
 /////////////////////////////////////////////
 //
 //   A la une

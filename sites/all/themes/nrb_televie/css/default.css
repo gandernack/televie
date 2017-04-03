@@ -3033,6 +3033,11 @@ a.link-type-search:hover {
 #block-views-events-block-3 * {
   box-sizing: border-box; }
 
+#block-views-a-la-une-block-1.inactive,
+#block-views-articles-block-1.inactive,
+#block-views-events-block-3.inactive {
+  display: none; }
+
 #block-views-a-la-une-block-1 {
   min-height: 260px;
   background: #dc3a4d;
