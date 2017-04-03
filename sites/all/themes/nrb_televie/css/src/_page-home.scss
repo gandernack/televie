@@ -1453,6 +1453,8 @@
     margin-top: -120px;
     width: 33.33333%;
 
+    transition: margin-top .3s;
+
     &:last-child
     {
       margin-right: 0;
@@ -1530,6 +1532,14 @@
       }
     }
 
+  }
+
+  &.inactive
+  {
+    .views-row
+    {
+      margin-top: 0;
+    }
   }
 }
 

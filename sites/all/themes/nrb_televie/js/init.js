@@ -16,9 +16,7 @@
             return false;
         });
 
-
         $(".soiree-compteur pre").wrap("soiree-22222");
-
 
         /*************************************************************
          *
@@ -35,7 +33,6 @@
             heightStyle: "content"
         });
 
-
         /*************************************************************
          *
          *  pour ajouter des class chrome, ie, firefox... dans le body
@@ -43,13 +40,11 @@
          *************************************************************/
         var currentBrowser = $.browserDetection(true);
 
-
         /*************************************************************
          *
          *  pour détecter le scoll dans une page
          *
          *************************************************************/
-
 
         $.localScroll();
 
@@ -59,66 +54,56 @@
          *
          *************************************************************/
 
-        $("body.front").addClass("body-start");
-        // $(".front .block-close").after($("#footer"));
-        // $(".front.body-start > #page-wrapper").fadeIn(2000);
+        var funnel = null;
 
-        $("#start .start-emo").click(function () {
-            $("#event").toggle("slide", {direction: 'right'}, 500);
-            $(".mobile .event").toggle();
-            $(".main #page-emotional").addClass("active");
-            $(".main #slide5").addClass("active");
-            $("#footer .region-footer-first .blockfooterfirst-part2").slideUp();
-            $("#footer .region-footer-first .blockfooterfirst-part1").slideDown();
-            $(".main #slide5").addClass("emo-active");
-            $(".main .block-close").slideToggle(500);
-            $(".main #footer").addClass("active");
-            $(".main").animate({
-                    top: 0
-                }, 500, "linear", function () {
-                    $("body").removeClass("body-start");
-                }
-            );
+        function openFunnel(funnel)
+        {
+          if (funnel)
+          {
+            jQuery(".main #page-emotional").removeClass("active");
+            jQuery(".main #page-factual").removeClass("active");
+          }
+          funnel = funnel;
+          var funnel = jQuery(funnel);
+
+          jQuery("#block-views-a-la-une-block-1").addClass("inactive");
+          funnel.addClass("active");
+          jQuery(".main .block-close").slideDown(500);
+
+          jQuery("html, body").stop().animate({scrollTop: funnel.offset().top - 100}, 600);
+        }
+
+        function closeFunnel()
+        {
+          funnel = null;
+          jQuery("#block-views-a-la-une-block-1").removeClass("inactive");
+
+          jQuery(".main .block-close").slideUp(500);
+
+          jQuery("html, body").stop().animate({scrollTop: 0}, 600, function()
+          {
+            jQuery(".main #page-emotional").removeClass("active");
+            jQuery(".main #page-factual").removeClass("active");
+          });
+        }
+
+        // Emotional::Open
+        jQuery('.videoitem').eq(0).click(function ()
+        {
+          openFunnel("#page-emotional");
         });
 
-        $("#start .start-fac").click(function () {
-            $("#event").toggle("slide", {direction: 'right'}, 500);
-            $(".mobile .event").toggle();
-            $(".main #page-factual").addClass("active");
-            $("#footer .region-footer-first .blockfooterfirst-part2").slideUp();
-            $("#footer .region-footer-first .blockfooterfirst-part1").slideDown();
-            $(".main #slide5").addClass("active");
-            $(".main #slide5").addClass("fac-active");
-            $(".main .block-close").slideToggle(500);
-            $(".main #footer").addClass("active");
-            $(".main").animate({
-                    top: 0
-                }, 1000, "easeInOutQuart", function () {
-                    $("body").removeClass("body-start");
-                }
-            );
+        // Factual::Open
+        jQuery('.videoitem').eq(1).click(function ()
+        {
+          openFunnel("#page-factual");
         });
 
-
-        $(".main .close").click(function () {
-            $("#event").toggle("slide", {direction: 'right'}, 500);
-            $(".mobile .event").toggle();
-            $(".main").animate({
-                    top: '100%'
-                }, 1500, "easeInOutQuart"
-            );
-            $(".main #page-emotional").removeClass("active", 1000);
-            $("#footer .region-footer-first .blockfooterfirst-part2").slideDown();
-            $("#footer .region-footer-first .blockfooterfirst-part1").slideUp();
-            $(".main #page-factual").removeClass("active", 1000);
-            $(".main #slide5").removeClass("active");
-            $(".main #slide5").removeClass("emo-active");
-            $(".main #slide5").removeClass("fac-active");
-            $(".main .block-close").slideToggle(500);
-            $(".main #footer").removeClass("active");
-            $("body").addClass("body-start");
+        // Funnel::Close
+        jQuery(".main .close").click(function ()
+        {
+          closeFunnel();
         });
-
 
         /*************************************************************
          *
