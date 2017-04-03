@@ -61,9 +61,7 @@
 
         $("body.front").addClass("body-start");
         // $(".front .block-close").after($("#footer"));
-
-        $(".front.body-start > #page-wrapper").fadeIn(2000);
-
+        // $(".front.body-start > #page-wrapper").fadeIn(2000);
 
         $("#start .start-emo").click(function () {
             $("#event").toggle("slide", {direction: 'right'}, 500);

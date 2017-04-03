@@ -11,10 +11,10 @@
     -ms-text-size-adjust: 100%;
   }
 }
-
+/*
 body.mobile.front {
   background: #dc3a4d !important;
-}
+}*/
 
 body.not-front.page-soutenir-le-televie.mobile #block-system-main .view-facons-d-aider .view-footer {
   background: #dc3a4d !important;
@@ -44,9 +44,9 @@ body.mobile.not-front #footer {
   margin-top: 0;
 }
 
-.front.body-start.mobile #page #block-system-main {
+/*.front.body-start.mobile #page #block-system-main {
   height: 65%;
-}
+}*/
 
 .mobile .overlay .overlay-wrapper {
   width: 95%;

@@ -44,8 +44,6 @@
  * @ingroup themeable
  */
 ?>
-<div class="start-emo-fac-1" <?php print $attributes; ?>>
-    <?php foreach ($items as $delta => $item): ?>
-      <?php print render($item); ?>
-    <?php endforeach; ?>
-</div>
+<?php foreach ($items as $delta => $item): ?>
+  <?php print render($item); ?>
+<?php endforeach; ?>
