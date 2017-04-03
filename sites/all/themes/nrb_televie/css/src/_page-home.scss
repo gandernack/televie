@@ -3,6 +3,11 @@
   display: none;
 }
 
+// Some drupal content not to display
+.front #start h3 {
+  display: none;
+}
+
 #start
 {
   position: relative;
@@ -14,6 +19,12 @@
     height: 100%;
   }
 }
+
+// ///////////////////////////////////////////////////
+//
+//       Video Items
+//
+// ///////////////////////////////////////////////////
 
 .videoitem,
 .videoitem *
@@ -224,9 +235,13 @@
       }
     }
   }
-
 }
 
+// ///////////////////////////////////////////////////
+//
+//       The centered heart
+//
+// ///////////////////////////////////////////////////
 .heart
 {
   background: url(../img/start/coeur.png) no-repeat center;
@@ -242,329 +257,11 @@
   pointer-events: none;
 }
 
+// ///////////////////////////////////////////////////
 //
+//       Funnels
 //
-// #start .start-fac .video-fond:after {
-//   background: rgba(0, 0, 0, 0.1);
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
-//
-// #start .start-emo .video-fond,
-// #start .start-fac .video-fond {
-//   display: none;
-//   width: auto;
-//   height: auto;
-//   min-height: 100%;
-//   min-width: 100%;
-//   position: absolute;
-//   z-index: 0;
-//   bottom: 0;
-//   right: 0;
-// }
-//
-// #start .video-fond video {
-//   width: auto;
-//   height: auto;
-//   min-height: 100%;
-//   min-width: 100%;
-// }
-
-// #start .start-emo:hover .video-fond,
-// #start .start-fac:hover .video-fond {
-//   display: block;
-// }
-
-// #start .start-emo .start-emo-wrapper {
-  // background: url(../img/start/emo.jpg) no-repeat center top;
-  // background-size: cover;
-  // display: block;
-  // width: 100%;
-  // height: 100%;
-  // -webkit-transform: scale(1);
-  // transform: scale(1);
-  // -webkit-transition: all 500ms ease;
-  // -moz-transition: all 500ms ease;
-  // -ms-transition: all 500ms ease;
-  // -o-transition: all 500ms ease;
-  // transition: all 500ms ease;
-// }
-
-// #start .start-fac .start-fac-wrapper {
-  // background: url(../img/start/med.jpg) no-repeat center center;
-  // background-size: cover;
-  // display: table;
-  // width: 100%;
-  // height: 100%;
-  // -webkit-transform: scale(1);
-  // transform: scale(1);
-  // -webkit-transition: all 500ms ease;
-  // -moz-transition: all 500ms ease;
-  // -ms-transition: all 500ms ease;
-  // -o-transition: all 500ms ease;
-  // transition: all 500ms ease;
-// }
-
-// #start .start-emo-fac-1 .carre {
-//   position: absolute;
-//   z-index: 2;
-//   display: block;
-//   border: 2px solid transparent;
-//   width: 90%;
-//   height: 80%;
-//   top: 4%;
-//   left: 5%;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-emo-fac-1:hover .carre {
-//   border: 2px solid white;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-
-// #total #start a .ecran-noir {
-//   background: url(../img/tele.png) repeat;
-//   height: 100%;
-//   width: 100%;
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
-
-// #total #start a:hover .ecran-noir {
-//   z-index: 1;
-// }
-
-// #start .start-emo .content,
-// #start .start-fac .content {
-//   display: table-cell;
-//   width: 80%;
-//   top: 45%;
-//   margin-top: -123px;
-//   height: 170px;
-//   font-size: 5vw;
-//   line-height: 86px;
-//   z-index: 1;
-//   position: absolute;
-//   text-transform: uppercase;
-//   font-family: 'proxima-excn-semibold';
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-emo:hover .content,
-// #start .start-fac:hover .content {
-//   margin-top: -180px;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-emo .content {
-//   text-align: right;
-//   padding-right: 20%;
-// }
-//
-// #start .start-emo .content .title1 {
-//   color: #dc3a4d;
-//   letter-spacing: -0.03em;
-// }
-//
-// #start .start-emo .content .title2 {
-//   color: white;
-// }
-//
-// #start .start-emo .content .title3 {
-//   color: white;
-//   display: block;
-// }
-//
-// #start .start-fac .content {
-//   text-align: left;
-//   padding-left: 20%;
-// }
-//
-// #start .start-fac .content .title1 {
-//   color: #3e82b6;
-// }
-//
-// #start .start-fac .content .title2 {
-//   display: block;
-// }
-//
-// #start .start-visu {
-//   width: 85px;
-//   height: 150px;
-//   border-radius: 50px 50px 0 0;
-//   position: absolute;
-//   top: 25%;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-visu:after {
-//   content: '';
-//   width: 190px;
-//   height: 190px;
-//   border-radius: 100px;
-//   position: absolute;
-//   top: -30px;
-// }
-//
-// #start .start-emo .start-visu {
-//   background: #dc3a4d;
-//   right: -35px;
-//   -moz-transform: rotate(-55deg);
-//   -webkit-transform: rotate(-55deg);
-//   -o-transform: rotate(-55deg);
-//   -ms-transform: rotate(-55deg);
-//   transform: rotate(-55deg);
-// }
-//
-// #start .start-emo .start-visu:after {
-//   right: -70px;
-//   border: 7px solid #dc3a4d;
-// }
-//
-// #start .start-fac .start-visu {
-//   background: #9b3440;
-//   left: -35px;
-//   -moz-transform: rotate(55deg);
-//   -webkit-transform: rotate(55deg);
-//   -o-transform: rotate(55deg);
-//   -ms-transform: rotate(55deg);
-//   transform: rotate(55deg);
-// }
-//
-// #start .start-fac .start-visu:after {
-//   left: -70px;
-//   border: 7px solid #9b3440;
-// }
-//
-// #start .start-plus {
-//   opacity: 1;
-//   font-family: 'symbolesnrbregular';
-//   font-size: 6em;
-//   position: absolute;
-//   width: 82px;
-//   height: 82px;
-//   line-height: 82px;
-//   margin-top: -40px;
-//   top: 60%;
-//   left: 50%;
-//   margin-left: -45px;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-plus:after {
-//   content: '';
-//   position: absolute;
-//   border: 3px solid;
-//   border-radius: 50px;
-//   width: 80px;
-//   height: 80px;
-//   display: block;
-//   left: -2px;
-//   top: 3px;
-// }
-//
-// #start .start-emo .start-plus {
-//   color: white;
-//   border-color: white;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-fac .start-plus {
-//   color: #554c60;
-//   border-color: #554c60;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-emo:hover .start-plus,
-// #start .start-fac:hover .start-plus {
-//   color: white;
-//   border-color: white;
-//   opacity: 1;
-//   -webkit-transition: all 500ms ease;
-//   -moz-transition: all 500ms ease;
-//   -ms-transition: all 500ms ease;
-//   -o-transition: all 500ms ease;
-//   transition: all 500ms ease;
-// }
-//
-// #start .start-visu-ext {
-//   text-indent: -65000px;
-//   background: url(../img/start/coeur.png) no-repeat center;
-//   background-size: contain;
-//   width: 250px;
-//   height: 250px;
-//   display: block;
-//   position: absolute;
-//   left: 50%;
-//   margin-left: -123px;
-//   top: 45%;
-//   margin-top: -123px;
-// }
-
-
-/* ----- hack ie ---------- */
-
-// .IE #start .field-group-format-wrapper .start-emo-fac-1 {
-//   display: inline-block;
-//   height: 100%;
-//   width: 49%;
-// }
-
-
-.front #start h3 {
-  display: none;
-}
-
-
-// .front .main {
-//   z-index: 2;
-// }
-
-// .main {
-//   position: absolute;
-//   top: 100%;
-//   width: 100%;
-//   overflow: hidden;
-// }
+// ///////////////////////////////////////////////////
 
 .main #page-emotional {
   height: 3247px;

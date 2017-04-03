@@ -1863,6 +1863,9 @@ a.link-type-search:hover {
 .messages.error {
   display: none; }
 
+.front #start h3 {
+  display: none; }
+
 #start {
   position: relative; }
   #start .field-group-format-wrapper {
@@ -1988,10 +1991,6 @@ a.link-type-search:hover {
   top: calc(50% - 250px/2);
   left: calc(50% - 250px/2);
   pointer-events: none; }
-
-/* ----- hack ie ---------- */
-.front #start h3 {
-  display: none; }
 
 .main #page-emotional {
   height: 3247px;
