@@ -894,24 +894,6 @@ body.mobile.not-front #footer {
 
 /* ---------------------------------------------------------------------   footer   --------------------------------------------------------------------- */
 
-.mobile #footer .region-footer-first {
-  padding-bottom: 20px;
-  min-height: 1px;
-}
-
-.mobile #footer .region-footer-first:before,
-.mobile #footer .region-footer-first:after {
-  display: none;
-}
-
-.mobile #footer .region-footer-first .blockfooterfirst-part1 h2,
-.mobile #footer .region-footer-first .blockfooterfirst-part2 h2 {
-  padding-top: 30px;
-}
-
-.mobile #footer .region-footer-first .blockfooterfirst-part1 .don-qu {
-  margin-right: 0;
-}
 
 .mobile #footer .region-footer-first .blockfooterfirst-part2 .view-facons-d-aider .views-row {
   width: 45%;
@@ -961,12 +943,6 @@ body.mobile.not-front #footer {
 
 .mobile #footer .region-footer-third {
   overflow: hidden;
-}
-
-.mobile.front #footer .region-footer-first .blockfooterfirst-part1,
-.mobile.front #footer .region-footer-first .blockfooterfirst-part2 {
-  position: relative;
-  top: -80px;
 }
 
 .mobile #footer .region-footer-first .blockfooterfirst-part1,

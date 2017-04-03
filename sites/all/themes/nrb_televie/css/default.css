@@ -1873,6 +1873,9 @@ a.link-type-search:hover {
     width: 100%;
     height: 100%; }
 
+.mobile #start .field-group-format-wrapper {
+  flex-direction: column; }
+
 .videoitem,
 .videoitem * {
   box-sizing: border-box; }
@@ -1899,7 +1902,6 @@ a.link-type-search:hover {
     display: block;
     width: 100%;
     height: 100%;
-    background-size: cover;
     transition: all 500ms ease; }
     .videoitem .videoitem__wrapper::before {
       content: "";
@@ -1930,7 +1932,10 @@ a.link-type-search:hover {
       width: 100%;
       height: 100%; }
     .videoitem .videoitem__wrapper .videoitem__normal {
-      z-index: 1; }
+      z-index: 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top; }
       .videoitem .videoitem__wrapper .videoitem__normal .videoitem__background {
         display: none;
         height: 100%;
@@ -1946,7 +1951,7 @@ a.link-type-search:hover {
       padding: 20%; }
       .videoitem .videoitem__wrapper .videoitem__hover .videoitem__content {
         position: relative;
-        top: 70px;
+        top: 5%;
         font-size: 70px;
         font-family: proxima-excn-semibold;
         color: #ffffff;
@@ -1970,17 +1975,45 @@ a.link-type-search:hover {
         line-height: .75;
         color: #ffffff; }
   .videoitem:first-child .videoitem__normal {
-    background: url("../img/start/emo.jpg") no-repeat center top; }
+    background-image: url("../img/start/emo.jpg"); }
   .videoitem:first-child .videoitem__content {
     text-align: right; }
     .videoitem:first-child .videoitem__content strong {
       color: #dc3a4d; }
+  .videoitem:first-child .videoitem__hover {
+    padding: 20% 145px 20% 20%; }
   .videoitem:nth-child(2) .videoitem__normal {
-    background: url("../img/start/med.jpg") no-repeat center top; }
+    background-image: url("../img/start/med.jpg"); }
   .videoitem:nth-child(2) .videoitem__content {
     text-align: left; }
     .videoitem:nth-child(2) .videoitem__content strong {
       color: #3e82b6; }
+  .videoitem:nth-child(2) .videoitem__hover {
+    padding: 20% 20% 20% 145px; }
+
+.mobile .videoitem {
+  width: 100%;
+  height: calc(50vh - 100px); }
+  .mobile .videoitem .videoitem__hover .videoitem__content {
+    width: 70%; }
+  .mobile .videoitem:first-child .videoitem__hover {
+    padding: 8% 8% 100px 8%; }
+    .mobile .videoitem:first-child .videoitem__hover .videoitem__content {
+      top: 15%; }
+    .mobile .videoitem:first-child .videoitem__hover .videoitem__trigger {
+      top: 33%;
+      right: 15%;
+      bottom: auto;
+      left: auto; }
+  .mobile .videoitem:nth-child(2) .videoitem__hover {
+    padding: 100px 8% 8% 8%; }
+    .mobile .videoitem:nth-child(2) .videoitem__hover .videoitem__content {
+      left: 30%; }
+    .mobile .videoitem:nth-child(2) .videoitem__hover .videoitem__trigger {
+      top: 33%;
+      right: auto;
+      bottom: auto;
+      left: 15%; }
 
 .heart {
   background: url(../img/start/coeur.png) no-repeat center;
@@ -1988,9 +2021,13 @@ a.link-type-search:hover {
   width: 250px;
   height: 250px;
   position: absolute;
-  top: calc(50% - 250px/2);
+  top: calc(33% - 250px/2);
   left: calc(50% - 250px/2);
   pointer-events: none; }
+
+.mobile .heart {
+  top: calc(50% - 250px/2);
+  transform: scale(0.8); }
 
 .main #page-emotional {
   height: 3247px;
@@ -3018,6 +3055,7 @@ a.link-type-search:hover {
       margin-right: 0; }
   #block-views-a-la-une-block-1 .alaune__item {
     display: inline-block;
+    width: 100%;
     text-decoration: none;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     transition: transform .3s; }
@@ -3025,6 +3063,8 @@ a.link-type-search:hover {
       transform: translateY(-50px); }
     #block-views-a-la-une-block-1 .alaune__item .item__header {
       padding: 20px;
+      height: 120px;
+      overflow: hidden;
       position: relative;
       border-top: 8px solid #dc3a4d; }
       #block-views-a-la-une-block-1 .alaune__item .item__header::after {
@@ -3248,6 +3288,31 @@ a.link-type-search:hover {
     #block-views-events-block-3 .prochactivites__item:hover .prochactivites__hover {
       opacity: 1;
       transform: scale(1); }
+
+.mobile #block-views-a-la-une-block-1 > h2,
+.mobile #block-views-articles-block-1 > h2,
+.mobile #block-views-events-block-3 > h2 {
+  width: 90%;
+  max-width: 600px;
+  padding: 30px 0 0 0; }
+.mobile #block-views-a-la-une-block-1 .view-content,
+.mobile #block-views-a-la-une-block-1 .views-row,
+.mobile #block-views-articles-block-1 .view-content,
+.mobile #block-views-articles-block-1 .views-row,
+.mobile #block-views-events-block-3 .view-content,
+.mobile #block-views-events-block-3 .views-row {
+  display: block; }
+.mobile #block-views-a-la-une-block-1 .view-content,
+.mobile #block-views-articles-block-1 .view-content,
+.mobile #block-views-events-block-3 .view-content {
+  padding: 60px 0px; }
+.mobile #block-views-a-la-une-block-1 .views-row,
+.mobile #block-views-articles-block-1 .views-row,
+.mobile #block-views-events-block-3 .views-row {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 600px; }
 
 .infos-total {
   background: #f1f0ef;
