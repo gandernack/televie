@@ -171,6 +171,8 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset_1']['label'] = 'hours';
+  $handler->display->display_options['fields']['fieldset_1']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['fieldset_1']['alter']['nl2br'] = TRUE;
   $handler->display->display_options['fields']['fieldset_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['fieldset_1']['children'] = array(
     0 => 'field_heure_debut',
@@ -207,7 +209,7 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['field_rue']['field'] = 'field_rue';
   $handler->display->display_options['fields']['field_rue']['label'] = '';
   $handler->display->display_options['fields']['field_rue']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_rue']['alter']['text'] = '[field_rue-value] [field_numero]';
+  $handler->display->display_options['fields']['field_rue']['alter']['text'] = '[field_rue-value][field_numero]';
   $handler->display->display_options['fields']['field_rue']['element_label_colon'] = FALSE;
   /* Champ: Contenu : Code postal */
   $handler->display->display_options['fields']['field_code_postal']['id'] = 'field_code_postal';
@@ -1270,6 +1272,8 @@ mois+6|Dans 6 mois';
 
   /* Display: Bloc Prochaines activités HP */
   $handler = $view->new_display('block', 'Bloc Prochaines activités HP', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Prochaines activités';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -1281,8 +1285,11 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'image_url';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'url_type' => '1',
     'image_style' => 'medium',
     'image_link' => 'content',
   );
@@ -1293,19 +1300,23 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Champ: Contenu : Chemin */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['label'] = '';
-  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
   /* Champ: Contenu : Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['label'] = '';
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_date']['settings'] = array(
     'format_type' => 'medium',
     'fromto' => 'both',
@@ -1321,19 +1332,26 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['field_localite']['field'] = 'field_localite';
   $handler->display->display_options['fields']['field_localite']['label'] = '';
   $handler->display->display_options['fields']['field_localite']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_localite']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_localite']['type'] = 'text_plain';
   /* Champ: Contenu : Province */
   $handler->display->display_options['fields']['field_province']['id'] = 'field_province';
   $handler->display->display_options['fields']['field_province']['table'] = 'field_data_field_province';
   $handler->display->display_options['fields']['field_province']['field'] = 'field_province';
   $handler->display->display_options['fields']['field_province']['label'] = '';
-  $handler->display->display_options['fields']['field_province']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_province']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_province']['element_default_classes'] = FALSE;
   /* Champ: Contenu : Description */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '150',
@@ -1342,16 +1360,43 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['field_date_1']['id'] = 'field_date_1';
   $handler->display->display_options['fields']['field_date_1']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date_1']['field'] = 'field_date';
+  $handler->display->display_options['fields']['field_date_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_date_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_date_1']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_date_1']['type'] = 'date_plain';
   $handler->display->display_options['fields']['field_date_1']['settings'] = array(
-    'format_type' => 'short',
-    'fromto' => 'both',
+    'format_type' => 'long',
+    'fromto' => '',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
     'show_remaining_days' => 0,
-    'show_repeat_rule' => 'show',
   );
+  /* Champ: Global : PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['label'] = '';
+  $handler->display->display_options['fields']['php']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_value'] = '$todayts = new DateTime();;
+$today = $todayts->format(\'Y-m-d\');
+$todayts = new DateTime($today . " 00:00");
+$load = new DateTime($data->field_data_field_date_field_date_value);
+$diff = $load->diff($todayts);
+$nbJours = $diff->format(\'%a \');
+if ($nbJours == 0) {
+  $result = "Aujourd\'hui";
+}
+elseif ($nbJours == 1) {
+  $result = "Dans 1 jour";
+} else {
+  $result = "Dans " . $nbJours . " jours"; 
+}
+return $result;';
+  $handler->display->display_options['fields']['php']['php_output'] = '<?php print $value; ?>';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Contenu : Publié */
@@ -1375,6 +1420,7 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_date_value']['default_date'] = 'now';
+  $handler->display->display_options['block_description'] = 'Prochaines activités HP';
   $export['events'] = $view;
 
   return $export;
