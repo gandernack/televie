@@ -38,7 +38,7 @@
 
   </div>
   <div class="prochactivites__hover">
-    <span class="prochactivites__cta">Ca <strong>m'intéresse</strong></span>
+    <span class="prochactivites__cta">Je veux <strong>en savoir plus</strong></span>
   </div>
 </a>
 
