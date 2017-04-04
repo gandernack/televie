@@ -1,0 +1,8 @@
+name = Block - Dernières news HP
+core = 7.x
+package = Custom features
+version = 7.x-1.0
+dependencies[] = fe_block
+dependencies[] = views
+features[fe_block_settings][] = views-articles-block_1
+features[features_api][] = api:2
