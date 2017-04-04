@@ -623,11 +623,6 @@ body.mobile.not-front #footer {
   text-align: center;
 }
 
-.mobile .agenda-wrapper #agenda .agenda-search .form-submit,
-.mobile .agenda-wrapper #agenda .agenda-search .views-exposed-widget select {
-  border-radius: 4px;
-}
-
 .mobile #agenda .agenda-result .views-row {
   border-bottom: 1px solid #acabb0;
   float: none;

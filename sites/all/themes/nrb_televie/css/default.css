@@ -4236,87 +4236,99 @@ span.header-view {
 .agenda-wrapper #agenda .agenda-search h2:last-child {
   margin-bottom: 30px; }
 
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget {
-  display: inline-block;
-  width: 27%;
-  position: relative;
-  height: 49px; }
+.view-filters,
+.view-filters * {
+  box-sizing: border-box; }
 
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget.views-submit-button {
-  width: auto; }
-
-.agenda-wrapper #agenda .agenda-search select {
-  width: 100%;
-  padding: 11px;
-  height: 51px; }
-
-.agenda-wrapper #agenda .agenda-search select option {
-  padding: 5px;
-  margin: 0; }
-
-.agenda-wrapper #agenda .agenda-search select option:first-child {
-  padding: 16px 5px; }
-
-.agenda-wrapper #agenda .views-exposed-form .views-exposed-widget {
-  padding: 0;
-  float: none;
+.view-filters .views-exposed-widgets {
+  display: flex;
+  align-items: flex-end; }
+  .view-filters .views-exposed-widgets .views-exposed-widget {
+    padding: 0;
+    margin: 0;
+    flex-grow: 2; }
+  .view-filters .views-exposed-widgets:last-child {
+    flex-grow: 1; }
+.view-filters .views-exposed-widget label {
+  margin-bottom: 10px;
+  font-family: proxima-cn-light;
+  font-size: 18px;
+  color: #ffffff;
+  opacity: .8; }
+.view-filters .views-exposed-widget .form-type-select {
   position: relative; }
-
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget:nth-child(1) select {
-  border-radius: 6px 0 0 6px; }
-
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget:nth-child(2) select {
-  border-radius: 0; }
-
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget:nth-child(3) select {
-  border-radius: 0; }
-
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget:nth-child(2) {
-  left: -4px; }
-
-.agenda-wrapper #agenda .agenda-search .views-exposed-widget:nth-child(3) {
-  left: -8px; }
-
-.agenda-wrapper #agenda .agenda-search .form-submit {
-  color: white;
-  text-decoration: none;
-  border-bottom: 4px solid #47bf82;
-  text-transform: uppercase;
-  background: #47bf82;
+  .view-filters .views-exposed-widget .form-type-select::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 5px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #777580 transparent transparent transparent; }
+.view-filters .views-exposed-widget .form-select {
+  height: 50px;
+  width: 100%;
+  background: #ffffff;
+  padding: 0 10px;
+  border: none;
+  border-right: 1px solid #c8c7cc;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none; }
+.view-filters .views-exposed-widget:first-child .form-select {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+.view-filters .views-exposed-widget:last-child {
   position: relative;
-  border-radius: 0 4px 4px 0;
-  padding: 13px 17px 12px 12px;
-  margin: 0;
-  font-size: 1.2em;
-  height: 51px;
-  left: -12px;
-  cursor: pointer;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0; }
-
-.agenda-wrapper #agenda .agenda-search .views-submit-button .ajax-progress {
+  max-width: 160px; }
+  .view-filters .views-exposed-widget:last-child input {
+    margin: 17px 0 0 0;
+    padding: 0 15px;
+    height: 50px;
+    width: 100%;
+    border: 0;
+    background: #47bf82;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "proxima-excn-light";
+    font-size: 28px;
+    text-align: left;
+    cursor: pointer; }
+  .view-filters .views-exposed-widget:last-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 15px;
+    background: transparent;
+    border-radius: 100%;
+    border: 3px solid #ffffff;
+    width: 10px;
+    height: 10px; }
+  .view-filters .views-exposed-widget:last-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% + 8px);
+    right: 13px;
+    background: #ffffff;
+    border-radius: 10px;
+    height: 10px;
+    width: 3px;
+    transform: rotate(-45deg); }
+.view-filters .ajax-progress {
   display: none; }
 
-.agenda-wrapper #agenda .agenda-search .views-submit-button span:after {
-  content: '';
-  position: absolute;
-  background: url(../img/picto/search.png) no-repeat;
-  background-size: contain;
-  display: block;
-  width: 20px;
-  height: 20px;
-  right: 28px;
-  top: 50%;
-  margin-top: -10px; }
-
-.agenda-wrapper #agenda .agenda-search .form-submit:hover {
-  border-bottom: 4px solid #2c8055;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease; }
+.mobile .view-filters .views-exposed-widget:last-child::after, .mobile .view-filters .views-exposed-widget:last-child::before {
+  content: none; }
 
 .view-empty {
   text-align: center;
