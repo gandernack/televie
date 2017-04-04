@@ -254,12 +254,64 @@ function ct_a_la_une_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-a_la_une-field_sous_titre'.
+  $field_instances['node-a_la_une-field_sous_titre'] = array(
+    'bundle' => 'a_la_une',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'cck_blocks' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sous_titre',
+    'label' => 'Sous-titre',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Catégorie à la une');
   t('Description');
   t('Image à la une');
   t('Lien à la une');
+  t('Sous-titre');
 
   return $field_instances;
 }

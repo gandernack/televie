@@ -16,6 +16,7 @@ features[field_instance][] = node-a_la_une-body
 features[field_instance][] = node-a_la_une-field_categorie_a_la_une
 features[field_instance][] = node-a_la_une-field_image_la_une
 features[field_instance][] = node-a_la_une-field_lien_la_une
+features[field_instance][] = node-a_la_une-field_sous_titre
 features[node][] = a_la_une
 features[variable][] = comment_a_la_une
 features[variable][] = comment_anonymous_a_la_une

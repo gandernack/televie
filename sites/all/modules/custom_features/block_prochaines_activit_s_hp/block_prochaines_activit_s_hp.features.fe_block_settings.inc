@@ -34,7 +34,7 @@ function block_prochaines_activit_s_hp_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'nrb_televie',
-        'weight' => -12,
+        'weight' => 2,
       ),
       'seven' => array(
         'region' => '',
@@ -50,7 +50,7 @@ function block_prochaines_activit_s_hp_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 1,
+    'visibility' => 0,
   );
 
   return $export;
