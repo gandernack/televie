@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * block_prochaines_activit_s_hp.features.fe_block_settings.inc
+ * block_a_la_une_premiere_image.features.fe_block_settings.inc
  */
 
 /**
  * Implements hook_default_fe_block_settings().
  */
-function block_prochaines_activit_s_hp_default_fe_block_settings() {
+function block_a_la_une_premiere_image_default_fe_block_settings() {
   $export = array();
 
   $export['version'] = '2.0';
 
-  $export['views-events-block_3'] = array(
+  $export['views-a_la_une-block_link_open'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'events-block_3',
+    'delta' => 'a_la_une-block_link_open',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
     'module' => 'views',
@@ -31,10 +31,10 @@ function block_prochaines_activit_s_hp_default_fe_block_settings() {
         'weight' => 0,
       ),
       'nrb_televie' => array(
-        'region' => 'content',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'nrb_televie',
-        'weight' => -12,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => '',
