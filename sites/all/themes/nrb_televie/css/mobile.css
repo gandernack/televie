@@ -31,10 +31,10 @@ body.not-front.page-soutenir-le-televie.mobile #block-system-main .view-facons-d
 body.body-start.mobile {
   overflow: visible;
 }
-
+/*
 .mobile #total #start {
   background: white;
-}
+}*/
 
 body.mobile.node-type-article {
   background: #f1f0ef;
@@ -255,53 +255,6 @@ body.mobile.not-front #footer {
 
 
 /* ---------------------------------------------------------------------   start   --------------------------------------------------------------------- */
-
-.mobile #start {
-  height: 68%;
-  display: block;
-  min-height: inherit;
-}
-
-.mobile #start .start-emo-fac-1 {
-  display: table-row;
-  width: 100%;
-  max-width: 100%;
-  height: 50%;
-}
-
-.mobile #start .start-emo:hover .video-fond,
-.mobile #start .start-fac:hover .video-fond {
-  display: none;
-}
-
-.mobile #start .start-plus {
-  display: none;
-}
-
-.mobile #start .start-emo .content,
-.mobile #start .start-fac .content {
-  margin-top: 1%;
-  text-align: center;
-  padding: inherit;
-  font-size: 10vw;
-  line-height: normal;
-}
-
-.mobile #start .carre {
-  display: none;
-}
-
-.mobile #start .start-visu-ext {
-  display: none;
-  width: 107px;
-  margin-left: -50px;
-  top: 34%;
-  margin-top: -75px;
-}
-
-.mobile #start .start-fac .start-fac-wrapper {
-  display: table;
-}
 
 .mobile #page-factual .section-fac .wrapper {
   width: 93%;
