@@ -11,10 +11,10 @@
     -ms-text-size-adjust: 100%;
   }
 }
-
+/*
 body.mobile.front {
   background: #dc3a4d !important;
-}
+}*/
 
 body.not-front.page-soutenir-le-televie.mobile #block-system-main .view-facons-d-aider .view-footer {
   background: #dc3a4d !important;
@@ -31,10 +31,10 @@ body.not-front.page-soutenir-le-televie.mobile #block-system-main .view-facons-d
 body.body-start.mobile {
   overflow: visible;
 }
-
+/*
 .mobile #total #start {
   background: white;
-}
+}*/
 
 body.mobile.node-type-article {
   background: #f1f0ef;
@@ -44,9 +44,9 @@ body.mobile.not-front #footer {
   margin-top: 0;
 }
 
-.front.body-start.mobile #page #block-system-main {
+/*.front.body-start.mobile #page #block-system-main {
   height: 65%;
-}
+}*/
 
 .mobile .overlay .overlay-wrapper {
   width: 95%;
@@ -255,53 +255,6 @@ body.mobile.not-front #footer {
 
 
 /* ---------------------------------------------------------------------   start   --------------------------------------------------------------------- */
-
-.mobile #start {
-  height: 68%;
-  display: block;
-  min-height: inherit;
-}
-
-.mobile #start .start-emo-fac-1 {
-  display: table-row;
-  width: 100%;
-  max-width: 100%;
-  height: 50%;
-}
-
-.mobile #start .start-emo:hover .video-fond,
-.mobile #start .start-fac:hover .video-fond {
-  display: none;
-}
-
-.mobile #start .start-plus {
-  display: none;
-}
-
-.mobile #start .start-emo .content,
-.mobile #start .start-fac .content {
-  margin-top: 1%;
-  text-align: center;
-  padding: inherit;
-  font-size: 10vw;
-  line-height: normal;
-}
-
-.mobile #start .carre {
-  display: none;
-}
-
-.mobile #start .start-visu-ext {
-  display: none;
-  width: 107px;
-  margin-left: -50px;
-  top: 34%;
-  margin-top: -75px;
-}
-
-.mobile #start .start-fac .start-fac-wrapper {
-  display: table;
-}
 
 .mobile #page-factual .section-fac .wrapper {
   width: 93%;
@@ -623,11 +576,6 @@ body.mobile.not-front #footer {
   text-align: center;
 }
 
-.mobile .agenda-wrapper #agenda .agenda-search .form-submit,
-.mobile .agenda-wrapper #agenda .agenda-search .views-exposed-widget select {
-  border-radius: 4px;
-}
-
 .mobile #agenda .agenda-result .views-row {
   border-bottom: 1px solid #acabb0;
   float: none;
@@ -894,24 +842,6 @@ body.mobile.not-front #footer {
 
 /* ---------------------------------------------------------------------   footer   --------------------------------------------------------------------- */
 
-.mobile #footer .region-footer-first {
-  padding-bottom: 20px;
-  min-height: 1px;
-}
-
-.mobile #footer .region-footer-first:before,
-.mobile #footer .region-footer-first:after {
-  display: none;
-}
-
-.mobile #footer .region-footer-first .blockfooterfirst-part1 h2,
-.mobile #footer .region-footer-first .blockfooterfirst-part2 h2 {
-  padding-top: 30px;
-}
-
-.mobile #footer .region-footer-first .blockfooterfirst-part1 .don-qu {
-  margin-right: 0;
-}
 
 .mobile #footer .region-footer-first .blockfooterfirst-part2 .view-facons-d-aider .views-row {
   width: 45%;
@@ -961,12 +891,6 @@ body.mobile.not-front #footer {
 
 .mobile #footer .region-footer-third {
   overflow: hidden;
-}
-
-.mobile.front #footer .region-footer-first .blockfooterfirst-part1,
-.mobile.front #footer .region-footer-first .blockfooterfirst-part2 {
-  position: relative;
-  top: -80px;
 }
 
 .mobile #footer .region-footer-first .blockfooterfirst-part1,

@@ -28,7 +28,7 @@
 <a href="<?php print strip_tags($fields['path']->content); ?>" class="prochactivites__item">
   <div class="prochactivites__normal">
     <div class="prochactivites__first" style="background-image:url('<?php print strip_tags($fields['field_image']->content); ?>')">
-      <time class="prochactivites__time"><?php print $fields['field_date_1']->content; ?></time>
+      <time class="prochactivites__time"><?php print $fields['php']->content; ?></time>
     </div>
 
     <div class="prochactivites__second">
@@ -38,7 +38,7 @@
 
   </div>
   <div class="prochactivites__hover">
-    <span class="prochactivites__cta">Ca <strong>m'intéresse</strong></span>
+    <span class="prochactivites__cta">Je veux <strong>en savoir plus</strong></span>
   </div>
 </a>
 

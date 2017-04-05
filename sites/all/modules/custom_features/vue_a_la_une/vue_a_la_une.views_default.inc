@@ -357,8 +357,11 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['field_image_la_une']['field'] = 'field_image_la_une';
   $handler->display->display_options['fields']['field_image_la_une']['label'] = '';
   $handler->display->display_options['fields']['field_image_la_une']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_la_une']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image_la_une']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_la_une']['type'] = 'image_url';
   $handler->display->display_options['fields']['field_image_la_une']['settings'] = array(
+    'url_type' => '1',
     'image_style' => 'event_home',
     'image_link' => '',
   );
@@ -367,23 +370,36 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '35';
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Champ: Contenu : Sous-titre */
   $handler->display->display_options['fields']['field_sous_titre']['id'] = 'field_sous_titre';
   $handler->display->display_options['fields']['field_sous_titre']['table'] = 'field_data_field_sous_titre';
   $handler->display->display_options['fields']['field_sous_titre']['field'] = 'field_sous_titre';
   $handler->display->display_options['fields']['field_sous_titre']['label'] = '';
+  $handler->display->display_options['fields']['field_sous_titre']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_sous_titre']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sous_titre']['element_default_classes'] = FALSE;
   /* Champ: Contenu : Description */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '150',
+    'trim_length' => '200',
   );
   /* Champ: Contenu : Lien à la une */
   $handler->display->display_options['fields']['field_lien_la_une']['id'] = 'field_lien_la_une';
@@ -391,16 +407,9 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['field_lien_la_une']['field'] = 'field_lien_la_une';
   $handler->display->display_options['fields']['field_lien_la_une']['label'] = '';
   $handler->display->display_options['fields']['field_lien_la_une']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_lien_la_une']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_lien_la_une']['click_sort_column'] = 'url';
-  /* Champ: Global : Voir le compteur de résultats */
-  $handler->display->display_options['fields']['counter']['id'] = 'counter';
-  $handler->display->display_options['fields']['counter']['table'] = 'views';
-  $handler->display->display_options['fields']['counter']['field'] = 'counter';
-  $handler->display->display_options['fields']['counter']['label'] = '';
-  $handler->display->display_options['fields']['counter']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['counter']['counter_start'] = '1';
-  $handler->display->display_options['fields']['counter']['reverse'] = 0;
+  $handler->display->display_options['fields']['field_lien_la_une']['type'] = 'link_plain';
   $export['a_la_une'] = $view;
 
   return $export;
