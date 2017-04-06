@@ -18,7 +18,7 @@ function block_social_networks_default_fe_block_boxes() {
 	<li class="facebook"><a href="https://www.facebook.com/televie/" target="_blank">Facebook</a></li>
 	<li class="twitter"><a href="https://twitter.com/televie" target="_blank">Twitter</a></li>
 	<li class="instagram"><a href="https://www.instagram.com/televieofficiel/" target="_blank">Instagram</a></li>
-	<li class="youtube"><a href="#" target="_blank">Youtube</a></li>
+	<li class="youtube"><a href="https://www.youtube.com/channel/UCOUW2930JeN_EKZ4Ea1Rcag" target="_blank">Youtube</a></li>
 </ul>
 ';
 

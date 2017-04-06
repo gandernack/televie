@@ -20,8 +20,10 @@ function block_vue_a_la_une_blocs_new_hp_default_fe_block_settings() {
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
     'module' => 'views',
-    'node_types' => array(),
-    'pages' => '<front>',
+    'node_types' => array(
+      0 => 'home_page',
+    ),
+    'pages' => '',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -34,7 +36,7 @@ function block_vue_a_la_une_blocs_new_hp_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'nrb_televie',
-        'weight' => 0,
+        'weight' => -14,
       ),
       'seven' => array(
         'region' => '',
@@ -50,7 +52,7 @@ function block_vue_a_la_une_blocs_new_hp_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 1,
+    'visibility' => 0,
   );
 
   $export['views-a_la_une-block_link_open'] = array(
@@ -75,7 +77,7 @@ function block_vue_a_la_une_blocs_new_hp_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'nrb_televie',
-        'weight' => -21,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => '',
