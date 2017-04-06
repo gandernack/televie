@@ -1,368 +1,366 @@
-body.page-node-2599 {
-  background: #f9fafa;
-}
+.soiree
+{
+  // Cleanup of global code
+  .basic-page
+  {
+    display: none;
 
-.soiree #block-system-main {
-  display: none;
-}
+    &::before,
+    &::after
+    {
+      content: none;
+    }
+  }
 
-.soiree-storify {
-  max-height: 762px;
-  margin: auto;
-  overflow: hidden;
-  width: 900px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
+  .node-page
+  {
+    max-width: none;
+    width: auto;
 
-.soiree-storify iframe {
-  margin: auto;
-}
+    &::before,
+    &::after
+    {
+      content: none;
+    }
+  }
 
-.page-node-2599 .basic-page:before,
-.page-node-2599 .basic-page:after,
-.page-node-2599 #footer .region-footer-first {
-  display: none;
-}
+  *
+  {
+    box-sizing: border-box;
+  }
 
-.soiree {
-  text-align: center;
-}
+  a
+  {
+    color: inherit;
+    text-decoration: none;
+  }
 
-.soiree-bloc-1 {
-  height: 930px;
-  background: url(../img/soiree/branding.jpg) no-repeat center;
-  background-size: cover;
-  color: white;
-  position: relative;
-}
+  .section__inner
+  {
+    position: relative;
 
-.soiree-bloc-1 .soiree-tele {
-  background: url(../img/tele.png) repeat rgba(0, 0, 0, 0.2);
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-}
+    max-width: 960px;
+    margin: auto;
 
-.soiree-bloc-1 .soiree-tele:after {
-  background: rgba(42, 29, 66, 0.8);
-  top: 0px;
-  height: 36%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  content: '';
-}
+    text-align: center;
 
-.soiree-bloc-1 .soiree-title {
-  display: block;
-  padding: 24px 0 20px 0;
-  position: relative;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 2em;
-  font-family: 'proxima-excn-semibold';
-  line-height: 1.7em;
-}
+    h1
+    {
+      font-size: 60px;
+      font-family: "proxima-excn-light";
+      color: currentColor;
 
-.soiree-bloc-1 .soiree-title div {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 20px;
-}
+      margin-bottom: 70px 0 10px 0;
 
-.soiree-bloc-1 .soiree-title strong {
-  display: block;
-  font-size: 2.5em;
-  font-family: 'proxima-excn-black';
-}
+      strong
+      {
+        font-family: "proxima-excn-semibold";
+      }
+    }
+  }
 
-.soiree-bloc-1 .soiree-title:before {
-  background: url(../img/soiree/logo.png) no-repeat center top;
-  background-size: contain;
-  width: 210px;
-  height: 191px;
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-}
+  /////////////////////////////////////////////////////
+  //
+  //       Components
+  //
+  /////////////////////////////////////////////////////
+  .options
+  {
+    display: flex;
+    justify-content: space-between;
 
-.soiree-bloc-1 .soiree-subtitle {
-  font-size: 3.3em;
-  position: relative;
-  font-family: 'proxima-excn-regular';
-}
+    .item
+    {
+      .circle
+      {
+        position: relative;
 
-.soiree-bloc-1 .soiree-subtitle strong {
-  font-family: 'proxima-excn-semibold';
-}
+        display: block;
+        width: 170px;
+        height: 170px;
+        margin: auto;
 
-.soiree-bloc-1 .soiree-compteur {
-  background: #a32a3c;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #a32a3c 0%, #d75357 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #a32a3c 0%, #d75357 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #a32a3c 0%, #d75357 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a32a3c', endColorstr='#d75357', GradientType=1);
-  /* IE6-9 */
-  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
-  margin: auto;
-  display: inline-block;
-  position: relative;
-  border-radius: 10px;
-  font-family: 'graduateregular';
-  padding: 25px 80px;
-}
+        background: transparent;
+        border-radius: 100%;
+        box-shadow: 0px 0px 0px 2px currentColor;
 
-.soiree-bloc-1 .soiree-compteur span {
-  vertical-align: bottom;
-  line-height: 99px;
-  font-size: 66pt;
-  margin: 0 0.1%;
-  font-size-adjust: auto;
-}
+        // background
+        &::before
+        {
+          content: "";
 
-.soiree-bloc-1 .soiree-compteur span.soiree-compteur-chiffre {
-  background: url(../img/soiree/compteur-chiffre.png) no-repeat center top;
-  background-size: contain;
-  padding: 5px;
-}
+          position: absolute;
+          top: 10px;
+          left: 10px;
 
-.soiree-bloc-1 .soiree-link-direct {
-  display: block;
-  position: absolute;
-  bottom: 200px;
-  margin: auto;
-  width: 100%;
-}
+          width: calc(100% - 20px);
+          height: calc(100% - 20px);
 
-.soiree-bloc-1 .soiree-link-direct a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-family: 'proxima-excn-semibold';
-  margin: auto;
-  text-align: center;
-  font-size: 2em;
-}
+          background: currentColor;
+          border-radius: 100%;
+        }
 
-.soiree-bloc-1 .soiree-link-direct a:before {
-  background: url(../img/soiree/play.png) no-repeat center top;
-  width: 100%;
-  height: 100px;
-  display: block;
-  background-size: contain;
-  content: '';
-}
+        img
+        {
+          position: relative;
+          top: 25%;
 
-.soiree-bloc-2 {
-  background: url(../img/soiree/soutenir.jpg) no-repeat center;
-  padding: 60px 0 0 0;
-  width: 100%;
-  height: 740px;
-  display: block;
-  position: relative;
-  background-size: cover;
-  top: -38px;
-  -moz-transform: skewX(0deg) skewY(2deg);
-  -webkit-transform: skewX(0deg) skewY(2deg);
-  -o-transform: skewX(0deg) skewY(2deg);
-  -ms-transform: skewX(0deg) skewY(2deg);
-  transform: skewX(0deg) skewY(2deg);
-}
+          width: 50%;
+          height: 50%;
+        }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper {
-  -moz-transform: skewX(0deg) skewY(-2deg);
-  -webkit-transform: skewX(0deg) skewY(-2deg);
-  -o-transform: skewX(0deg) skewY(-2deg);
-  -ms-transform: skewX(0deg) skewY(-2deg);
-  transform: skewX(0deg) skewY(-2deg);
-}
+        &.-s
+        {
+          width: 135px;
+          height: 135px;
+        }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper .soiree-bloc-2-title {
-  font-size: 3.3em;
-  position: relative;
-  font-family: 'proxima-excn-regular';
-  color: white;
-  margin-bottom: 35px;
-}
+        &.-l
+        {
+          width: 210px;
+          height: 210px;
+        }
+      }
+    }
+  }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper .soiree-bloc-2-title strong {
-  font-family: 'proxima-excn-semibold';
-}
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li {
-  display: inline-block;
-  list-style: none;
-}
+  /////////////////////////////////////////////////////
+  //
+  //       Compteur
+  //
+  /////////////////////////////////////////////////////
+  .block-compteur
+  {
+    display: none;
+  }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a {
-  display: block;
-  font-family: 'proxima-excn-regular';
-  font-size: 1.7em;
-  color: white;
-  text-decoration: none;
-}
+  /////////////////////////////////////////////////////
+  //
+  //       First section (video+compteur)
+  //
+  /////////////////////////////////////////////////////
+  .first
+  {
+    @extend .skew-positive;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a strong {
-  display: block;
-  font-family: 'proxima-excn-semibold';
-}
+    position: relative;
+    top: -15px;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a .visu {
-  background: transparent;
-  display: block;
-  width: 141px;
-  height: 141px;
-  padding: 4px;
-  border: 3px solid white;
-  position: relative;
-  border-radius: 100px;
-  margin: 0 60px;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease;
-}
+    background:
+      url('/sites/all/themes/nrb_televie/img/tele.png') repeat top left / auto,
+      url('/sites/all/themes/nrb_televie/img/soiree/branding.jpg') no-repeat center center / cover
+    ;
+    min-height: 80vh;
+    height: 100%;
+    overflow: hidden;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .visu {
-  margin: 0 60px;
-}
+    .section__inner
+    {
+      @extend .skew-negative;
+    }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a:hover .visu {
-  background: white;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease;
-}
+    &::before
+    {
+      @extend .skew-negative;
+      content: "";
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a .visu span {
-  display: block;
-  width: 133px;
-  height: 133px;
-  padding: 0;
-  background: white;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  border-radius: 100px;
-}
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 36%;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-1 a .visu:after {
-  background: url(../img/soiree/picto-tel.png) no-repeat center;
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  content: '';
-  background-size: contain;
-  left: 32px;
-  top: 28px;
-}
+      background: #2a1d42;
+      opacity: .8;
+    }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-2 a .visu:after {
-  background: url(../img/soiree/picto-don.png) no-repeat center;
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  content: '';
-  background-size: contain;
-  left: 32px;
-  top: 28px;
-}
+    .logo
+    {
+      margin-top: 50px;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-3 a .visu:after {
-  background: url(../img/soiree/picto-sms.png) no-repeat center;
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  content: '';
-  background-size: contain;
-  left: 32px;
-  top: 28px;
-}
+      img
+      {
+        width: auto;
+        height: 150px;
+      }
+    }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-4 a .visu:after {
-  background: url(../img/soiree/picto-virement.png) no-repeat center;
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  content: '';
-  background-size: contain;
-  left: 19px;
-  top: 19px;
-}
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li.soiree-bloc-2-pictos-5 a .visu:after {
-  background: url(../img/soiree/picto-enchere.png) no-repeat center;
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  content: '';
-  background-size: contain;
-  left: 19px;
-  top: 19px;
-}
+  }
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul li a .content {
-  position: relative;
-  border-radius: 10px;
-  margin: 15px auto;
-  padding: 10px;
-  font-size: 0.95em;
-  display: block;
-  width: 70%;
-}
+  /////////////////////////////////////////////////////
+  //
+  //       Second section (giving)
+  //
+  /////////////////////////////////////////////////////
+  .second
+  {
+    padding: 70px 0 10px 0;
+    background: url('/sites/all/themes/nrb_televie/img/soiree/soutenir.jpg') no-repeat center center / cover;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-1 li a .content {
-  background: #902946;
-  text-transform: uppercase;
-}
+    position: relative;
+    top: -35px;
+    z-index: 2;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .content {
-  font-family: 'proxima-excn-bold';
-  font-size: 1em;
-}
+    color: #ffffff;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .visu {
-  width: 120px;
-  height: 120px;
-}
+    .second__label
+    {
+      display: block;
+      margin-top: 20px;
 
-.soiree-bloc-2 .soiree-bloc-2-wrapper ul.soiree-bloc-2-pictos-2 li a .visu span {
-  width: 112px;
-  height: 112px;
-  top: 8px;
-  left: 8px;
-}
+      background: #902946;
+      border-radius: 8px;
+      width: 100%;
+      padding: 10px;
 
-.soiree-bloc-4 {
-  background: #f1f0ef;
-  width: 100%;
-  display: block;
-  position: relative;
-  top: -100px;
-  padding-top: 60px;
-}
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: "proxima-excn-light";
 
-.soiree-bloc-4 .soiree-storify-title {
-  color: #dc3a4d;
-  font-size: 3em;
-  font-family: 'proxima-excn-regular';
-  text-align: left;
-  margin-left: 50px;
-  margin-bottom: 40px;
-}
+      strong
+      {
+        font-family: "proxima-excn-semibold";
+      }
+    }
 
-.soiree-bloc-4 .soiree-storify-title strong {
-  display: block;
-  font-family: 'proxima-excn-semibold';
+    .second__note
+    {
+      margin-top: 50px;
+
+      font-size: 15px;
+      font-family: "proxima-light";
+    }
+  }
+
+  /////////////////////////////////////////////////////
+  //
+  //       Third section (social)
+  //
+  /////////////////////////////////////////////////////
+  .third
+  {
+    padding: 100px 0;
+    @extend .skew-positive;
+    background: #faf7f6 url('/sites/all/themes/nrb_televie/img/tele.png') repeat top left / auto;
+
+    position: relative;
+    top: -50px;
+    z-index: 0;
+
+    color: #dc3a4d;
+
+    .section__inner
+    {
+      @extend .skew-negative;
+    }
+  }
+
+  /////////////////////////////////////////////////////
+  //
+  //       Fourth section (acting)
+  //
+  /////////////////////////////////////////////////////
+  .fourth
+  {
+    @extend .skew-positive;
+
+
+    padding: 70px 0;
+    background: #f9fafa;
+
+    position: relative;
+    top: -70px;
+
+    color: #4a4756;
+
+    .section__inner
+    {
+      @extend .skew-negative;
+    }
+
+    .fourth__label
+    {
+      font-size: 28px;
+      font-family: "proxima-excn-semibold";
+    }
+  }
+
+  /////////////////////////////////////////////////////
+  //
+  //       Fifth section (fiscal declaration)
+  //
+  /////////////////////////////////////////////////////
+  .fifth
+  {
+    position: relative;
+    top: -70px;
+    width: 100%;
+
+    padding: 50px 0;
+    background: #dc3a4d;
+
+    &::before,
+    &::after
+    {
+      content: "";
+
+      position: absolute;
+      left: 0%;
+      top: -10px;
+
+      background: #dc3a4d;
+      height: 100px;
+      width: 50%;
+    }
+
+    &::before
+    {
+      @extend .skew-positive;
+    }
+
+    &::after
+    {
+      right: 0%;
+      left: auto;
+
+      @extend .skew-negative;
+    }
+
+    .section__inner
+    {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn
+    {
+      display: inline-block;
+
+      background: #902946;
+      border-radius: 10px;
+      padding: 10px 30px;
+
+      color: #ffffff;
+      font-family: "proxima-excn-light";
+      font-size: 24px;
+      text-transform: uppercase;
+      text-align: left;
+
+      strong
+      {
+        font-family: "proxima-excn-semibold";
+      }
+
+      &::after
+      {
+        content: '>';
+        font-family: 'symbolesnrbregular';
+        font-size: 16px;
+
+        padding-left: 30px;
+      }
+    }
+  }
 }
