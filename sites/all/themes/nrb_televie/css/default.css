@@ -351,11 +351,11 @@ body.not-front.page-soutenir-le-televie #footer {
   margin: 30px auto; }
 
 /* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
-.skew-negative, #block-views-articles-block-1 .content, #block-views-articles-block-1 > h2, #block-views-events-block-3, .soiree .first .section__inner, .soiree .third .section__inner, .soiree .fourth .section__inner, .soiree .fifth::after {
+.skew-negative, #block-views-articles-block-1 .content, #block-views-articles-block-1 > h2, #block-views-events-block-3, .soiree section.first .section__inner, .soiree section.third .section__inner, .soiree section.fourth .section__inner, .soiree section.fifth::after {
   transform: skewY(-1.5deg); }
 
 .skew-positive, #block-views-articles-block-1, #block-views-events-block-3 > h2,
-#block-views-events-block-3 .content, .soiree .first, .soiree .third, .soiree .fourth, .soiree .fifth::before {
+#block-views-events-block-3 .content, .soiree section.first, .soiree section.third, .soiree section.fourth, .soiree section.fifth::before {
   transform: skewY(1.5deg); }
 
 .text-center {
@@ -6278,7 +6278,7 @@ span.header-view {
   width: auto; }
   .soiree .node-page::before, .soiree .node-page::after {
     content: none; }
-.soiree * {
+.soiree .block-system * {
   box-sizing: border-box; }
 .soiree a {
   color: inherit;
@@ -6286,6 +6286,7 @@ span.header-view {
 .soiree .section__inner {
   position: relative;
   max-width: 960px;
+  width: 90%;
   margin: auto;
   text-align: center; }
   .soiree .section__inner h1 {
@@ -6298,35 +6299,64 @@ span.header-view {
 .soiree .options {
   display: flex;
   justify-content: space-between; }
-  .soiree .options .item .circle {
-    position: relative;
-    display: block;
-    width: 170px;
-    height: 170px;
-    margin: auto;
-    background: transparent;
-    border-radius: 100%;
-    box-shadow: 0px 0px 0px 2px currentColor; }
-    .soiree .options .item .circle::before {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: calc(100% - 20px);
-      height: calc(100% - 20px);
-      background: currentColor;
-      border-radius: 100%; }
-    .soiree .options .item .circle img {
+  @media (max-width: 525px) {
+    .soiree .options {
+      flex-direction: column; } }
+  .soiree .options .item {
+    position: relative; }
+    .soiree .options .item .circle {
       position: relative;
-      top: 25%;
-      width: 50%;
-      height: 50%; }
-    .soiree .options .item .circle.-s {
-      width: 135px;
-      height: 135px; }
-    .soiree .options .item .circle.-l {
-      width: 210px;
-      height: 210px; }
+      display: block;
+      width: 170px;
+      height: 170px;
+      margin: auto;
+      background: transparent;
+      border-radius: 100%;
+      box-shadow: 0px 0px 0px 2px currentColor; }
+      .soiree .options .item .circle::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        background: currentColor;
+        border-radius: 100%; }
+      .soiree .options .item .circle img {
+        position: relative;
+        top: 25%;
+        width: 50%;
+        height: 50%; }
+      @media (max-width: 885px) {
+        .soiree .options .item .circle {
+          width: 135px;
+          height: 135px; } }
+      @media (max-width: 525px) {
+        .soiree .options .item .circle {
+          width: 100px;
+          height: 100px; } }
+      .soiree .options .item .circle.-s {
+        width: 135px;
+        height: 135px; }
+        @media (max-width: 885px) {
+          .soiree .options .item .circle.-s {
+            width: 100px;
+            height: 100px; } }
+        @media (max-width: 525px) {
+          .soiree .options .item .circle.-s {
+            width: 80px;
+            height: 80px; } }
+      .soiree .options .item .circle.-l {
+        width: 210px;
+        height: 210px; }
+        @media (max-width: 885px) {
+          .soiree .options .item .circle.-l {
+            width: 170px;
+            height: 170px; } }
+        @media (max-width: 525px) {
+          .soiree .options .item .circle.-l {
+            width: 135px;
+            height: 135px; } }
 .soiree .block-compteur {
   position: absolute;
   z-index: 4;
@@ -6339,7 +6369,7 @@ span.header-view {
     display: flex;
     width: 90%;
     max-width: 870px;
-    height: 130px;
+    height: 110px;
     margin: auto;
     padding: 15px 30px;
     background: #bc3146;
@@ -6350,7 +6380,7 @@ span.header-view {
     text-align: center; }
     @media (max-width: 885px) {
       .soiree .block-compteur .compteur__inner {
-        height: 100px;
+        height: 70px;
         padding: 15px 20px;
         font-size: 55px;
         line-height: 70px; }
@@ -6358,7 +6388,7 @@ span.header-view {
           margin-right: 5px; } }
     @media (max-width: 525px) {
       .soiree .block-compteur .compteur__inner {
-        height: 80px;
+        height: 40px;
         padding: 15px;
         font-size: 25px;
         line-height: 45px; }
@@ -6454,15 +6484,16 @@ span.header-view {
     .soiree .block-video .video__active .video__video {
       width: 600px;
       height: 338px; }
-.soiree .first {
+.soiree section.first {
   position: relative;
   top: -25px;
   z-index: 3;
   background: linear-gradient(rgba(23, 40, 90, 0.3), rgba(23, 40, 90, 0.3)), url("/sites/all/themes/nrb_televie/img/tele.png") repeat top left/auto, url("/sites/all/themes/nrb_televie/img/soiree/branding.jpg") no-repeat center center/cover;
-  min-height: 90vh;
+  min-height: 685px;
+  max-height: 90vh;
   height: 100%;
   overflow: hidden; }
-  .soiree .first::before {
+  .soiree section.first::before {
     content: "";
     position: absolute;
     top: 0;
@@ -6472,19 +6503,46 @@ span.header-view {
     background: #2a1d42;
     opacity: .8;
     transform: skewY(-3deg); }
-  .soiree .first .logo {
+  .soiree section.first .logo {
     margin-top: 40px; }
-    .soiree .first .logo img {
+    .soiree section.first .logo img {
       width: auto;
       height: 150px; }
-.soiree .second {
+.soiree section.second {
   padding: 70px 0 10px 0;
   background: url("/sites/all/themes/nrb_televie/img/soiree/soutenir.jpg") no-repeat center center/cover;
   position: relative;
-  top: -45px;
+  top: -55px;
   z-index: 2;
   color: #ffffff; }
-  .soiree .second .second__label {
+  .soiree section.second .second__normal {
+    position: relative;
+    display: block; }
+  .soiree section.second .second__active {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    display: none;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 100%;
+    color: #902946;
+    font-size: 18px;
+    font-family: proxima-excn-regular; }
+    .soiree section.second .second__active::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 25px 25px 0;
+      border-color: transparent #ffffff transparent transparent; }
+  .soiree section.second .second__label {
     display: block;
     margin-top: 20px;
     background: #902946;
@@ -6494,35 +6552,60 @@ span.header-view {
     text-transform: uppercase;
     font-size: 24px;
     font-family: "proxima-excn-light"; }
-    .soiree .second .second__label strong {
+    .soiree section.second .second__label strong {
       font-family: "proxima-excn-semibold"; }
-  .soiree .second .second__note {
+  .soiree section.second .second__note {
     margin-top: 50px;
     font-size: 15px;
     font-family: "proxima-light"; }
-.soiree .third {
+  .soiree section.second .second__information {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    display: block;
+    padding: 7px;
+    min-width: 26px;
+    width: 26px;
+    min-height: 26px;
+    height: 26px;
+    background: #ffffff;
+    border-radius: 100%;
+    color: #902946;
+    font-family: proxima-cn-bold;
+    font-size: 20px;
+    line-height: 14px; }
+    @media (max-width: 525px) {
+      .soiree section.second .second__information {
+        right: 0; } }
+  .soiree section.second .second__item.-active .second__information {
+    font-family: proxima-regular;
+    line-height: 11px; }
+  .soiree section.second .second__item.-active .second__active {
+    display: block; }
+.soiree section.third {
   padding: 100px 0;
   background: #faf7f6 url("/sites/all/themes/nrb_televie/img/tele.png") repeat top left/auto;
   position: relative;
   top: -50px;
   z-index: 0;
   color: #dc3a4d; }
-.soiree .fourth {
+.soiree section.fourth {
   padding: 70px 0;
   background: #f9fafa;
   position: relative;
   top: -70px;
   color: #4a4756; }
-  .soiree .fourth .fourth__label {
+  .soiree section.fourth .fourth__label {
     font-size: 28px;
     font-family: "proxima-excn-semibold"; }
-.soiree .fifth {
+.soiree section.fifth {
   position: relative;
   top: -70px;
   width: 100%;
+  margin-bottom: -70px;
   padding: 50px 0;
   background: #dc3a4d; }
-  .soiree .fifth::before, .soiree .fifth::after {
+  .soiree section.fifth::before, .soiree section.fifth::after {
     content: "";
     position: absolute;
     left: 0%;
@@ -6530,13 +6613,13 @@ span.header-view {
     background: #dc3a4d;
     height: 100px;
     width: 50%; }
-  .soiree .fifth::after {
+  .soiree section.fifth::after {
     right: 0%;
     left: auto; }
-  .soiree .fifth .section__inner {
+  .soiree section.fifth .section__inner {
     position: relative;
     z-index: 2; }
-  .soiree .fifth .btn {
+  .soiree section.fifth .btn {
     display: inline-block;
     background: #902946;
     border-radius: 10px;
@@ -6546,13 +6629,15 @@ span.header-view {
     font-size: 24px;
     text-transform: uppercase;
     text-align: left; }
-    .soiree .fifth .btn strong {
+    .soiree section.fifth .btn strong {
       font-family: "proxima-excn-semibold"; }
-    .soiree .fifth .btn::after {
+    .soiree section.fifth .btn::after {
       content: '>';
       font-family: 'symbolesnrbregular';
       font-size: 16px;
       padding-left: 30px; }
+.soiree #footer {
+  margin-top: 0 !important; }
 
 .soroptimist h1 {
   color: #DC3A4D;

@@ -24,7 +24,7 @@
     }
   }
 
-  *
+  .block-system *
   {
     box-sizing: border-box;
   }
@@ -40,6 +40,7 @@
     position: relative;
 
     max-width: 960px;
+    width: 90%;
     margin: auto;
 
     text-align: center;
@@ -69,8 +70,15 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 525px)
+    {
+      flex-direction: column;
+    }
+
     .item
     {
+      position: relative;
+
       .circle
       {
         position: relative;
@@ -109,16 +117,52 @@
           height: 50%;
         }
 
+        @media (max-width: 885px)
+        {
+          width: 135px;
+          height: 135px;
+        }
+
+        @media (max-width: 525px)
+        {
+          width: 100px;
+          height: 100px;
+        }
+
         &.-s
         {
           width: 135px;
           height: 135px;
+
+          @media (max-width: 885px)
+          {
+            width: 100px;
+            height: 100px;
+          }
+
+          @media (max-width: 525px)
+          {
+            width: 80px;
+            height: 80px;
+          }
         }
 
         &.-l
         {
           width: 210px;
           height: 210px;
+
+          @media (max-width: 885px)
+          {
+            width: 170px;
+            height: 170px;
+          }
+
+          @media (max-width: 525px)
+          {
+            width: 135px;
+            height: 135px;
+          }
         }
       }
     }
@@ -149,7 +193,7 @@
 
       width: 90%;
       max-width: 870px;
-      height: 130px;
+      height: 110px;
       margin: auto;
       padding: 15px 30px;
 
@@ -163,7 +207,7 @@
 
       @media (max-width: 885px)
       {
-        height: 100px;
+        height: 70px;
         padding: 15px 20px;
 
         font-size: 55px;
@@ -177,7 +221,7 @@
 
       @media (max-width: 525px)
       {
-        height: 80px;
+        height: 40px;
         padding: 15px;
 
         font-size: 25px;
@@ -334,13 +378,12 @@
       {
         display: block;
       }
-
     }
 
     .video__active
     {
       display: none;
-      
+
       text-align: center;
 
       .video__video
@@ -349,7 +392,6 @@
         height: 338px;
       }
     }
-
   }
 
   /////////////////////////////////////////////////////
@@ -357,7 +399,7 @@
   //       First section (video+compteur)
   //
   /////////////////////////////////////////////////////
-  .first
+  section.first
   {
     @extend .skew-positive;
 
@@ -370,7 +412,8 @@
       url('/sites/all/themes/nrb_televie/img/tele.png') repeat top left / auto,
       url('/sites/all/themes/nrb_televie/img/soiree/branding.jpg') no-repeat center center / cover
     ;
-    min-height: 90vh;
+    min-height: 685px;
+    max-height: 90vh;
     height: 100%;
     overflow: hidden;
 
@@ -413,16 +456,57 @@
   //       Second section (giving)
   //
   /////////////////////////////////////////////////////
-  .second
+  section.second
   {
     padding: 70px 0 10px 0;
     background: url('/sites/all/themes/nrb_televie/img/soiree/soutenir.jpg') no-repeat center center / cover;
 
     position: relative;
-    top: -45px;
+    top: -55px;
     z-index: 2;
 
     color: #ffffff;
+
+    .second__normal
+    {
+      position: relative;
+      display: block;
+    }
+
+    .second__active
+    {
+      position: absolute;
+      top: 15px;
+      left: 0px;
+
+      display: none;
+      width: 170px;
+      height: 170px;
+      margin: auto;
+      padding: 40px 20px;
+
+      background: #ffffff;
+      border-radius: 100%;
+
+      color: #902946;
+      font-size: 18px;
+      font-family: proxima-excn-regular;
+
+      &::after
+      {
+        content: "";
+
+        position: absolute;
+        top: 25px;
+        right: 10px;
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 25px 25px 0;
+        border-color: transparent #ffffff transparent transparent;
+      }
+    }
 
     .second__label
     {
@@ -451,6 +535,49 @@
       font-size: 15px;
       font-family: "proxima-light";
     }
+
+    .second__information
+    {
+      position: absolute;
+      top: 0;
+      right: -20px;
+
+      $size: 26px;
+
+      display: block;
+      padding: 7px;
+      min-width: $size;
+      width: $size;
+      min-height: $size;
+      height: $size;
+
+      background: #ffffff;
+      border-radius: 100%;
+
+      color: #902946;
+      font-family: proxima-cn-bold;
+      font-size: 20px;
+      line-height: 14px;
+
+      @media (max-width: 525px)
+      {
+        right: 0;
+      }
+    }
+
+    .second__item.-active
+    {
+      .second__information
+      {
+        font-family: proxima-regular;
+        line-height: 11px;
+      }
+
+      .second__active
+      {
+        display: block;
+      }
+    }
   }
 
   /////////////////////////////////////////////////////
@@ -458,7 +585,7 @@
   //       Third section (social)
   //
   /////////////////////////////////////////////////////
-  .third
+  section.third
   {
     padding: 100px 0;
     @extend .skew-positive;
@@ -481,7 +608,7 @@
   //       Fourth section (acting)
   //
   /////////////////////////////////////////////////////
-  .fourth
+  section.fourth
   {
     @extend .skew-positive;
 
@@ -511,12 +638,13 @@
   //       Fifth section (fiscal declaration)
   //
   /////////////////////////////////////////////////////
-  .fifth
+  section.fifth
   {
     position: relative;
     top: -70px;
     width: 100%;
 
+    margin-bottom: -70px;
     padding: 50px 0;
     background: #dc3a4d;
 
@@ -581,5 +709,15 @@
         padding-left: 30px;
       }
     }
+  }
+
+  /////////////////////////////////////////////////////
+  //
+  //       Footer
+  //
+  /////////////////////////////////////////////////////
+  #footer
+  {
+    margin-top: 0 !important;
   }
 }

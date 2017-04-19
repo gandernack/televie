@@ -76,17 +76,14 @@
   <div id="page" class="soiree">
     <?php print $messages;  ?>
 
-    
+
 
     <?php print render($page['content']); ?>
     <?php print $feed_icons; ?>
-        
-      </div>
-    </div>
+
 
     <div id="footer">
       <div class="section">
-        <?php print render($page['footer_first']); ?>
         <?php print render($page['footer_second']); ?>
         <?php print render($page['footer_third']); ?>
         <?php print render($page['footer_fourth']); ?>

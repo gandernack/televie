@@ -22,6 +22,7 @@
          *
          *************************************************************/
 
+        // video display
         jQuery('.block-video a').on('click', function(event)
         {
           event.preventDefault();
@@ -30,7 +31,23 @@
           jQuery('.block-video .video__active').show();
 
           return false;
-        })
+        });
+
+        // SMS
+        jQuery('.second__item.item:nth-child(3n)').on('click', function(event)
+        {
+          event.preventDefault();
+
+          var t = jQuery(event.currentTarget);
+          t.toggleClass('-active');
+
+          if (t.hasClass('-active'))
+            jQuery(".second__information").html('x');
+          else
+            jQuery(".second__information").html('i');
+
+          return false;
+        });
 
 
         /*************************************************************
