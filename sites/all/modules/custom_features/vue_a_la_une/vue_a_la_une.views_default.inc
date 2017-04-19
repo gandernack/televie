@@ -362,7 +362,7 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['field_image_la_une']['type'] = 'image_url';
   $handler->display->display_options['fields']['field_image_la_une']['settings'] = array(
     'url_type' => '1',
-    'image_style' => 'event_home',
+    'image_style' => 'large',
     'image_link' => '',
   );
   /* Champ: Contenu : Titre */
@@ -377,14 +377,6 @@ function vue_a_la_une_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Champ: Contenu : Sous-titre */
-  $handler->display->display_options['fields']['field_sous_titre']['id'] = 'field_sous_titre';
-  $handler->display->display_options['fields']['field_sous_titre']['table'] = 'field_data_field_sous_titre';
-  $handler->display->display_options['fields']['field_sous_titre']['field'] = 'field_sous_titre';
-  $handler->display->display_options['fields']['field_sous_titre']['label'] = '';
-  $handler->display->display_options['fields']['field_sous_titre']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_sous_titre']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_sous_titre']['element_default_classes'] = FALSE;
   /* Champ: Contenu : Description */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
