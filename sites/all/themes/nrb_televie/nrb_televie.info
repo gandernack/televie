@@ -20,10 +20,10 @@ regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
-regions[footer_first] = Footer first 
-regions[footer_second] = Footer second 
-regions[footer_third] = Footer third 
-regions[footer_fourth] = Footer fourth 
+regions[footer_first] = Footer first
+regions[footer_second] = Footer second
+regions[footer_third] = Footer third
+regions[footer_fourth] = Footer fourth
 regions[footer_fifth] = Footer fifth
 regions[footer] = Footer
 
@@ -32,14 +32,15 @@ scripts[] = js/jquery.sticky.js
 scripts[] = js/jquery.parallax-1.1.3.js
 scripts[] = js/jquery.localscroll.js
 scripts[] = js/jquery.scrollTo.js
-scripts[] = js/matchMedia.js 
+scripts[] = js/matchMedia.js
 scripts[] = js/matchMedia.addListener.js
 scripts[] = js/jquery.equalheights.js
 scripts[] = js/enquire.min.js
 scripts[] = js/isotope.pkgd.min.js
 scripts[] = js/jquery.browser.detection.js
+scripts[] = js/TweenMax.min.js
 scripts[] = js/init.js
 scripts[] = js/ViewAgenda.js
+scripts[] = js/Countdown.js
 
 version = "1.0"
-

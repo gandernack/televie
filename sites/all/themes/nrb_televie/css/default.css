@@ -351,7 +351,7 @@ body.not-front.page-soutenir-le-televie #footer {
   margin: 30px auto; }
 
 /* ---------------------------------------------------------------------   login    --------------------------------------------------------------------- */
-.skew-negative, #block-views-articles-block-1 .content, #block-views-articles-block-1 > h2, #block-views-events-block-3, .soiree .first .section__inner, .soiree .first::before, .soiree .third .section__inner, .soiree .fourth .section__inner, .soiree .fifth::after {
+.skew-negative, #block-views-articles-block-1 .content, #block-views-articles-block-1 > h2, #block-views-events-block-3, .soiree .first .section__inner, .soiree .third .section__inner, .soiree .fourth .section__inner, .soiree .fifth::after {
   transform: skewY(-1.5deg); }
 
 .skew-positive, #block-views-articles-block-1, #block-views-events-block-3 > h2,
@@ -6328,12 +6328,107 @@ span.header-view {
       width: 210px;
       height: 210px; }
 .soiree .block-compteur {
-  display: none; }
+  position: absolute;
+  z-index: 4;
+  top: 22vh;
+  width: 100%; }
+  .soiree .block-compteur .compteur__inner {
+    width: 80%;
+    max-width: 870px;
+    height: 130px;
+    margin: auto;
+    background: url("/sites/all/themes/nrb_televie/img/soiree/countdown.png") no-repeat center center/cover;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 90px;
+    font-family: graduateregular;
+    text-align: center; }
+    .soiree .block-compteur .compteur__inner var {
+      font-style: normal; }
+.soiree .separator {
+  float: left; }
+.soiree .figure {
+  position: relative;
+  float: left;
+  height: 110px;
+  width: 100px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 4px 0 0 rgba(255, 255, 255, 0.08); }
+  .soiree .figure:last-child {
+    margin-right: 0; }
+  .soiree .figure > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font: normal 5.94em/107px;
+    font-weight: 700;
+    color: #de4848; }
+  .soiree .figure .top::after, .soiree .figure .bottom-back::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .soiree .figure .top {
+    z-index: 3;
+    background-color: #f7f7f7;
+    transform-origin: 50% 100%;
+    border-top-radius: 10px;
+    transform: perspective(200px); }
+  .soiree .figure .bottom {
+    z-index: 1; }
+    .soiree .figure .bottom:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(0, 0, 0, 0.02); }
+  .soiree .figure .bottom-back {
+    z-index: 2;
+    top: 0;
+    height: 50%;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    border-top-radius: 10px; }
+    .soiree .figure .bottom-back span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .soiree .figure .top, .soiree .figure .top-back {
+    height: 50%;
+    overflow: hidden;
+    backface-visibility: hidden; }
+  .soiree .figure .top-back {
+    z-index: 4;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    transform: perspective(200px) rotateX(180deg);
+    border-bottom-radius: 10px; }
+    .soiree .figure .top-back span {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      margin: auto; }
 .soiree .first {
   position: relative;
-  top: -15px;
+  top: -25px;
+  z-index: 3;
   background: url("/sites/all/themes/nrb_televie/img/tele.png") repeat top left/auto, url("/sites/all/themes/nrb_televie/img/soiree/branding.jpg") no-repeat center center/cover;
-  min-height: 80vh;
+  min-height: 90vh;
   height: 100%;
   overflow: hidden; }
   .soiree .first::before {
@@ -6342,11 +6437,12 @@ span.header-view {
     top: 0;
     left: 0;
     width: 100%;
-    height: 36%;
+    height: 38%;
     background: #2a1d42;
-    opacity: .8; }
+    opacity: .8;
+    transform: skewY(-3deg); }
   .soiree .first .logo {
-    margin-top: 50px; }
+    margin-top: 40px; }
     .soiree .first .logo img {
       width: auto;
       height: 150px; }
@@ -6354,7 +6450,7 @@ span.header-view {
   padding: 70px 0 10px 0;
   background: url("/sites/all/themes/nrb_televie/img/soiree/soutenir.jpg") no-repeat center center/cover;
   position: relative;
-  top: -35px;
+  top: -45px;
   z-index: 2;
   color: #ffffff; }
   .soiree .second .second__label {
