@@ -138,11 +138,16 @@
 
     width: 100%;
 
+    @media (max-width: 525px)
+    {
+      top: 25vh;
+    }
+
     .compteur__inner
     {
       display: flex;
 
-      width: 80%;
+      width: 90%;
       max-width: 870px;
       height: 130px;
       margin: auto;
@@ -155,8 +160,37 @@
       font-size: 90px;
       font-family: graduateregular;
       text-align: center;
+
+      @media (max-width: 885px)
+      {
+        height: 100px;
+        padding: 15px 20px;
+
+        font-size: 55px;
+        line-height: 70px;
+
+        .figure
+        {
+          margin-right: 5px;
+        }
+      }
+
+      @media (max-width: 525px)
+      {
+        height: 80px;
+        padding: 15px;
+
+        font-size: 25px;
+        line-height: 45px;
+
+        .figure
+        {
+          margin-right: 2px;
+        }
+      }
     }
   }
+
 
   .separator
   {
@@ -178,7 +212,7 @@
 
     &.-mr-none
     {
-      margin-right: 0;
+      margin-right: 0 !important;
     }
 
     >span

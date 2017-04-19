@@ -6332,9 +6332,12 @@ span.header-view {
   z-index: 4;
   top: 22vh;
   width: 100%; }
+  @media (max-width: 525px) {
+    .soiree .block-compteur {
+      top: 25vh; } }
   .soiree .block-compteur .compteur__inner {
     display: flex;
-    width: 80%;
+    width: 90%;
     max-width: 870px;
     height: 130px;
     margin: auto;
@@ -6345,6 +6348,22 @@ span.header-view {
     font-size: 90px;
     font-family: graduateregular;
     text-align: center; }
+    @media (max-width: 885px) {
+      .soiree .block-compteur .compteur__inner {
+        height: 100px;
+        padding: 15px 20px;
+        font-size: 55px;
+        line-height: 70px; }
+        .soiree .block-compteur .compteur__inner .figure {
+          margin-right: 5px; } }
+    @media (max-width: 525px) {
+      .soiree .block-compteur .compteur__inner {
+        height: 80px;
+        padding: 15px;
+        font-size: 25px;
+        line-height: 45px; }
+        .soiree .block-compteur .compteur__inner .figure {
+          margin-right: 2px; } }
 .soiree .separator {
   display: block;
   width: 20px; }
@@ -6356,7 +6375,7 @@ span.header-view {
   margin-right: 10px;
   border: 2px solid #ac2b3c; }
   .soiree .figure.-mr-none {
-    margin-right: 0; }
+    margin-right: 0 !important; }
   .soiree .figure > span {
     position: absolute;
     left: 0;
