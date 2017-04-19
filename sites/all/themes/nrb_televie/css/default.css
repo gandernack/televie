@@ -6333,39 +6333,35 @@ span.header-view {
   top: 22vh;
   width: 100%; }
   .soiree .block-compteur .compteur__inner {
+    display: flex;
     width: 80%;
     max-width: 870px;
     height: 130px;
     margin: auto;
-    background: url("/sites/all/themes/nrb_televie/img/soiree/countdown.png") no-repeat center center/cover;
+    padding: 15px 30px;
+    background: #bc3146;
     border-radius: 8px;
     color: #ffffff;
     font-size: 90px;
     font-family: graduateregular;
     text-align: center; }
-    .soiree .block-compteur .compteur__inner var {
-      font-style: normal; }
 .soiree .separator {
-  float: left; }
+  display: block;
+  width: 20px; }
 .soiree .figure {
   position: relative;
-  float: left;
-  height: 110px;
-  width: 100px;
+  display: block;
+  height: 100%;
+  width: 100%;
   margin-right: 10px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 4px 0 0 rgba(255, 255, 255, 0.08); }
-  .soiree .figure:last-child {
+  border: 2px solid #ac2b3c; }
+  .soiree .figure.-mr-none {
     margin-right: 0; }
   .soiree .figure > span {
     position: absolute;
     left: 0;
     right: 0;
-    margin: auto;
-    font: normal 5.94em/107px;
-    font-weight: 700;
-    color: #de4848; }
+    margin: auto; }
   .soiree .figure .top::after, .soiree .figure .bottom-back::after {
     content: "";
     position: absolute;
@@ -6374,12 +6370,10 @@ span.header-view {
     bottom: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    border-bottom: 2px solid #ac2b3c; }
   .soiree .figure .top {
     z-index: 3;
-    background-color: #f7f7f7;
     transform-origin: 50% 100%;
-    border-top-radius: 10px;
     transform: perspective(200px); }
   .soiree .figure .bottom {
     z-index: 1; }
@@ -6390,15 +6384,13 @@ span.header-view {
       top: 0;
       left: 0;
       width: 100%;
-      height: 50%;
-      background-color: rgba(0, 0, 0, 0.02); }
+      height: 50%; }
   .soiree .figure .bottom-back {
     z-index: 2;
     top: 0;
     height: 50%;
     overflow: hidden;
-    background-color: #f7f7f7;
-    border-top-radius: 10px; }
+    background-color: #bc3146; }
     .soiree .figure .bottom-back span {
       position: absolute;
       top: 0;
@@ -6412,11 +6404,9 @@ span.header-view {
   .soiree .figure .top-back {
     z-index: 4;
     bottom: 0;
-    background-color: #fff;
-    -webkit-transform-origin: 50% 0;
+    background-color: #bc3146;
     transform-origin: 50% 0;
-    transform: perspective(200px) rotateX(180deg);
-    border-bottom-radius: 10px; }
+    transform: perspective(200px) rotateX(180deg); }
     .soiree .figure .top-back span {
       position: absolute;
       top: -100%;

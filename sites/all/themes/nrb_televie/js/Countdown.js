@@ -101,7 +101,7 @@
   function Countdown()
   {
     this.options = {};
-    this.options.delay = 5000;
+    this.options.delay = 15000;
     this.options.url = "http://televie.dev//sites/all/themes/nrb_televie/countdown.php";
 
     this.init();
@@ -115,7 +115,7 @@
    **/
   p.init = function()
   {
-    this.view = jQuery('.compteur__inner var');
+    this.view = jQuery('.compteur__inner');
     this.figures = this.view.find(".figure").map(function(i, e){ return new Televie.Evening.Figure(e); });
     this.nFigures = this.figures.length;
 
@@ -222,7 +222,7 @@
 
   jQuery(window).on('load', function()
   {
-    new Countdown();
+    window.Televie.countdown = new Countdown();
   });
 
 })(window);

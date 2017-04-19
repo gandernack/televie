@@ -1,5 +1,5 @@
 <?php
-  echo random_float( 1000, 9999999);
+  echo random_float( 1000, 999999999);
 
 
 function random_float ($min,$max) {
