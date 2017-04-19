@@ -16,7 +16,22 @@
             return false;
         });
 
-        $(".soiree-compteur pre").wrap("soiree-22222");
+        /*************************************************************
+         *
+         *  page soirée
+         *
+         *************************************************************/
+
+        jQuery('.block-video a').on('click', function(event)
+        {
+          event.preventDefault();
+
+          jQuery('.block-video .video__normal').hide();
+          jQuery('.block-video .video__active').show();
+
+          return false;
+        })
+
 
         /*************************************************************
          *

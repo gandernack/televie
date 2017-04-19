@@ -6432,11 +6432,33 @@ span.header-view {
       left: 0;
       right: 0;
       margin: auto; }
+.soiree .block-video {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 40vh;
+  top: 40vh; }
+  .soiree .block-video .video__normal {
+    width: 300px;
+    margin: 50px auto;
+    font-family: proxima-excn-regular;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center; }
+    .soiree .block-video .video__normal .video__icon,
+    .soiree .block-video .video__normal .video__label {
+      display: block; }
+  .soiree .block-video .video__active {
+    display: none;
+    text-align: center; }
+    .soiree .block-video .video__active .video__video {
+      width: 600px;
+      height: 338px; }
 .soiree .first {
   position: relative;
   top: -25px;
   z-index: 3;
-  background: url("/sites/all/themes/nrb_televie/img/tele.png") repeat top left/auto, url("/sites/all/themes/nrb_televie/img/soiree/branding.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(23, 40, 90, 0.3), rgba(23, 40, 90, 0.3)), url("/sites/all/themes/nrb_televie/img/tele.png") repeat top left/auto, url("/sites/all/themes/nrb_televie/img/soiree/branding.jpg") no-repeat center center/cover;
   min-height: 90vh;
   height: 100%;
   overflow: hidden; }
