@@ -1389,7 +1389,7 @@ if ($nbJours == 0) {
   $result = "Aujourd\'hui";
 }
 elseif ($nbJours == 1) {
-  $result = "Dans 1 jour";
+  $result = "Demain";
 } else {
   $result = "Dans " . $nbJours . " jours"; 
 }
