@@ -6303,6 +6303,7 @@ span.header-view {
     .soiree .options {
       flex-direction: column; } }
   .soiree .options .item {
+    display: block;
     position: relative; }
     .soiree .options .item .circle {
       position: relative;
@@ -6401,7 +6402,7 @@ span.header-view {
   position: relative;
   display: block;
   height: 100%;
-  width: 100%;
+  flex-grow: 1;
   margin-right: 10px;
   border: 2px solid #ac2b3c; }
   .soiree .figure.-mr-none {
@@ -6490,8 +6491,7 @@ span.header-view {
   z-index: 3;
   background: linear-gradient(rgba(23, 40, 90, 0.3), rgba(23, 40, 90, 0.3)), url("/sites/all/themes/nrb_televie/img/tele.png") repeat top left/auto, url("/sites/all/themes/nrb_televie/img/soiree/branding.jpg") no-repeat center center/cover;
   min-height: 685px;
-  max-height: 90vh;
-  height: 100%;
+  height: 90vh;
   overflow: hidden; }
   .soiree section.first::before {
     content: "";
