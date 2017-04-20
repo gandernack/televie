@@ -102,7 +102,7 @@
   {
     this.options = {};
     this.options.delay = 5000;
-    this.options.url = "http://televie.dev/sites/all/themes/nrb_televie/countdown.php";
+    this.options.url = "/sites/all/themes/nrb_televie/countdown.php";
 
     this.init();
   }
