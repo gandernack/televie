@@ -1,0 +1,123 @@
+array(
+  (object) array(
+      'vid' => '2599',
+      'uid' => '1',
+      'title' => 'Soirée',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '360d32b3-f637-4fb4-9c16-417ae84c4e4c',
+      'nid' => '2599',
+      'type' => 'page',
+      'language' => 'fr',
+      'created' => '1458648739',
+      'changed' => '1492670915',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '023def33-0943-4db7-afaf-aff7c55c26ce',
+      'revision_timestamp' => '1492670915',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "<article class=\"soiree\">\r\n\r\n  <!-- First section (video+compteur) -->\r\n  <section class=\"first\">\r\n    <div class=\"section__inner\">\r\n\r\n      <div class=\"logo\" tabindex=\"1\">\r\n        <img src=\"/sites/all/themes/nrb_televie/img/soiree/logo.png\" alt=\"logo-televie\">\r\n      </div>\r\n\r\n      <div class=\"player\">\r\n\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- Second section (giving) -->\r\n  <section class=\"second\">\r\n    <div class=\"section__inner\">\r\n      <h1>Faire <strong>un don !</strong></h1>\r\n\r\n      <div class=\"second__options options\">\r\n        <a href=\"javascript:void()\" class=\"second__item item\">\r\n          <span class=\"second__normal normal\">\r\n            <span class=\"second__illustration circle\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-tel.png\" alt=\"Téléphoner\">\r\n            </span>\r\n            <span class=\"second__label\">Appelez le <br><strong>0800 90 800</strong></span>\r\n          </span>\r\n        </a>\r\n\r\n        <a href=\"https://dons.televie.be/b/mon-don?_ga=1.154266424.1425799038.1478079932\" class=\"second__item item\">\r\n          <span class=\"second__normal normal\">\r\n            <span class=\"second__illustration circle -l\"><img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-don.png\" alt=\"Donner\"></span>\r\n            <span class=\"second__label\">Faites un don<br><strong>en ligne</strong></span>\r\n          </span>\r\n        </a>\r\n\r\n        <a href=\"#\" class=\"second__item item\">\r\n          <span class=\"second__normal normal\">\r\n            <span class=\"second__illustration circle\"><img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-sms.png\" alt=\"Envoyer un sms\"></span>\r\n            <span class=\"second__label\">Envoyez un<br>sms au <strong>8000</strong></span>\r\n            <span class=\"second__information\">i</span>\r\n          </span>\r\n          <span class=\"second__active\">Envoyez votre numéro de compte suivi d'un espace et ensuite le montant de votre don.</span>\r\n        </a>\r\n      </div>\r\n\r\n      <div class=\"second__note\">Tout don égal ou supérieur à 40,00€ donne droit à un reçu fiscal envoyé par le FRS-FNRS.</div>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- Third section (social) -->\r\n  <section class=\"third\">\r\n    <div class=\"section__inner\">\r\n      <h1>Suivez-nous sur <br><strong>les réseaux sociaux!</strong></h1>\r\n\r\n      <div class=\"third__options options\">\r\n        <a href=\"https://www.facebook.com/televie/\" class=\"third__item item\">\r\n          <span class=\"third__normal normal\">\r\n            <span class=\"third__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/fb.png\" alt=\"Facebook\">\r\n            </span>\r\n          </span>\r\n        </a>\r\n        <a href=\"https://twitter.com/televie\" class=\"third__item item\">\r\n          <span class=\"third__normal normal\">\r\n            <span class=\"third__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/twitter.png\" alt=\"Twitter\">\r\n            </span>\r\n          </span>\r\n        </a>\r\n        <a href=\"https://www.instagram.com/televieofficiel/\" class=\"third__item item\">\r\n          <span class=\"third__normal normal\">\r\n            <span class=\"third__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/inst.png\" alt=\"Instagram\">\r\n            </span>\r\n          </span>\r\n        </a>\r\n        <!-- <a href=\"https://www.youtube.com/channel/UCOUW2930JeN_EKZ4Ea1Rcag\" class=\"third__item item\">\r\n          <span class=\"third__normal normal\">\r\n            <span class=\"third__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/youtube.png\" alt=\"Youtube\">\r\n            </span>\r\n          </span>\r\n        </a> -->\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- Fourth section (acting) -->\r\n  <section class=\"fourth\">\r\n    <div class=\"section__inner\">\r\n      <h1>Agissez<strong> autrement !</strong></h1>\r\n\r\n      <div class=\"fourth__options options\">\r\n        <a href=\"https://www.facebook.com/televie/\" class=\"fourth__item item\">\r\n          <span class=\"fourth__normal normal\">\r\n            <span class=\"fourth__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-enchere.png\" alt=\"Enchere\">\r\n            </span>\r\n            <span class=\"fourth__label\">Les enchères du<br> Télévie</span>\r\n          </span>\r\n        </a>\r\n        <a href=\"https://www.facebook.com/televie/\" class=\"fourth__item item\">\r\n          <span class=\"fourth__normal normal\">\r\n            <span class=\"fourth__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-collecte.png\" alt=\"Facebook\">\r\n            </span>\r\n            <span class=\"fourth__label\">Les pages de<br> collecte du Télévie</span>\r\n          </span>\r\n        </a>\r\n        <a href=\"https://www.facebook.com/televie/\" class=\"fourth__item item\">\r\n          <span class=\"fourth__normal normal\">\r\n            <span class=\"fourth__illustration circle -s\">\r\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-disk.png\" alt=\"Facebook\">\r\n            </span>\r\n            <span class=\"fourth__label\">Les disques d'or</span>\r\n          </span>\r\n        </a>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- Fifth section (fiscal declaration) -->\r\n  <section class=\"fifth\">\r\n    <div class=\"section__inner\">\r\n      <a href=\"/attestation-fiscale\" class=\"btn\">Formulaire pour <br><strong>recevoir l'attestation fiscale</strong></a>\r\n    </div>\r\n  </section>\r\n</article>",
+            'summary' => '',
+            'format' => 'full_html',
+            'safe_value' => "<article class=\"soiree\">\n\n  <!-- First section (video+compteur) -->\n  <section class=\"first\">\n    <div class=\"section__inner\">\n\n      <div class=\"logo\" tabindex=\"1\">\n        <img src=\"/sites/all/themes/nrb_televie/img/soiree/logo.png\" alt=\"logo-televie\">\n      </div>\n\n      <div class=\"player\">\n\n      </div>\n    </div>\n  </section>\n\n  <!-- Second section (giving) -->\n  <section class=\"second\">\n    <div class=\"section__inner\">\n      <h1>Faire <strong>un don !</strong></h1>\n\n      <div class=\"second__options options\">\n        <a href=\"javascript:void()\" class=\"second__item item\">\n          <span class=\"second__normal normal\">\n            <span class=\"second__illustration circle\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-tel.png\" alt=\"Téléphoner\">\n            </span>\n            <span class=\"second__label\">Appelez le <br><strong>0800 90 800</strong></span>\n          </span>\n        </a>\n\n        <a href=\"https://dons.televie.be/b/mon-don?_ga=1.154266424.1425799038.1478079932\" class=\"second__item item\">\n          <span class=\"second__normal normal\">\n            <span class=\"second__illustration circle -l\"><img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-don.png\" alt=\"Donner\"></span>\n            <span class=\"second__label\">Faites un don<br><strong>en ligne</strong></span>\n          </span>\n        </a>\n\n        <a href=\"#\" class=\"second__item item\">\n          <span class=\"second__normal normal\">\n            <span class=\"second__illustration circle\"><img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-sms.png\" alt=\"Envoyer un sms\"></span>\n            <span class=\"second__label\">Envoyez un<br>sms au <strong>8000</strong></span>\n            <span class=\"second__information\">i</span>\n          </span>\n          <span class=\"second__active\">Envoyez votre numéro de compte suivi d'un espace et ensuite le montant de votre don.</span>\n        </a>\n      </div>\n\n      <div class=\"second__note\">Tout don égal ou supérieur à 40,00€ donne droit à un reçu fiscal envoyé par le FRS-FNRS.</div>\n    </div>\n  </section>\n\n  <!-- Third section (social) -->\n  <section class=\"third\">\n    <div class=\"section__inner\">\n      <h1>Suivez-nous sur <br><strong>les réseaux sociaux!</strong></h1>\n\n      <div class=\"third__options options\">\n        <a href=\"https://www.facebook.com/televie/\" class=\"third__item item\">\n          <span class=\"third__normal normal\">\n            <span class=\"third__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/fb.png\" alt=\"Facebook\">\n            </span>\n          </span>\n        </a>\n        <a href=\"https://twitter.com/televie\" class=\"third__item item\">\n          <span class=\"third__normal normal\">\n            <span class=\"third__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/twitter.png\" alt=\"Twitter\">\n            </span>\n          </span>\n        </a>\n        <a href=\"https://www.instagram.com/televieofficiel/\" class=\"third__item item\">\n          <span class=\"third__normal normal\">\n            <span class=\"third__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/inst.png\" alt=\"Instagram\">\n            </span>\n          </span>\n        </a>\n        <!-- <a href=\"https://www.youtube.com/channel/UCOUW2930JeN_EKZ4Ea1Rcag\" class=\"third__item item\">\n          <span class=\"third__normal normal\">\n            <span class=\"third__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/youtube.png\" alt=\"Youtube\">\n            </span>\n          </span>\n        </a> -->\n      </div>\n    </div>\n  </section>\n\n  <!-- Fourth section (acting) -->\n  <section class=\"fourth\">\n    <div class=\"section__inner\">\n      <h1>Agissez<strong> autrement !</strong></h1>\n\n      <div class=\"fourth__options options\">\n        <a href=\"https://www.facebook.com/televie/\" class=\"fourth__item item\">\n          <span class=\"fourth__normal normal\">\n            <span class=\"fourth__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-enchere.png\" alt=\"Enchere\">\n            </span>\n            <span class=\"fourth__label\">Les enchères du<br> Télévie</span>\n          </span>\n        </a>\n        <a href=\"https://www.facebook.com/televie/\" class=\"fourth__item item\">\n          <span class=\"fourth__normal normal\">\n            <span class=\"fourth__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-collecte.png\" alt=\"Facebook\">\n            </span>\n            <span class=\"fourth__label\">Les pages de<br> collecte du Télévie</span>\n          </span>\n        </a>\n        <a href=\"https://www.facebook.com/televie/\" class=\"fourth__item item\">\n          <span class=\"fourth__normal normal\">\n            <span class=\"fourth__illustration circle -s\">\n              <img src=\"/sites/all/themes/nrb_televie/img/soiree/picto-disk.png\" alt=\"Facebook\">\n            </span>\n            <span class=\"fourth__label\">Les disques d'or</span>\n          </span>\n        </a>\n    </div>\n  </section>\n\n  <!-- Fifth section (fiscal declaration) -->\n  <section class=\"fifth\">\n    <div class=\"section__inner\">\n      <a href=\"/attestation-fiscale\" class=\"btn\">Formulaire pour <br><strong>recevoir l'attestation fiscale</strong></a>\n    </div>\n  </section>\n</article>",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_image' => array(),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '3449',
+        'source' => 'node/2599',
+        'alias' => 'soiree',
+        'language' => 'fr',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1458648739',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'opengraph_meta' => array(
+        'title' => '',
+        'description' => '',
+        'image' => '',
+        'type' => '',
+        'url' => '',
+        'latitude' => '',
+        'longitude' => '',
+        'street-address' => '',
+        'locality' => '',
+        'region' => '',
+        'postal-code' => '',
+        'country-name' => '',
+        'email' => '',
+        'phone_number' => '',
+        'fax_number' => '',
+        'site_name' => 'Télévie',
+      ),
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'a:5:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";}',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)
