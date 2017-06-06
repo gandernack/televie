@@ -19,7 +19,8 @@ a.btn01 {
   transition: all 250ms ease;
 }
 
-a.btn01:hover {
+a.btn01:hover,
+a.btn01:focus {
   border-bottom: 5px solid #902946;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -58,7 +59,8 @@ a.btn02 {
   transition: all 250ms ease;
 }
 
-a.btn02:hover {
+a.btn02:hover,
+a.btn02:focus {
   border-bottom: 5px solid #0a5073;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

@@ -66,7 +66,8 @@
   transform: rotate(90deg);
 }
 
-.page-soutenir-le-televie #block-system-main .view-facons-d-aider .view-header .scrollto a:hover {
+.page-soutenir-le-televie #block-system-main .view-facons-d-aider .view-header .scrollto a:hover,
+.page-soutenir-le-televie #block-system-main .view-facons-d-aider .view-header .scrollto a:focus {
   background: rgba(255, 255, 255, .4);
 }
 
@@ -212,7 +213,8 @@
   border: 2px solid white;
 }
 
-.page-soutenir-le-televie #block-system-main .view-facons-d-aider .views-row a:hover .visu {
+.page-soutenir-le-televie #block-system-main .view-facons-d-aider .views-row a:hover .visu,
+.page-soutenir-le-televie #block-system-main .view-facons-d-aider .views-row a:focus .visu {
   background: #dc3a4d;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -221,7 +223,8 @@
   transition: all 250ms ease;
 }
 
-.page-soutenir-le-televie #block-system-main .view-facons-d-aider #soutenir-block-1 .views-row a:hover .visu {
+.page-soutenir-le-televie #block-system-main .view-facons-d-aider #soutenir-block-1 .views-row a:hover .visu,
+.page-soutenir-le-televie #block-system-main .view-facons-d-aider #soutenir-block-1 .views-row a:focus .visu {
   background: white;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

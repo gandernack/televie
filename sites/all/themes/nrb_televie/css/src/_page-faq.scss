@@ -78,6 +78,7 @@
 }
 
 .bloc-faq .item-list ul li.views-row .ui-accordion-header:hover:before,
+.bloc-faq .item-list ul li.views-row .ui-accordion-header:focus:before,
 .bloc-faq .item-list ul li.views-row .ui-accordion-header.ui-state-active:before {
   border: 5px solid #dc3a4d;
   -webkit-transition: all 250ms ease;

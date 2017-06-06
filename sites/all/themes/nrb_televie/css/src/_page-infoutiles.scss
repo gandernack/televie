@@ -74,7 +74,8 @@
 
   transform: rotate(90deg);
 }
-.infos-total #infos-utiles .slide1 .scrollto a:hover {
+.infos-total #infos-utiles .slide1 .scrollto a:hover,
+.infos-total #infos-utiles .slide1 .scrollto a:focus {
   background: rgba(255, 255, 255, .4);
 }
 
@@ -191,7 +192,8 @@
   transition: all 250ms ease;
 }
 
-.infos-total #infos-utiles #slide2 .bullet a:hover .visu-wrapper .visu {
+.infos-total #infos-utiles #slide2 .bullet a:hover .visu-wrapper .visu,
+.infos-total #infos-utiles #slide2 .bullet a:focus .visu-wrapper .visu {
   border: 8px solid white;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -540,7 +542,8 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   color: #494756;
 }
 
-.infos-total #infos-utiles .view-ligne-du-temps #slide4 .view-footer #lt-more:hover {
+.infos-total #infos-utiles .view-ligne-du-temps #slide4 .view-footer #lt-more:hover,
+.infos-total #infos-utiles .view-ligne-du-temps #slide4 .view-footer #lt-more:focus {
   color: #dc3a4d;
 }
 
@@ -715,9 +718,9 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   background: #dcc2a9;
 }
 
-.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li.type17:before {  
-  background: #86b2c3;  
-}  
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li.type17:before {
+  background: #86b2c3;
+}
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes {
   margin-top: 30px;
 }
@@ -793,6 +796,5 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   background: #dcc2a9;
 }
 
-.infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes img.type17 {  
-  background: #86b2c3; }  
- 
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes img.type17 {
+  background: #86b2c3; }
