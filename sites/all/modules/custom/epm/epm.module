@@ -1,0 +1,144 @@
+<?php
+define('DEFAULTFRONTPAGEURL','node/1880');
+define('EVENINGURL','node/2599');
+
+function epm_init() {
+  // Return a 403 page and prevent further operations if the user does not have the right permissions.
+  if (!user_access('access epm content')) {
+    //drupal_access_denied();
+  }
+}
+
+function epm_permission() {
+  return array(
+    'access epm content' => array(
+      'title' => t('Access to the Evening Page Management module'),
+    )
+  );
+}
+  
+function epm_menu() {
+  $items = array();
+  $items['admin/epm'] = array( 
+    'title' => 'Evening page management', 
+    'description' => 'A form to manage the evening page',
+    'page callback' => 'drupal_get_form', 
+    'page arguments' => array('epm_form'), 
+    'access arguments' => array('access epm content'),
+  );
+  return $items;
+}
+
+function epm_form($form, &$form_state) {
+  // Front page settings
+  $frontpage = variable_get('site_frontpage', 'node');
+//  dsm($frontpage);
+//  dsm(DEFAULTFRONTPAGEURL);
+  if ($frontpage == DEFAULTFRONTPAGEURL) {
+    $cb_evening_page = FALSE;
+  } else {
+    $cb_evening_page = TRUE;
+  }
+//  dsm($cb_evening_page);
+  $form['evening_page'] = array(
+    '#type' => 'checkbox', 
+    '#title' => t('Set evening page as home page'),
+    '#default_value' => $cb_evening_page,
+  );
+  
+  // Counter block settings
+  $result = db_query("SELECT region FROM {block} WHERE delta = '14' and theme = 'nrb_televie'");
+  if ($result) {
+    while ($row = $result->fetchAssoc()) {
+//      dsm($row);
+      ($row['region']=='content') ? $cb_counter = TRUE : $cb_counter = FALSE;
+      }
+  }
+  $form['counter'] = array(
+    '#type' => 'checkbox', 
+    '#title' => t('Counter active'),
+    '#default_value' => $cb_counter,
+  );
+  
+  // Video block settings
+  $result = db_query("SELECT region FROM {block} WHERE delta = '20' and theme = 'nrb_televie'");
+  if ($result) {
+    while ($row = $result->fetchAssoc()) {
+//      dsm($row);
+      ($row['region']=='content') ? $cb_video = TRUE : $cb_video = FALSE;
+      }
+  }
+  $form['video'] = array(
+    '#type' => 'checkbox', 
+    '#title' => t('Video active'),
+    '#default_value' => $cb_video,
+  );
+  $form['submit_button'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+  
+  return $form;
+}
+
+function epm_form_validate($form, &$form_state) {
+}
+
+function epm_form_submit($form, &$form_state) {
+  // Sauvegarde de la frontpage
+  if ($form['evening_page']['#checked']) {
+    $frontpage = variable_set('site_frontpage', 'node/2599'); // Page soirée
+    $nom_page = "Soirée";
+  } else {
+    $frontpage = variable_set('site_frontpage', 'node/1880'); // Page accueil
+    $nom_page = "Accueil";
+  }
+  $msg = 'La page d\'accueil du site est ' . $nom_page . '.';
+  drupal_set_message($msg, 'status');
+  
+  // Sauvegarde du block compteur
+  if ($form['counter']['#checked']) {
+    $num_updated = db_update('block')
+      ->fields(array(
+        'region' => 'content',
+      ))
+      ->condition('delta', '14', '=')
+      ->condition('theme', 'nrb_televie', '=')
+      ->execute();
+    drupal_set_message(t('Le block "Compteur" est activé.'), 'status');
+      
+  } else {
+    $num_updated = db_update('block')
+      ->fields(array(
+        'region' => '-1',
+      ))
+      ->condition('delta', '14', '=')
+      ->condition('theme', 'nrb_televie', '=')
+      ->execute();
+    drupal_set_message(t('Le block "Compteur" est désactivé.'), 'status');
+  }
+
+  // Sauvegarde du block video
+  if ($form['video']['#checked']) {
+    $num_updated = db_update('block')
+      ->fields(array(
+        'region' => 'content',
+      ))
+      ->condition('delta', '20', '=')
+      ->condition('theme', 'nrb_televie', '=')
+      ->execute();
+    drupal_set_message(t('Le block "Vidéo" est activé !'), 'status');
+  } else {
+    $num_updated = db_update('block')
+      ->fields(array(
+        'region' => '-1',
+      ))
+      ->condition('delta', '20', '=')
+      ->condition('theme', 'nrb_televie', '=')
+      ->execute();
+    dsm($num_updated);
+    drupal_set_message(t('Le block "Vidéo" est désactivé !'), 'status');
+  }
+  //drupal_set_message(t('Settings saved !'), 'status');
+}
+ 
