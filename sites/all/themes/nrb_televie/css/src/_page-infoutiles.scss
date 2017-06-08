@@ -36,14 +36,14 @@
   height: 100%;
 }
 
-.infos-total #infos-utiles .slide1 h2 {
+.infos-total #infos-utiles .slide1 h1 {
   font-size: 42px;
   padding-top: 15%;
   text-align: left;
   font-family: proxima-excn-semibold;
 }
 
-.infos-total #infos-utiles .slide1 h2 strong {
+.infos-total #infos-utiles .slide1 h1 strong {
   font-family: proxima-excn-semibold;
 }
 
@@ -123,14 +123,16 @@
   transform: skewX(0deg) skewY(0deg);
 }
 
-.infos-total #infos-utiles #slide2 h2 {
+.infos-total #infos-utiles #slide2 h2, 
+.infos-total #infos-utiles #slide2 h3
+{
   color: white;
   font-size: 3.5em;
   text-align: left;
   font-family: proxima-excn-semibold;
 }
 
-.infos-total #infos-utiles #slide2 .overlay h2 {
+.infos-total #infos-utiles #slide2 .overlay h3 {
   margin-top: 100px;
 }
 
@@ -314,16 +316,27 @@
   max-width: 600px;
 }
 
-.infos-total #infos-utiles .slide3 .wrapper .content h2 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
-  font-family: proxima-excn-light;
+
+// V Here
+
+
+
+.infos-total #infos-utiles .slide3 .wrapper .content
+{
+  blockquote
+  {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: proxima-excn-light;
+  }
+
+  .author
+  {
+    font-size: 1.8em;
+    font-family: proxima-excn-light;
+  }
 }
 
-.infos-total #infos-utiles .slide3 .wrapper .content h3 {
-  font-size: 1.8em;
-  font-family: proxima-excn-light;
-}
 
 .infos-total #infos-utiles .slide3 .wrapper .content strong {
   font-family: proxima-excn-semibold;

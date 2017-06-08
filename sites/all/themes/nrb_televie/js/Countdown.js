@@ -119,9 +119,12 @@
     this.figures = this.view.find(".figure").map(function(i, e){ return new Televie.Evening.Figure(e); });
     this.nFigures = this.figures.length;
 
-    this.interval = null;
-    this.start();
-    this.updateValue();
+    if (this.view.length > 0)
+    {
+      this.interval = null;
+      this.start();
+      this.updateValue();
+    }
   }
 
   /**

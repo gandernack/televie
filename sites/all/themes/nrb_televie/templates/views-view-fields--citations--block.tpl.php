@@ -26,6 +26,8 @@
 ?>
 <div class="visu"><?php print $fields['field_image']->content; ?></div>
 <div class="content">
-  <div class="cita"><?php print $fields['field_version_courte']->content; ?></div>
+  <blockquote class="cita">
+    <?php print $fields['field_version_courte']->content; ?>
+  </blockquote>
   <div class="title"><?php print $fields['field_auteur']->content; ?></div>
 </div>

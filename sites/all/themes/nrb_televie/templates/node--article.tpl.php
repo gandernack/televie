@@ -95,7 +95,7 @@
     <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
   <?php //endif; ?>
   <?php print render($title_suffix); ?>
-  
+
 
   <?php if ($display_submitted): ?>
     <div class="submitted">
@@ -117,9 +117,7 @@
   <?php print render($content['comments']); ?>
 
 </div>
-<code>
-  <ul id="node-navigation">
-    <li class="next"><?php print pn_node($node, 'n'); ?></li>
-    <li class="prev"><?php print pn_node($node, 'p'); ?></li>
-  </ul>
-</code>
+<ul id="node-navigation">
+  <li class="next"><?php print pn_node($node, 'n'); ?></li>
+  <li class="prev"><?php print pn_node($node, 'p'); ?></li>
+</ul>
