@@ -45,7 +45,5 @@
  */
 ?>
     <?php foreach ($items as $delta => $item): ?>
-<?php dsm($item); ?>
-      <?php //print render($item);?>
       <?php print decode_entities($item['#markup']); ?>
     <?php endforeach; ?>
