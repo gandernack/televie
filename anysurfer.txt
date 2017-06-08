@@ -1,20 +1,20 @@
 # Global
-- Bloc logo
+- Bloc logo - ok
 
 # Home
 - @GAN Virer l'editeur de texte
 
 # Info utiles
-- info utiles - block 2 -> mis a jour
+- info utiles - block 2 -> mis a jour - ok
 - @CJA Ajouter les alt sur les images de la timeline
 - @GAN Ajouter les alt sur les chercheurs
-- Bloc logo RTL - Bel RTL - FRS FNRS -> mise a jour
+- Bloc logo RTL - Bel RTL - FRS FNRS -> mise a jour - ok
 
 # Au jour le jour
-- Vues Au jour le jour - Entete
+- Vues Au jour le jour - Entete - ok
 - @CJA Ajouter les alt sur les images
 - @CJA Ajouter les alt sur les quotes
 
 
 # Activités
-- 
+-

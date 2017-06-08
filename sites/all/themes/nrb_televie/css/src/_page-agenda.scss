@@ -45,18 +45,15 @@
   max-width: 870px;
 }
 
-.agenda-wrapper #agenda .agenda-header h2 {
+.agenda-wrapper #agenda .agenda-header h1 {
   color: white;
   font-size: 42px;
-  font-family: proxima-excn-semibold;
   line-height: 56px;
-}
-
-.agenda-wrapper #agenda .agenda-header h3 {
-  color: white;
-  font-size: 3.2em;
-  margin: 30px 0;
   font-family: proxima-excn-thin;
+
+  strong {
+    font-family: proxima-excn-semibold;
+  }
 }
 
 #agenda .agenda-header .event-highlight {
@@ -182,23 +179,23 @@
   display: inline-block;
 }
 
-#agenda .agenda-header .event-highlight a .ecran-noir {
-  background: rgba(0, 0, 0, 0.0);
+#agenda .agenda-header .event-highlight a .ecran-noir
+{
   display: block;
   width: 100%;
   height: 100%;
+
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 0;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
+
+  background: rgba(0, 0, 0, 0.0);
   transition: all 250ms ease;
 }
 
 #agenda .agenda-header .event-highlight a:hover .ecran-noir,
-#agenda .agenda-header .event-highlight a:focus .ecran-noir {
+#agenda .agenda-header .event-highlight a:focus .ecran-noir
+{
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -208,12 +205,15 @@
   z-index: 1;
 }
 
-#agenda .agenda-header .event-highlight a .visu img {
-  min-width: 100%;
-  min-height: 300px;
+#agenda .agenda-header .event-highlight a .visu
+{
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+
   position: absolute;
-  width: auto;
-  max-width: 765px;
 }
 
 #agenda .agenda-header .event-highlight a .part2 .content {
@@ -569,14 +569,14 @@
 }
 
 #agenda .agenda-result .masonry-item a {
+  display: block;
   height: 310px;
   overflow: hidden;
+
+  background-position: center;
+  background-size: cover;
+
   position: relative;
-  display: block;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
   transition: all 250ms ease;
 }
 

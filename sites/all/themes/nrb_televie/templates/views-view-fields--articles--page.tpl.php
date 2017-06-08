@@ -34,11 +34,10 @@
   <span class="part2">
       <span class="content">
       <span class="title"><span class="content-wrapper"><?php print $fields['title']->content; ?></span></span>
-      
+
       <span class="desc"><span class="content-wrapper"><?php print $fields['body']->content; ?></span></span>
     </span>
     <span class="fleche">></span>
     <span class="carre">&nbsp;</span>
   </span>
 </a>
-
