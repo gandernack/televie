@@ -1,0 +1,229 @@
+array(
+  (object) array(
+      'vid' => '1880',
+      'uid' => '1',
+      'title' => 'Accueil',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'e512c7e8-decc-4671-b3d1-536c37babb09',
+      'nid' => '1880',
+      'type' => 'home_page',
+      'language' => 'fr',
+      'created' => '1448292464',
+      'changed' => '1496920584',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'e3380d1b-5eca-4a97-9fa4-9bea091a8b9f',
+      'revision_timestamp' => '1496920584',
+      'revision_uid' => '1',
+      'field_start_emotionnel' => array(
+        'und' => array(
+          array(
+            'value' => "<a class=\"videoitem\" href=\"#\">\r\n  <div class=\"videoitem__wrapper\">\r\n    <div class=\"videoitem__normal\">\r\n        <div class=\"videoitem__background\">\r\n          <video autoplay=\"true\" height=\"222\" loop=\"\" poster=\"sites/all/themes/nrb_televie/img/start/emo.jpg\" preload=\"auto\" width=\"400\">\r\n            <source src=\"sites/all/themes/nrb_televie/videos/emotionnel.mp4\" type=\"video/mp4\" />\r\n            <source src=\"sites/all/themes/nrb_televie/videos/emotionnel.webm\" type=\"video/webm\" />\r\n            <source src=\"sites/all/themes/nrb_televie/videos/emotionnel.ogv\" type=\"video/ogg\" />\r\n          </video>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"videoitem__hover\">\r\n      <div class=\"content videoitem__content\">\r\n        <div class=\"videoitem__title1\">\r\n          <strong>La vie</strong>\r\n          <span>n'a</span>\r\n        </div>\r\n        <div class=\"videoitem__title2\">pas de prix</div>\r\n      </div>\r\n      <div class=\"videoitem__trigger\">+</div>\r\n    </div>\r\n  </div>\r\n</a>\r\n",
+            'format' => NULL,
+            'safe_value' => "&lt;a class=&quot;videoitem&quot; href=&quot;#&quot;&gt;\r\n  &lt;div class=&quot;videoitem__wrapper&quot;&gt;\r\n    &lt;div class=&quot;videoitem__normal&quot;&gt;\r\n        &lt;div class=&quot;videoitem__background&quot;&gt;\r\n          &lt;video autoplay=&quot;true&quot; height=&quot;222&quot; loop=&quot;&quot; poster=&quot;sites/all/themes/nrb_televie/img/start/emo.jpg&quot; preload=&quot;auto&quot; width=&quot;400&quot;&gt;\r\n            &lt;source src=&quot;sites/all/themes/nrb_televie/videos/emotionnel.mp4&quot; type=&quot;video/mp4&quot; /&gt;\r\n            &lt;source src=&quot;sites/all/themes/nrb_televie/videos/emotionnel.webm&quot; type=&quot;video/webm&quot; /&gt;\r\n            &lt;source src=&quot;sites/all/themes/nrb_televie/videos/emotionnel.ogv&quot; type=&quot;video/ogg&quot; /&gt;\r\n          &lt;/video&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n    &lt;div class=&quot;videoitem__hover&quot;&gt;\r\n      &lt;div class=&quot;content videoitem__content&quot;&gt;\r\n        &lt;div class=&quot;videoitem__title1&quot;&gt;\r\n          &lt;strong&gt;La vie&lt;/strong&gt;\r\n          &lt;span&gt;n&#039;a&lt;/span&gt;\r\n        &lt;/div&gt;\r\n        &lt;div class=&quot;videoitem__title2&quot;&gt;pas de prix&lt;/div&gt;\r\n      &lt;/div&gt;\r\n      &lt;div class=&quot;videoitem__trigger&quot;&gt;+&lt;/div&gt;\r\n    &lt;/div&gt;\r\n  &lt;/div&gt;\r\n&lt;/a&gt;\r\n",
+          ),
+        ),
+      ),
+      'field_start_factuel' => array(
+        'und' => array(
+          array(
+            'value' => "<a class=\"videoitem\" href=\"#\">\r\n  <div class=\"videoitem__wrapper\">\r\n    <div class=\"videoitem__normal\">\r\n      <div class=\"videoitem__background\">\r\n        <video autoplay=\"true\" height=\"222\" loop=\"\" poster=\"sites/all/themes/nrb_televie/img/start/fac.jpg\" preload=\"auto\" width=\"400\">\r\n          <source src=\"sites/all/themes/nrb_televie/videos/factuel.mp4\" type=\"video/mp4\" />\r\n          <source src=\"sites/all/themes/nrb_televie/videos/factuel.webm\" type=\"video/webm\" />\r\n          <source src=\"sites/all/themes/nrb_televie/videos/factuel.ogv\" type=\"video/ogg\" />\r\n        </video>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"videoitem__hover\">\r\n      <div class=\"content videoitem__content\">\r\n        <div class=\"videoitem__title1\">\r\n          <strong>La recherche</strong>\r\n        </div>\r\n        <div class=\"videoitem__title2\">a un coût</div>\r\n      </div>\r\n      <div class=\"videoitem__trigger\">+</div>\r\n    </div>\r\n  </div>\r\n</a>\r\n",
+            'format' => NULL,
+            'safe_value' => "&lt;a class=&quot;videoitem&quot; href=&quot;#&quot;&gt;\r\n  &lt;div class=&quot;videoitem__wrapper&quot;&gt;\r\n    &lt;div class=&quot;videoitem__normal&quot;&gt;\r\n      &lt;div class=&quot;videoitem__background&quot;&gt;\r\n        &lt;video autoplay=&quot;true&quot; height=&quot;222&quot; loop=&quot;&quot; poster=&quot;sites/all/themes/nrb_televie/img/start/fac.jpg&quot; preload=&quot;auto&quot; width=&quot;400&quot;&gt;\r\n          &lt;source src=&quot;sites/all/themes/nrb_televie/videos/factuel.mp4&quot; type=&quot;video/mp4&quot; /&gt;\r\n          &lt;source src=&quot;sites/all/themes/nrb_televie/videos/factuel.webm&quot; type=&quot;video/webm&quot; /&gt;\r\n          &lt;source src=&quot;sites/all/themes/nrb_televie/videos/factuel.ogv&quot; type=&quot;video/ogg&quot; /&gt;\r\n        &lt;/video&gt;\r\n      &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n    &lt;div class=&quot;videoitem__hover&quot;&gt;\r\n      &lt;div class=&quot;content videoitem__content&quot;&gt;\r\n        &lt;div class=&quot;videoitem__title1&quot;&gt;\r\n          &lt;strong&gt;La recherche&lt;/strong&gt;\r\n        &lt;/div&gt;\r\n        &lt;div class=&quot;videoitem__title2&quot;&gt;a un coût&lt;/div&gt;\r\n      &lt;/div&gt;\r\n      &lt;div class=&quot;videoitem__trigger&quot;&gt;+&lt;/div&gt;\r\n    &lt;/div&gt;\r\n  &lt;/div&gt;\r\n&lt;/a&gt;\r\n",
+          ),
+        ),
+      ),
+      'field_section_emotionnel_1' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide1\">\r\n    <div class=\"section-emo\" id=\"section-emo-1\">\r\n        <div class=\"wrapper\">\r\n            <div class=\"content\">\r\n                <h2>\"Tu as un cancer\".</h2>\r\n\r\n                <h3>Chaque jour, en Belgique, un enfant entend ces mots.</h3>\r\n\r\n                <p class=\"desc\">Sur 5 enfants malades, 1 seul pouvait espérer guérir il y a 50 ans. Les quatre autres n’avaient aucune chance de s’en sortir.<br />\r\n                    <br /> Aujourd'hui, la tendance s’est inversée : 83% des enfants malades guérissent ! Les espoirs ne cessent d’augmenter grâce aux progrès de la chirurgie, de la radiothérapie, de la chimiothérapie et de la greffe de cellules souches.<br\r\n                    />\r\n                    <br /> Malgré tout, 1 enfant malade sur 5 meurt de son cancer.<br />\r\n                    <br /> Et si c’était le vôtre ?</p>\r\n\r\n                <div class=\"bullet\"><a class=\"bullet-1\" href=\"#\"><span class=\"visu-wrapper\"><span class=\"visu\">&nbsp;</span></span> <strong>65.000</strong><span class=\"desc\">Nouveaux cas de cancer par an</span></a>\r\n                    <a class=\"bullet-2\" href=\"#\"> <span class=\"visu-wrapper\"><span class=\"visu\">&nbsp;</span></span> <strong>1 homme sur 3</strong><br />\r\n                        <strong>et 1 femme sur 4</strong><span class=\"desc\">auront un cancer avant 75 ans</span></a>\r\n                    <a class=\"bullet-3\" href=\"#\"> <span class=\"visu-wrapper\"><span class=\"visu\">&nbsp;</span></span> <strong>405</strong><span class=\"desc\">Enfants touchés (en 2013)</span></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide1&quot;&gt;\r\n    &lt;div class=&quot;section-emo&quot; id=&quot;section-emo-1&quot;&gt;\r\n        &lt;div class=&quot;wrapper&quot;&gt;\r\n            &lt;div class=&quot;content&quot;&gt;\r\n                &lt;h2&gt;&quot;Tu as un cancer&quot;.&lt;/h2&gt;\r\n\r\n                &lt;h3&gt;Chaque jour, en Belgique, un enfant entend ces mots.&lt;/h3&gt;\r\n\r\n                &lt;p class=&quot;desc&quot;&gt;Sur 5 enfants malades, 1 seul pouvait espérer guérir il y a 50 ans. Les quatre autres n’avaient aucune chance de s’en sortir.&lt;br /&gt;\r\n                    &lt;br /&gt; Aujourd&#039;hui, la tendance s’est inversée : 83% des enfants malades guérissent ! Les espoirs ne cessent d’augmenter grâce aux progrès de la chirurgie, de la radiothérapie, de la chimiothérapie et de la greffe de cellules souches.&lt;br\r\n                    /&gt;\r\n                    &lt;br /&gt; Malgré tout, 1 enfant malade sur 5 meurt de son cancer.&lt;br /&gt;\r\n                    &lt;br /&gt; Et si c’était le vôtre ?&lt;/p&gt;\r\n\r\n                &lt;div class=&quot;bullet&quot;&gt;&lt;a class=&quot;bullet-1&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visu-wrapper&quot;&gt;&lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt; &lt;strong&gt;65.000&lt;/strong&gt;&lt;span class=&quot;desc&quot;&gt;Nouveaux cas de cancer par an&lt;/span&gt;&lt;/a&gt;\r\n                    &lt;a class=&quot;bullet-2&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;visu-wrapper&quot;&gt;&lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt; &lt;strong&gt;1 homme sur 3&lt;/strong&gt;&lt;br /&gt;\r\n                        &lt;strong&gt;et 1 femme sur 4&lt;/strong&gt;&lt;span class=&quot;desc&quot;&gt;auront un cancer avant 75 ans&lt;/span&gt;&lt;/a&gt;\r\n                    &lt;a class=&quot;bullet-3&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;visu-wrapper&quot;&gt;&lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt; &lt;strong&gt;405&lt;/strong&gt;&lt;span class=&quot;desc&quot;&gt;Enfants touchés (en 2013)&lt;/span&gt;&lt;/a&gt;\r\n                &lt;/div&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_section_emotionnel_2' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide2\">\r\n\r\n  <div class=\"section-emo\" id=\"section-emo-2\">\r\n      <div class=\"wrapper\">\r\n          <div class=\"content\">\r\n              <h3>La recherche,</h3>\r\n\r\n              <h2>seule solution contre le cancer</h2>\r\n\r\n              <p class=\"desc\">Si la vie n’a pas de prix… la recherche a un coût. Chaque euro récolté pendant l’opération Télévie est intégralement versé à la lutte contre le cancer.<br />\r\n                  <br /> Chaque homme, chaque femme, chaque enfant a le droit d’être en bonne santé. Tout le monde est touché de près ou de loin par le cancer. Pour combattre cet ennemi la recherche est notre seule arme !</p>\r\n          </div>\r\n      </div>\r\n\r\n      <div class=\"section-emo-2-par\">\r\n          <div class=\"wrapper\">\r\n              <p>Arsène Burny</p>\r\n\r\n              <p><strong>« La lutte contre les cancers est intense et basée sur la connaissance. Il faut des cerveaux, des bras et de l’argent ! »</strong></p>\r\n          </div>\r\n      </div>\r\n  </div>\r\n\r\n</div>\r\n",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide2&quot;&gt;\r\n\r\n  &lt;div class=&quot;section-emo&quot; id=&quot;section-emo-2&quot;&gt;\r\n      &lt;div class=&quot;wrapper&quot;&gt;\r\n          &lt;div class=&quot;content&quot;&gt;\r\n              &lt;h3&gt;La recherche,&lt;/h3&gt;\r\n\r\n              &lt;h2&gt;seule solution contre le cancer&lt;/h2&gt;\r\n\r\n              &lt;p class=&quot;desc&quot;&gt;Si la vie n’a pas de prix… la recherche a un coût. Chaque euro récolté pendant l’opération Télévie est intégralement versé à la lutte contre le cancer.&lt;br /&gt;\r\n                  &lt;br /&gt; Chaque homme, chaque femme, chaque enfant a le droit d’être en bonne santé. Tout le monde est touché de près ou de loin par le cancer. Pour combattre cet ennemi la recherche est notre seule arme !&lt;/p&gt;\r\n          &lt;/div&gt;\r\n      &lt;/div&gt;\r\n\r\n      &lt;div class=&quot;section-emo-2-par&quot;&gt;\r\n          &lt;div class=&quot;wrapper&quot;&gt;\r\n              &lt;p&gt;Arsène Burny&lt;/p&gt;\r\n\r\n              &lt;p&gt;&lt;strong&gt;« La lutte contre les cancers est intense et basée sur la connaissance. Il faut des cerveaux, des bras et de l’argent ! »&lt;/strong&gt;&lt;/p&gt;\r\n          &lt;/div&gt;\r\n      &lt;/div&gt;\r\n  &lt;/div&gt;\r\n\r\n&lt;/div&gt;\r\n",
+          ),
+        ),
+      ),
+      'field_section_emotionnel_3' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide3\">\r\n\r\n    <div class=\"section-emo\" id=\"section-emo-3\">\r\n        <div class=\"wrapper\">\r\n            <div class=\"content\">\r\n                <h2>Les résultats sont là !</h2>\r\n\r\n                <h3>Hier, 80% des enfants malades mourraient, aujourd'hui plus de 80% survivent !</h3>\r\n\r\n                <p class=\"desc\">Votre générosité fait reculer la maladie et sauve des vies ! Grâce à vos dons, 111 chercheurs travaillent au quotidien dans ce combat contre les cancers.<br />\r\n                    <br /> Leurs projets progressent, mais le cancer a encore et toujours une longueur d’avance.<br />\r\n                    <br /> Aujourd’hui, plus que jamais, le Télévie a besoin de vous !</p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section-emo-3-par\">\r\n            <div class=\"wrapper\">\r\n                <h2>Grâce à vos dons</h2>\r\n\r\n                <div class=\"bullet\"><a class=\"bullet-1\" href=\"#\"><span class=\"visu-wrapper\"><span class=\"visu\">&nbsp;</span> </span> <strong>2114</strong> <span class=\"desc\">projets de recherche</span> </a>\r\n                    <a class=\"bullet-2\" href=\"http://dons.televie.be\"> <span class=\"visu-wrapper\"> <span class=\"visu\">&nbsp;</span> </span> <strong>1€ versé</strong> <span class=\"desc\">= 1€ à la recherche</span> </a>\r\n                    <a class=\"bullet-3\" href=\"#\"> <span class=\"visu-wrapper\"> <span class=\"visu\">&nbsp;</span> </span> <strong>2133</strong> <span class=\"desc\">scientifiques</span> </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide3&quot;&gt;\r\n\r\n    &lt;div class=&quot;section-emo&quot; id=&quot;section-emo-3&quot;&gt;\r\n        &lt;div class=&quot;wrapper&quot;&gt;\r\n            &lt;div class=&quot;content&quot;&gt;\r\n                &lt;h2&gt;Les résultats sont là !&lt;/h2&gt;\r\n\r\n                &lt;h3&gt;Hier, 80% des enfants malades mourraient, aujourd&#039;hui plus de 80% survivent !&lt;/h3&gt;\r\n\r\n                &lt;p class=&quot;desc&quot;&gt;Votre générosité fait reculer la maladie et sauve des vies ! Grâce à vos dons, 111 chercheurs travaillent au quotidien dans ce combat contre les cancers.&lt;br /&gt;\r\n                    &lt;br /&gt; Leurs projets progressent, mais le cancer a encore et toujours une longueur d’avance.&lt;br /&gt;\r\n                    &lt;br /&gt; Aujourd’hui, plus que jamais, le Télévie a besoin de vous !&lt;/p&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n\r\n        &lt;div class=&quot;section-emo-3-par&quot;&gt;\r\n            &lt;div class=&quot;wrapper&quot;&gt;\r\n                &lt;h2&gt;Grâce à vos dons&lt;/h2&gt;\r\n\r\n                &lt;div class=&quot;bullet&quot;&gt;&lt;a class=&quot;bullet-1&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visu-wrapper&quot;&gt;&lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt; &lt;/span&gt; &lt;strong&gt;2114&lt;/strong&gt; &lt;span class=&quot;desc&quot;&gt;projets de recherche&lt;/span&gt; &lt;/a&gt;\r\n                    &lt;a class=&quot;bullet-2&quot; href=&quot;http://dons.televie.be&quot;&gt; &lt;span class=&quot;visu-wrapper&quot;&gt; &lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt; &lt;/span&gt; &lt;strong&gt;1€ versé&lt;/strong&gt; &lt;span class=&quot;desc&quot;&gt;= 1€ à la recherche&lt;/span&gt; &lt;/a&gt;\r\n                    &lt;a class=&quot;bullet-3&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;visu-wrapper&quot;&gt; &lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt; &lt;/span&gt; &lt;strong&gt;2133&lt;/strong&gt; &lt;span class=&quot;desc&quot;&gt;scientifiques&lt;/span&gt; &lt;/a&gt;\r\n                &lt;/div&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_section_emotionnel_4' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide4\">\r\n\r\n    <div class=\"section-emo\" id=\"section-emo-4\">\r\n        <div class=\"intro\">\r\n            <div class=\"wrapper\"><span class=\"title1\">Faisons</span> <span class=\"title2\">gagner</span> <span class=\"title3\">la vie</span></div>\r\n        </div>\r\n    </div>\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide4&quot;&gt;\r\n\r\n    &lt;div class=&quot;section-emo&quot; id=&quot;section-emo-4&quot;&gt;\r\n        &lt;div class=&quot;intro&quot;&gt;\r\n            &lt;div class=&quot;wrapper&quot;&gt;&lt;span class=&quot;title1&quot;&gt;Faisons&lt;/span&gt; &lt;span class=&quot;title2&quot;&gt;gagner&lt;/span&gt; &lt;span class=&quot;title3&quot;&gt;la vie&lt;/span&gt;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_section_factuel_6' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide6\">\r\n\r\n    <div class=\"section-fac\" id=\"section-fac-6\">\r\n        <div class=\"wrapper\">\r\n            <div class=\"content\">\r\n                <h2>Toutes les deux minutes,</h2>\r\n\r\n                <h3>une personne décède des suites d'un cancer, dans le monde</h3>\r\n\r\n                <div class=\"bullet\"><a class=\"bullet-1\" href=\"#\"><span class=\"visu-wrapper\"><span class=\"visu\">&nbsp;</span></span><span class=\"desc\">En Belgique,</span><strong>65.487</strong><span class=\"desc\"> nouveaux cas de cancer enregistrés en 2013</span></a></div>\r\n\r\n                <p class=\"desc\">Selon le « World Cancer Report », 14 millions de nouveaux cas et 8,2 millions de décès liés à la maladie ont été comptabilisés en 2012.<br />\r\n                    <br /> Mais ce n’est pas tout : le nombre de nouvelles personnes touchées par le cancer dans le monde devrait augmenter de 70% au cours des deux prochaines décennies, passant ainsi de 14 millions… à <strong>22 millions</strong> de\r\n                    cas par an.</p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section-fac-6-par\">\r\n            <div class=\"wrapper\">\r\n                <p>Demain, 1 personne sur 2 sera touchée. Et si c'était vous ?</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide6&quot;&gt;\r\n\r\n    &lt;div class=&quot;section-fac&quot; id=&quot;section-fac-6&quot;&gt;\r\n        &lt;div class=&quot;wrapper&quot;&gt;\r\n            &lt;div class=&quot;content&quot;&gt;\r\n                &lt;h2&gt;Toutes les deux minutes,&lt;/h2&gt;\r\n\r\n                &lt;h3&gt;une personne décède des suites d&#039;un cancer, dans le monde&lt;/h3&gt;\r\n\r\n                &lt;div class=&quot;bullet&quot;&gt;&lt;a class=&quot;bullet-1&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visu-wrapper&quot;&gt;&lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;desc&quot;&gt;En Belgique,&lt;/span&gt;&lt;strong&gt;65.487&lt;/strong&gt;&lt;span class=&quot;desc&quot;&gt; nouveaux cas de cancer enregistrés en 2013&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;\r\n\r\n                &lt;p class=&quot;desc&quot;&gt;Selon le « World Cancer Report », 14 millions de nouveaux cas et 8,2 millions de décès liés à la maladie ont été comptabilisés en 2012.&lt;br /&gt;\r\n                    &lt;br /&gt; Mais ce n’est pas tout : le nombre de nouvelles personnes touchées par le cancer dans le monde devrait augmenter de 70% au cours des deux prochaines décennies, passant ainsi de 14 millions… à &lt;strong&gt;22 millions&lt;/strong&gt; de\r\n                    cas par an.&lt;/p&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n\r\n        &lt;div class=&quot;section-fac-6-par&quot;&gt;\r\n            &lt;div class=&quot;wrapper&quot;&gt;\r\n                &lt;p&gt;Demain, 1 personne sur 2 sera touchée. Et si c&#039;était vous ?&lt;/p&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_section_factuel_7' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide7\">\r\n\r\n    <div class=\"section-fac\" id=\"section-fac-7\">\r\n        <div class=\"wrapper\">\r\n            <div class=\"content\">\r\n                <h2>N'attendez pas que le cancer vous touche pour agir</h2>\r\n\r\n                <p class=\"desc\">Jamais la recherche contre le cancer n’a avancé aussi vite qu’aujourd’hui, tant au niveau du diagnostic qu’au niveau des traitements.<br />\r\n                    <br /> Mais une recherche de pointe demande une technologie de pointe et des équipements ultra-perfectionnés. La recherche coûte de plus en plus cher.<br />\r\n                    <br /> Pour guérir, il faut trouver. Pour trouver, il faut chercher. Pour chercher, il faut avoir des moyens.<br />\r\n                    <br /> Les recherches d’aujourd’hui sont nos traitements de demain.</p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section-fac-7-par\">\r\n            <div class=\"wrapper\">\r\n                <h2>Grâce à vos dons</h2>\r\n\r\n                <div class=\"bullet\"><a class=\"bullet-1\" href=\"#\"><span class=\"visu-wrapper\"><span class=\"visu\">&nbsp;</span> </span> <strong>2114</strong> <span class=\"desc\">projets de recherche</span> </a>\r\n                    <a class=\"bullet-2\" href=\"http://dons.televie.be\"> <span class=\"visu-wrapper\"> <span class=\"visu\">&nbsp;</span> </span> <strong>1€ versé</strong> <span class=\"desc\">= 1€ à la recherche</span> </a>\r\n                    <a class=\"bullet-3\" href=\"#\"> <span class=\"visu-wrapper\"> <span class=\"visu\">&nbsp;</span> </span> <strong>2133</strong> <span class=\"desc\">scientifiques</span> </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide7&quot;&gt;\r\n\r\n    &lt;div class=&quot;section-fac&quot; id=&quot;section-fac-7&quot;&gt;\r\n        &lt;div class=&quot;wrapper&quot;&gt;\r\n            &lt;div class=&quot;content&quot;&gt;\r\n                &lt;h2&gt;N&#039;attendez pas que le cancer vous touche pour agir&lt;/h2&gt;\r\n\r\n                &lt;p class=&quot;desc&quot;&gt;Jamais la recherche contre le cancer n’a avancé aussi vite qu’aujourd’hui, tant au niveau du diagnostic qu’au niveau des traitements.&lt;br /&gt;\r\n                    &lt;br /&gt; Mais une recherche de pointe demande une technologie de pointe et des équipements ultra-perfectionnés. La recherche coûte de plus en plus cher.&lt;br /&gt;\r\n                    &lt;br /&gt; Pour guérir, il faut trouver. Pour trouver, il faut chercher. Pour chercher, il faut avoir des moyens.&lt;br /&gt;\r\n                    &lt;br /&gt; Les recherches d’aujourd’hui sont nos traitements de demain.&lt;/p&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n\r\n        &lt;div class=&quot;section-fac-7-par&quot;&gt;\r\n            &lt;div class=&quot;wrapper&quot;&gt;\r\n                &lt;h2&gt;Grâce à vos dons&lt;/h2&gt;\r\n\r\n                &lt;div class=&quot;bullet&quot;&gt;&lt;a class=&quot;bullet-1&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visu-wrapper&quot;&gt;&lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt; &lt;/span&gt; &lt;strong&gt;2114&lt;/strong&gt; &lt;span class=&quot;desc&quot;&gt;projets de recherche&lt;/span&gt; &lt;/a&gt;\r\n                    &lt;a class=&quot;bullet-2&quot; href=&quot;http://dons.televie.be&quot;&gt; &lt;span class=&quot;visu-wrapper&quot;&gt; &lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt; &lt;/span&gt; &lt;strong&gt;1€ versé&lt;/strong&gt; &lt;span class=&quot;desc&quot;&gt;= 1€ à la recherche&lt;/span&gt; &lt;/a&gt;\r\n                    &lt;a class=&quot;bullet-3&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;visu-wrapper&quot;&gt; &lt;span class=&quot;visu&quot;&gt;&amp;nbsp;&lt;/span&gt; &lt;/span&gt; &lt;strong&gt;2133&lt;/strong&gt; &lt;span class=&quot;desc&quot;&gt;scientifiques&lt;/span&gt; &lt;/a&gt;\r\n                &lt;/div&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n\r\n\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_section_factuel_8' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"slide8\">\r\n\r\n    <div class=\"section-fac\" id=\"section-fac-8\">\r\n        <div class=\"wrapper\">\r\n            <div class=\"content\">\r\n                <h2>Chaque année,</h2>\r\n\r\n                <h3>le Télévie double les moyens belges consacrés à la recherche fondamentale en cancérologie</h3>\r\n\r\n                <p class=\"desc\">La recherche ne s’arrête pas aux frontières ! Une recherche de qualité ne peut se faire sans financement. Les fonds belges ne sont pas suffisants, de nombreux organismes internationaux étrangers financent la recherche contre le cancer.<br\r\n                    />\r\n                    <br /> Donner des moyens à la recherche, c’est lui donner les moyens de lutter contre le cancer.<br />\r\n                    <br /> Pour que la science continue de progresser, nous avons besoin de vous.<br /> &nbsp;\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;slide8&quot;&gt;\r\n\r\n    &lt;div class=&quot;section-fac&quot; id=&quot;section-fac-8&quot;&gt;\r\n        &lt;div class=&quot;wrapper&quot;&gt;\r\n            &lt;div class=&quot;content&quot;&gt;\r\n                &lt;h2&gt;Chaque année,&lt;/h2&gt;\r\n\r\n                &lt;h3&gt;le Télévie double les moyens belges consacrés à la recherche fondamentale en cancérologie&lt;/h3&gt;\r\n\r\n                &lt;p class=&quot;desc&quot;&gt;La recherche ne s’arrête pas aux frontières ! Une recherche de qualité ne peut se faire sans financement. Les fonds belges ne sont pas suffisants, de nombreux organismes internationaux étrangers financent la recherche contre le cancer.&lt;br\r\n                    /&gt;\r\n                    &lt;br /&gt; Donner des moyens à la recherche, c’est lui donner les moyens de lutter contre le cancer.&lt;br /&gt;\r\n                    &lt;br /&gt; Pour que la science continue de progresser, nous avons besoin de vous.&lt;br /&gt; &amp;nbsp;\r\n                &lt;/p&gt;\r\n            &lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_conduite_emotionnel' => array(
+        'und' => array(
+          array(
+            'value' => "<div class=\"conduite\">\r\n<div class=\"conduite-wrapper\">\r\n<div class=\"deco deco-1\">&nbsp;</div>\r\n\r\n<div class=\"trait trait-1\">&nbsp;</div>\r\n\r\n<div class=\"scrollto scrollto-1\"><a href=\"#slide2\">&gt;</a></div>\r\n\r\n<div class=\"trait trait-2\">&nbsp;</div>\r\n\r\n<div class=\"trait trait-3\">&nbsp;</div>\r\n\r\n<div class=\"scrollto scrollto-2\"><a href=\"#slide3\">&gt;</a></div>\r\n\r\n<div class=\"trait trait-4\">&nbsp;</div>\r\n\r\n<div class=\"deco deco-2\">&nbsp;</div>\r\n\r\n<div class=\"trait trait-5\">&nbsp;</div>\r\n\r\n<div class=\"trait trait-6\">&nbsp;</div>\r\n\r\n<div class=\"deco deco-3\">&nbsp;</div>\r\n</div>\r\n</div>\r\n",
+            'format' => NULL,
+            'safe_value' => "&lt;div class=&quot;conduite&quot;&gt;\r\n&lt;div class=&quot;conduite-wrapper&quot;&gt;\r\n&lt;div class=&quot;deco deco-1&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;trait trait-1&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;scrollto scrollto-1&quot;&gt;&lt;a href=&quot;#slide2&quot;&gt;&amp;gt;&lt;/a&gt;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;trait trait-2&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;trait trait-3&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;scrollto scrollto-2&quot;&gt;&lt;a href=&quot;#slide3&quot;&gt;&amp;gt;&lt;/a&gt;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;trait trait-4&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;deco deco-2&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;trait trait-5&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;trait trait-6&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n&lt;div class=&quot;deco deco-3&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n",
+          ),
+        ),
+      ),
+      'field_conduite_factuel' => array(
+        'und' => array(
+          array(
+            'value' => "<div id=\"factuel\">\r\n\r\n    <div class=\"conduite\">\r\n        <div class=\"conduite-wrapper\">\r\n            <div class=\"deco deco-1\">&nbsp;</div>\r\n\r\n            <div class=\"trait trait-1\">&nbsp;</div>\r\n\r\n            <div class=\"scrollto scrollto-1\"><a href=\"#slide7\">&gt;</a></div>\r\n\r\n            <div class=\"trait trait-2\">&nbsp;</div>\r\n\r\n            <div class=\"deco deco-2\">&nbsp;</div>\r\n\r\n            <div class=\"trait trait-3\">&nbsp;</div>\r\n\r\n            <div class=\"trait trait-4\">&nbsp;</div>\r\n\r\n            <div class=\"scrollto scrollto-2\"><a href=\"#slide8\">&gt;</a></div>\r\n\r\n            <div class=\"trait trait-5\">&nbsp;</div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</div>",
+            'format' => NULL,
+            'safe_value' => "&lt;div id=&quot;factuel&quot;&gt;\r\n\r\n    &lt;div class=&quot;conduite&quot;&gt;\r\n        &lt;div class=&quot;conduite-wrapper&quot;&gt;\r\n            &lt;div class=&quot;deco deco-1&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;trait trait-1&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;scrollto scrollto-1&quot;&gt;&lt;a href=&quot;#slide7&quot;&gt;&amp;gt;&lt;/a&gt;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;trait trait-2&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;deco deco-2&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;trait trait-3&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;trait trait-4&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;scrollto scrollto-2&quot;&gt;&lt;a href=&quot;#slide8&quot;&gt;&amp;gt;&lt;/a&gt;&lt;/div&gt;\r\n\r\n            &lt;div class=&quot;trait trait-5&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n        &lt;/div&gt;\r\n    &lt;/div&gt;\r\n\r\n\r\n&lt;/div&gt;",
+          ),
+        ),
+      ),
+      'field_close' => array(
+        'und' => array(
+          array(
+            'value' => "<div class=\"close\"><a href=\"#\">X</a></div>\r\n",
+            'format' => 'full_html',
+            'safe_value' => "<div class=\"close\"><a href=\"#\">X</a></div>\n",
+          ),
+        ),
+      ),
+      'field_coeur_central' => array(
+        'und' => array(
+          array(
+            'value' => "<div class=\"heart\"></div>\r\n",
+            'format' => NULL,
+            'safe_value' => "&lt;div class=&quot;heart&quot;&gt;&lt;/div&gt;\r\n",
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '2379',
+        'source' => 'node/1880',
+        'alias' => 'accueil',
+        'language' => 'fr',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1448292464',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'opengraph_meta' => array(
+        'title' => '',
+        'description' => '',
+        'image' => '',
+        'type' => '',
+        'url' => '',
+        'latitude' => '',
+        'longitude' => '',
+        'street-address' => '',
+        'locality' => '',
+        'region' => '',
+        'postal-code' => '',
+        'country-name' => '',
+        'email' => '',
+        'phone_number' => '',
+        'fax_number' => '',
+        'site_name' => 'Télévie',
+      ),
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'a:5:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";}',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)
