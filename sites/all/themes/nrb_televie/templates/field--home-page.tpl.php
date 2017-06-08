@@ -44,8 +44,8 @@
  * @ingroup themeable
  */
 ?>
-<div <?php print $attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <?php print render($item); ?>
+<?php dsm($item); ?>
+      <?php //print render($item);?>
+      <?php print decode_entities($item['#markup']); ?>
     <?php endforeach; ?>
-</div>
