@@ -27,7 +27,7 @@
       $sClass = "type" . substr("00" . strval($id+1), -2); 
       $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
       ?>
-      <img class="<?php print $sClass; ?>" src="<?php print $theme_path; ?>/img/content/chercheurs.png" alt=""</img>
+      <img class="<?php print $sClass; ?>" src="<?php print $theme_path; ?>/img/content/chercheurs.png" alt="<?php print $alt; ?>" title="<?php print $alt; ?>"></img>
     <?php 
     } 
     print "</span>";
