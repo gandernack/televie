@@ -28,7 +28,6 @@
 <a href="<?php print strip_tags($fields['field_lien_la_une']->content); ?>" class="alaune__item">
     <header class="item__header" style="background-image:url('<?php print strip_tags($fields['field_image_la_une']->content); ?>')">
         <h2><?php print $fields['title']->content; ?></h2>
-        <subtitle><?php print $fields['field_sous_titre']->content; ?></subtitle>
     </header>
 
     <div class="item__body">
