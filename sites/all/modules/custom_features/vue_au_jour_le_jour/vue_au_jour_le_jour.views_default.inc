@@ -122,9 +122,8 @@ function vue_au_jour_le_jour_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<div class="wrapper">
-              <h2>Ne manquez pas l\'actualité Télévie</h2>
-              <h3>... en suivant notre journal de bord durant toute l\'année !</h3>
-            </div>';
+    <h1><strong>Ne manquez pas l\'actualité Télévie</strong><br>... en suivant notre journal de bord durant toute l\'année !</h1>
+</div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -390,7 +389,7 @@ print_r(intval(($view->row_index+8)/12));
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
-  $handler->display->display_options['fields']['path']['label'] = 'link';
+  $handler->display->display_options['fields']['path']['label'] = 'lien';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['absolute'] = TRUE;
   /* Champ: Contenu : Titre */

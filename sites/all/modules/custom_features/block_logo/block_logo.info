@@ -1,0 +1,8 @@
+name = Block logo
+core = 7.x
+package = Custom features
+version = 7.x-1.0
+dependencies[] = fe_block
+features[fe_block_boxes][] = logo
+features[fe_block_settings][] = block-logo
+features[features_api][] = api:2
