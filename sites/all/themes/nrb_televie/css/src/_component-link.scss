@@ -24,7 +24,8 @@ a.link-type-1:after {
   top: 4px;
 }
 
-a.link-type-1:hover {
+a.link-type-1:hover,
+a.link-type-1:focus {
   border-bottom: 4px solid #99333e;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -59,7 +60,8 @@ a.link-type-2:after {
   top: 4px;
 }
 
-a.link-type-2:hover {
+a.link-type-2:hover,
+a.link-type-2:focus {
   border-bottom: 4px solid #1c2d47;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -97,7 +99,8 @@ a.link-type-search:after {
   margin-top: -10px;
 }
 
-a.link-type-search:hover {
+a.link-type-search:hover
+a.link-type-search:focus {
   border-bottom: 4px solid #2c8055;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

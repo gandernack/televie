@@ -128,7 +128,8 @@
   transition: all 250ms ease;
 }
 
-.node-type-article ul#node-navigation li a:hover .cadre {
+.node-type-article ul#node-navigation li a:hover .cadre,
+.node-type-article ul#node-navigation li a:focus .cadre {
   background: transparent;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

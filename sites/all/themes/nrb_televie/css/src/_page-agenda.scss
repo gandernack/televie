@@ -45,18 +45,15 @@
   max-width: 870px;
 }
 
-.agenda-wrapper #agenda .agenda-header h2 {
+.agenda-wrapper #agenda .agenda-header h1 {
   color: white;
   font-size: 42px;
-  font-family: proxima-excn-semibold;
   line-height: 56px;
-}
-
-.agenda-wrapper #agenda .agenda-header h3 {
-  color: white;
-  font-size: 3.2em;
-  margin: 30px 0;
   font-family: proxima-excn-thin;
+
+  strong {
+    font-family: proxima-excn-semibold;
+  }
 }
 
 #agenda .agenda-header .event-highlight {
@@ -111,7 +108,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-header .event-highlight a:hover .part2 {
+#agenda .agenda-header .event-highlight a:hover .part2,
+#agenda .agenda-header .event-highlight a:focus .part2 {
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   -o-transform: scale(1);
@@ -151,7 +149,8 @@
   /* IE6-9 */
 }
 
-#agenda .agenda-header .event-highlight a:hover .part1 {
+#agenda .agenda-header .event-highlight a:hover .part1,
+#agenda .agenda-header .event-highlight a:focus .part1 {
   background: rgba(0, 0, 0, 0.0);
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -160,7 +159,8 @@
   transition: all 250ms ease;
 }
 
-.IE9 #agenda .agenda-header .event-highlight a:hover .part1 {
+.IE9 #agenda .agenda-header .event-highlight a:hover .part1,
+.IE9 #agenda .agenda-header .event-highlight a:focus .part1 {
   display: none;
 }
 
@@ -170,7 +170,8 @@
   padding: 10px;
 }
 
-#agenda .agenda-header .event-highlight a:hover .part1 .content {
+#agenda .agenda-header .event-highlight a:hover .part1 .content,
+#agenda .agenda-header .event-highlight a:focus .part1 .content {
   display: none;
 }
 
@@ -178,22 +179,23 @@
   display: inline-block;
 }
 
-#agenda .agenda-header .event-highlight a .ecran-noir {
-  background: rgba(0, 0, 0, 0.0);
+#agenda .agenda-header .event-highlight a .ecran-noir
+{
   display: block;
   width: 100%;
   height: 100%;
+
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 0;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
+
+  background: rgba(0, 0, 0, 0.0);
   transition: all 250ms ease;
 }
 
-#agenda .agenda-header .event-highlight a:hover .ecran-noir {
+#agenda .agenda-header .event-highlight a:hover .ecran-noir,
+#agenda .agenda-header .event-highlight a:focus .ecran-noir
+{
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -203,12 +205,15 @@
   z-index: 1;
 }
 
-#agenda .agenda-header .event-highlight a .visu img {
-  min-width: 100%;
-  min-height: 300px;
+#agenda .agenda-header .event-highlight a .visu
+{
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+
   position: absolute;
-  width: auto;
-  max-width: 765px;
 }
 
 #agenda .agenda-header .event-highlight a .part2 .content {
@@ -228,7 +233,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-header .event-highlight a:hover .title {
+#agenda .agenda-header .event-highlight a:hover .title,
+#agenda .agenda-header .event-highlight a:focus .title {
   width: 90%;
   font-size: 2.0em;
   display: block;
@@ -254,7 +260,7 @@
 }
 
 #agenda .agenda-header .event-highlight a:hover .date,
-#agenda .agenda-header .event-highlight a:hover .desc {
+#agenda .agenda-header .event-highlight a:focus .desc {
   display: block;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -278,7 +284,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-header .event-highlight a:hover .fleche {
+#agenda .agenda-header .event-highlight a:hover .fleche,
+#agenda .agenda-header .event-highlight a:focus .fleche {
   display: block;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -302,7 +309,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-header .event-highlight a:hover .carre {
+#agenda .agenda-header .event-highlight a:hover .carre,
+#agenda .agenda-header .event-highlight a:focus .carre {
   display: block;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -561,14 +569,14 @@
 }
 
 #agenda .agenda-result .masonry-item a {
+  display: block;
   height: 310px;
   overflow: hidden;
+
+  background-position: center;
+  background-size: cover;
+
   position: relative;
-  display: block;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
   transition: all 250ms ease;
 }
 
@@ -617,7 +625,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-result .masonry-item a:hover .desc-fleche {
+#agenda .agenda-result .masonry-item a:hover .desc-fleche,
+#agenda .agenda-result .masonry-item a:focus .desc-fleche {
   opacity: 1;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -632,7 +641,8 @@
   text-align: center;
 }
 
-#agenda .agenda-result .masonry-item a:hover .desc-fleche-1 {
+#agenda .agenda-result .masonry-item a:hover .desc-fleche-1,
+#agenda .agenda-result .masonry-item a:focus .desc-fleche-1 {
   display: table-cell;
 }
 
@@ -656,7 +666,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-result .masonry-item a:hover .desc {
+#agenda .agenda-result .masonry-item a:hover .desc,
+#agenda .agenda-result .masonry-item a:focus .desc {
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -ms-transition: all 250ms ease;
@@ -705,7 +716,8 @@
   transition: all 250ms ease;
 }
 
-#agenda .agenda-result .masonry-item a:hover .ecran-noir {
+#agenda .agenda-result .masonry-item a:hover .ecran-noir,
+#agenda .agenda-result .masonry-item a:focus .ecran-noir {
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

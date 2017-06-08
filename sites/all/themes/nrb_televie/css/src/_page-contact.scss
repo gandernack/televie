@@ -87,7 +87,8 @@
   margin-top: -7px;
 }
 
-.contact-total .form-actions:hover {
+.contact-total .form-actions:hover,
+.contact-total .form-actions:focus {
   border-bottom: 4px solid #2c8055;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

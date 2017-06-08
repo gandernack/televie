@@ -24,22 +24,21 @@
  * @ingroup views_templates
  */
 ?>
-<?php 
+<?php
 //if (strip_tags($fields['path']->content) == "/marche-de-noel-de-morlanwelz-0") {
-  //file_put_contents("gan2.txt", print_r($row, true)); 
-  //print_r($fields['field_image']); 
+  //file_put_contents("gan2.txt", print_r($row, true));
+  //print_r($fields['field_image']);
 //}
 ?>
 <a href="<?php print strip_tags($fields['path']->content); ?>">
   <span class="ecran-noir"></span>
-  <span class="visu">
-    <?php 
+  <span class="visu" style="background-image:url('<?php print $fields['field_image']->content; ?>')">
+    <?php
       //if ($zebra == 'odd') {
         //print theme('image_style', array( 'path' =>  $row->field_field_image[0]['raw']['uri'], 'style_name' => 'agenda_masonery_-_2'));
       //} else {
-        print $fields['field_image']->content; 
       //}
-      
+
     ?>
   </span>
   <span class="desc-total">
@@ -51,4 +50,3 @@
     </span>
   </span>
 </a>
-

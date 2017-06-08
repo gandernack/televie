@@ -71,7 +71,8 @@
             padding: 40px 24px 36px 24px;
           }
 
-          &:hover
+          &:hover,
+          &:focus
           {
             border-bottom: 4px solid #dc3a4d;
             padding: 40px 24px 36px 24px;
@@ -104,7 +105,8 @@
 
             padding: 40px 64px 40px 32px;
 
-            &:hover
+            &:hover,
+            &:focus
             {
               border-bottom: 4px solid #ffffff;
               padding: 40px 64px 36px 32px;

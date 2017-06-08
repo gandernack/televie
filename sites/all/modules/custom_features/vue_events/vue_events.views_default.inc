@@ -170,7 +170,7 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
   $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
-  $handler->display->display_options['fields']['fieldset_1']['label'] = 'hours';
+  $handler->display->display_options['fields']['fieldset_1']['label'] = 'heures';
   $handler->display->display_options['fields']['fieldset_1']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['fieldset_1']['alter']['nl2br'] = TRUE;
   $handler->display->display_options['fields']['fieldset_1']['hide_empty'] = TRUE;
@@ -295,10 +295,9 @@ function vue_events_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '            <div class="wrapper-agenda-header">
-              <h2>Chaque année plus de 1000 activités sont organisées au profit du Télévie !</h2>
-              <h3>Les activités Télévie à ne pas manquer en ce moment</h3>
-            </div>';
+  $handler->display->display_options['header']['area']['content'] = '<div class="wrapper-agenda-header">
+  <h1><strong>Chaque année plus de 1000 activités sont organisées au profit du Télévie ! </strong><br>Les activités Télévie à ne pas manquer en ce moment</h1>
+</div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu : Image */
@@ -306,10 +305,14 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['element_type'] = '0';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'image_url';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'url_type' => '1',
     'image_style' => 'event_top',
     'image_link' => '',
   );
@@ -486,10 +489,13 @@ function vue_events_views_default_views() {
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_type'] = '0';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'image_url';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'url_type' => '1',
     'image_style' => 'agenda_masonery_-_1',
     'image_link' => '',
   );
@@ -967,6 +973,7 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['field_top']['id'] = 'field_top';
   $handler->display->display_options['fields']['field_top']['table'] = 'field_data_field_top';
   $handler->display->display_options['fields']['field_top']['field'] = 'field_top';
+  $handler->display->display_options['fields']['field_top']['label'] = 'Haut';
   /* Champ: Contenu : Master event */
   $handler->display->display_options['fields']['field_master_event']['id'] = 'field_master_event';
   $handler->display->display_options['fields']['field_master_event']['table'] = 'field_data_field_master_event';
@@ -1088,7 +1095,7 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['filters']['field_top_value']['group'] = 1;
   $handler->display->display_options['filters']['field_top_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_top_value']['expose']['operator_id'] = 'field_top_value_op';
-  $handler->display->display_options['filters']['field_top_value']['expose']['label'] = 'Top';
+  $handler->display->display_options['filters']['field_top_value']['expose']['label'] = 'Haut';
   $handler->display->display_options['filters']['field_top_value']['expose']['operator'] = 'field_top_value_op';
   $handler->display->display_options['filters']['field_top_value']['expose']['identifier'] = 'field_top_value';
   $handler->display->display_options['filters']['field_top_value']['expose']['remember_roles'] = array(

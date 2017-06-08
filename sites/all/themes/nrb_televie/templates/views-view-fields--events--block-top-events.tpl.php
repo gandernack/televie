@@ -31,12 +31,12 @@
 //print "<img src=" . image_style_url("agenda_masonery_-_2",$row->field_field_image['0']['raw']['uri']) . ">";
 ?>
 <?php //dsm($row); ?>
-<?php 
+<?php
 
 ?>
 <a href="<?php print strip_tags($fields['path']->content); ?>">
   <span class="ecran-noir">&nbsp;</span>
-  <span class="visu"><?php print $fields['field_image']->content; ?></span>
+  <span class="visu" style="background-image: url('<?php echo $fields['field_image']->content; ?>')"></span>
   <span class="part1">
     <span class="content">
       <span class="title"><?php print $fields['title']->content; ?></span>
@@ -52,4 +52,3 @@
     <span class="carre">&nbsp;</span>
   </span>
 </a>
-

@@ -147,7 +147,8 @@
   transition: all 250ms ease;
 }
 
-#footer .region-footer-first .blockfooterfirst-part1 .don-an li:hover:last-child a {
+#footer .region-footer-first .blockfooterfirst-part1 .don-an li:hover:last-child a,
+#footer .region-footer-first .blockfooterfirst-part1 .don-an li:focus:last-child a {
   background: #9b3440;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -195,7 +196,8 @@
   transition: all 250ms ease;
 }
 
-#footer .region-footer-first .blockfooterfirst-part2 .view-id-facons_d_aider .views-row a:hover .visu {
+#footer .region-footer-first .blockfooterfirst-part2 .view-id-facons_d_aider .views-row a:hover .visu,
+#footer .region-footer-first .blockfooterfirst-part2 .view-id-facons_d_aider .views-row a:focus .visu {
   background: white;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -219,7 +221,8 @@
   transition: all 250ms ease;
 }
 
-#footer .region-footer-first .blockfooterfirst-part2 .view-id-facons_d_aider .views-row a:hover .visu .field-content {
+#footer .region-footer-first .blockfooterfirst-part2 .view-id-facons_d_aider .views-row a:hover .visu .field-content,
+#footer .region-footer-first .blockfooterfirst-part2 .view-id-facons_d_aider .views-row a:focus .visu .field-content {
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -ms-transition: all 250ms ease;
@@ -356,7 +359,8 @@
   text-decoration: none;
 }
 
-#footer .region-footer-fourth a:hover {
+#footer .region-footer-fourth a:hover,
+#footer .region-footer-fourth a:focus {
   text-decoration: underline;
 }
 
@@ -413,7 +417,8 @@
   transition: all 250ms ease;
 }
 
-#footer .region-footer-fourth #block-block-3 .content ul li a:hover {
+#footer .region-footer-fourth #block-block-3 .content ul li a:hover,
+#footer .region-footer-fourth #block-block-3 .content ul li a:focus {
   background: #dc3a4d;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

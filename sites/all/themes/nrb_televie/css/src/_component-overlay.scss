@@ -61,7 +61,8 @@
   transition: all 250ms ease;
 }
 
-.overlay .wrapper .close-overlay:hover:before {
+.overlay .wrapper .close-overlay:hover:before,
+.overlay .wrapper .close-overlay:focus:before {
   border: 6px solid white;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -109,7 +110,8 @@
   transition: all 250ms ease;
 }
 
-.overlay .overlay-wrapper .close-overlay:hover:before {
+.overlay .overlay-wrapper .close-overlay:hover:before,
+.overlay .overlay-wrapper .close-overlay:focus:before {
   border: 6px solid white;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;

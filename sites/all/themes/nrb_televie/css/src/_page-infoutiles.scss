@@ -36,14 +36,14 @@
   height: 100%;
 }
 
-.infos-total #infos-utiles .slide1 h2 {
+.infos-total #infos-utiles .slide1 h1 {
   font-size: 42px;
   padding-top: 15%;
   text-align: left;
   font-family: proxima-excn-semibold;
 }
 
-.infos-total #infos-utiles .slide1 h2 strong {
+.infos-total #infos-utiles .slide1 h1 strong {
   font-family: proxima-excn-semibold;
 }
 
@@ -74,7 +74,8 @@
 
   transform: rotate(90deg);
 }
-.infos-total #infos-utiles .slide1 .scrollto a:hover {
+.infos-total #infos-utiles .slide1 .scrollto a:hover,
+.infos-total #infos-utiles .slide1 .scrollto a:focus {
   background: rgba(255, 255, 255, .4);
 }
 
@@ -122,14 +123,16 @@
   transform: skewX(0deg) skewY(0deg);
 }
 
-.infos-total #infos-utiles #slide2 h2 {
+.infos-total #infos-utiles #slide2 h2, 
+.infos-total #infos-utiles #slide2 h3
+{
   color: white;
   font-size: 3.5em;
   text-align: left;
   font-family: proxima-excn-semibold;
 }
 
-.infos-total #infos-utiles #slide2 .overlay h2 {
+.infos-total #infos-utiles #slide2 .overlay h3 {
   margin-top: 100px;
 }
 
@@ -191,7 +194,8 @@
   transition: all 250ms ease;
 }
 
-.infos-total #infos-utiles #slide2 .bullet a:hover .visu-wrapper .visu {
+.infos-total #infos-utiles #slide2 .bullet a:hover .visu-wrapper .visu,
+.infos-total #infos-utiles #slide2 .bullet a:focus .visu-wrapper .visu {
   border: 8px solid white;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -312,16 +316,27 @@
   max-width: 600px;
 }
 
-.infos-total #infos-utiles .slide3 .wrapper .content h2 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
-  font-family: proxima-excn-light;
+
+// V Here
+
+
+
+.infos-total #infos-utiles .slide3 .wrapper .content
+{
+  blockquote
+  {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: proxima-excn-light;
+  }
+
+  .author
+  {
+    font-size: 1.8em;
+    font-family: proxima-excn-light;
+  }
 }
 
-.infos-total #infos-utiles .slide3 .wrapper .content h3 {
-  font-size: 1.8em;
-  font-family: proxima-excn-light;
-}
 
 .infos-total #infos-utiles .slide3 .wrapper .content strong {
   font-family: proxima-excn-semibold;
@@ -540,7 +555,8 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   color: #494756;
 }
 
-.infos-total #infos-utiles .view-ligne-du-temps #slide4 .view-footer #lt-more:hover {
+.infos-total #infos-utiles .view-ligne-du-temps #slide4 .view-footer #lt-more:hover,
+.infos-total #infos-utiles .view-ligne-du-temps #slide4 .view-footer #lt-more:focus {
   color: #dc3a4d;
 }
 
@@ -715,9 +731,9 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   background: #dcc2a9;
 }
 
-.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li.type17:before {  
-  background: #86b2c3;  
-}  
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .filtre ul li.type17:before {
+  background: #86b2c3;
+}
 .infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes {
   margin-top: 30px;
 }
@@ -793,6 +809,5 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   background: #dcc2a9;
 }
 
-.infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes img.type17 {  
-  background: #86b2c3; }  
- 
+.infos-total #infos-utiles .slide7 .repartition-chercheurs .bonhommes img.type17 {
+  background: #86b2c3; }
