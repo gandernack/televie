@@ -27,7 +27,7 @@
 
 <a href="<?php print strip_tags($fields['path']->content); ?>">
   <span class="ecran-noir">&nbsp;</span>
-  <span class="visu"><?php print $fields['field_image']->content; ?></span>
+  <span class="visu" style="background-image:url('<?php print strip_tags($fields['field_image']->content); ?>')"></span>
   <span class="part1">
     <span class="title"><span class="content-wrapper"><?php print $fields['title']->content; ?></span></span>
   </span>

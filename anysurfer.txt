@@ -2,7 +2,7 @@
 - Bloc logo - ok
 
 # Home
-- @GAN Virer l'editeur de texte
+- Update des blocks de la home (des deux funnels)
 
 # Info utiles
 - info utiles - block 2 -> mis a jour - ok
@@ -12,6 +12,7 @@
 
 # Au jour le jour
 - Vues Au jour le jour - Entete - ok
+- Vues Au jour le jour - Update image fields
 - @CJA Ajouter les alt sur les images
 - @CJA Ajouter les alt sur les quotes
 

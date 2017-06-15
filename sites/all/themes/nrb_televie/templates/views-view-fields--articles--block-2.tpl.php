@@ -27,7 +27,7 @@
 
   <a href="<?php print strip_tags($fields['path']->content); ?>">
     <span class="ecran-noir">&nbsp;</span>
-    <span class="visu"><?php print $fields['field_image']->content; ?></span>
+    <span class="visu"  style="background-image:url('<?php print strip_tags($fields['field_image']->content); ?>')"></span>
     <span class="desc-total">
       <span class="desc-fleche"><span class="desc-fleche-1">></span></span>
       <span class="desc">
@@ -36,4 +36,3 @@
       </span>
     </span>
   </a>
-
