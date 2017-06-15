@@ -210,45 +210,7 @@ body.not-front.page-soutenir-le-televie #footer {
   margin: 10px 0; }
 
 /* ---------------------------------------------------------------------   style de l'interface'   --------------------------------------------------------------------- */
-.node-article h2.titre01,
-.titre01 {
-  color: #dc3a4d;
-  font-size: 42px;
-  margin: 20px 0;
-  font-family: 'proxima-excn-semibold'; }
-
-.node-article h2.titre02-noir,
-.titre02-noir {
-  color: #3a4f5e;
-  font-size: 26px;
-  margin: 20px 0;
-  font-family: 'proxima-excn-semibold'; }
-
-.node-article h2.titre02-rouge,
-.titre02-rouge {
-  color: #dc3a4d;
-  font-size: 26px;
-  margin: 20px 0;
-  font-family: 'proxima-excn-semibold'; }
-
 .node-article h2 span {
-  font-family: 'proxima-excn-semibold'; }
-
-.intro01 {
-  font-size: 2em;
-  margin: 20px 0;
-  font-family: 'proxima-excn-thin'; }
-
-.intro01 strong {
-  font-family: 'proxima-excn-semibold'; }
-
-.intro02 {
-  color: #dc3a4d;
-  font-size: 2em;
-  margin: 20px 0;
-  font-family: 'proxima-excn-thin'; }
-
-.intro02 strong {
   font-family: 'proxima-excn-semibold'; }
 
 .txt01 {
@@ -375,6 +337,54 @@ body.not-front.page-soutenir-le-televie #footer {
 
 .clearfix:after, #header .region-header:after {
   clear: both; }
+
+.c-red, .titre01-rouge, .titre02-rouge, .intro01-rouge, .intro02 {
+  color: #dc3a4d; }
+
+.c-black, .titre01-noir, .titre02-noir, .intro01-noir {
+  color: #3a4f5e; }
+
+.heading1, .titre01-rouge, .titre01-noir,
+.titre01 {
+  font-size: 42px;
+  margin: 0 0 20px 0;
+  font-family: 'proxima-excn-thin'; }
+  .heading1 strong, .titre01-rouge strong, .titre01-noir strong,
+  .titre01 strong {
+    font-family: 'proxima-excn-semibold'; }
+
+.heading2, .titre02-noir, .titre02-rouge,
+.titre02 {
+  font-size: 26px;
+  margin: 20px 0 10px 0;
+  font-family: 'proxima-excn-thin'; }
+  .heading2 strong, .titre02-noir strong, .titre02-rouge strong,
+  .titre02 strong {
+    font-family: 'proxima-excn-semibold'; }
+
+.heading4 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.heading5 {
+  font-size: 1.3em;
+  color: #47444a;
+  font-family: proxima-semibold; }
+
+.heading6 {
+  color: #868588;
+  margin-top: 10px;
+  font-size: 1em; }
+
+.excerpt, .intro01-rouge, .intro02, .intro01-noir,
+.intro01 {
+  font-size: 42px;
+  margin: 20px 0;
+  font-family: 'proxima-excn-thin'; }
+  .excerpt strong, .intro01-rouge strong, .intro02 strong, .intro01-noir strong,
+  .intro01 strong {
+    font-family: 'proxima-excn-semibold'; }
 
 @font-face {
   font-family: 'proxima-cn-light';
@@ -1504,15 +1514,6 @@ a.link-type-search:focus {
   position: relative;
   text-align: center; }
 
-#footer .region-footer-first .blockfooterfirst-part1 h2,
-#footer .region-footer-first .blockfooterfirst-part2 h2 {
-  font-size: 3.5em;
-  font-family: proxima-excn-light; }
-
-#footer .region-footer-first .blockfooterfirst-part1 h2 strong,
-#footer .region-footer-first .blockfooterfirst-part2 h2 strong {
-  font-family: proxima-excn-semibold; }
-
 #footer .region-footer-first .blockfooterfirst-part1 {
   padding: 10px 0 20px; }
 
@@ -1665,10 +1666,6 @@ a.link-type-search:focus {
   position: relative;
   min-height: 92px; }
 
-#footer .region-footer-second h2 {
-  color: #868588;
-  margin-top: 10px; }
-
 #footer .region-footer-second .content img {
   margin: 0 50px 0 0; }
 
@@ -1677,7 +1674,7 @@ a.link-type-search:focus {
   position: absolute;
   width: 100%;
   height: 30px;
-  top: -19px;
+  top: -20px;
   background: url(../img/footer/ombre.png) no-repeat left top;
   background-size: contain; }
 
@@ -1695,11 +1692,6 @@ a.link-type-search:focus {
   top: -19px;
   background: url(../img/footer/ombre.png) no-repeat left top;
   background-size: contain; }
-
-#footer .region-footer-third h2 {
-  font-size: 1.3em;
-  color: #47444a;
-  font-family: proxima-semibold; }
 
 #footer .region-footer-third #block-views-partenaires-block-2 h2 {
   padding-top: 20px; }
@@ -1754,11 +1746,6 @@ a.link-type-search:focus {
 #footer .region-footer-fourth a:hover,
 #footer .region-footer-fourth a:focus {
   text-decoration: underline; }
-
-#footer .region-footer-fourth h2 {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  margin-bottom: 10px; }
 
 #footer .content ul.menu,
 #footer #block-block-3 .content ul {
@@ -5810,12 +5797,6 @@ span.header-view {
 .node-article #block-addthis-addthis-block {
   max-width: 870px; }
 
-.node-article h2 {
-  color: #dc3a4d;
-  font-size: 42px;
-  margin: 20px 0;
-  font-family: 'proxima-excn-semibold'; }
-
 .node-article .field-type-image {
   margin: 20px 0;
   text-align: center; }
@@ -5869,7 +5850,7 @@ span.header-view {
 .node-type-article #block-system-main .node-article-date {
   color: #7a7982;
   font-size: 1.5em;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   display: block;
   font-family: proxima-cn-regular; }
 
@@ -6766,17 +6747,19 @@ body .page-404 + #footer {
     left: 0;
     top: 0;
     background: url("/sites/all/themes/nrb_televie/img/tele.png"); }
-  .page-404 .first .heading1,
-  .page-404 .first .heading2 {
+  .page-404 .first .heading1, .page-404 .first .titre01-rouge, .page-404 .first .titre01-noir,
+  .page-404 .first .heading2,
+  .page-404 .first .titre02-noir,
+  .page-404 .first .titre02-rouge {
     max-width: 600px;
     margin: 0 auto;
     padding: 0;
     font-family: 'proxima-excn-regular'; }
-  .page-404 .first .heading1 {
+  .page-404 .first .heading1, .page-404 .first .titre01-rouge, .page-404 .first .titre01-noir {
     font-size: 90px;
     padding-top: 145px;
     line-height: 90px; }
-  .page-404 .first .heading2 {
+  .page-404 .first .heading2, .page-404 .first .titre02-noir, .page-404 .first .titre02-rouge {
     font-size: 60px;
     line-height: 60px; }
 .page-404 .second {

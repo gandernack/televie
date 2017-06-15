@@ -71,17 +71,6 @@
   text-align: center;
 }
 
-#footer .region-footer-first .blockfooterfirst-part1 h2,
-#footer .region-footer-first .blockfooterfirst-part2 h2 {
-  font-size: 3.5em;
-  font-family: proxima-excn-light;
-}
-
-#footer .region-footer-first .blockfooterfirst-part1 h2 strong,
-#footer .region-footer-first .blockfooterfirst-part2 h2 strong {
-  font-family: proxima-excn-semibold;
-}
-
 #footer .region-footer-first .blockfooterfirst-part1 {
   padding: 10px 0 20px;
 }
@@ -256,11 +245,6 @@
   min-height: 92px;
 }
 
-#footer .region-footer-second h2 {
-  color: #868588;
-  margin-top: 10px;
-}
-
 #footer .region-footer-second .content img {
   margin: 0 50px 0 0;
 }
@@ -270,7 +254,7 @@
   position: absolute;
   width: 100%;
   height: 30px;
-  top: -19px;
+  top: -20px;
   background: url(../img/footer/ombre.png) no-repeat left top;
   background-size: contain;
 }
@@ -292,11 +276,6 @@
   background-size: contain;
 }
 
-#footer .region-footer-third h2 {
-  font-size: 1.3em;
-  color: #47444a;
-  font-family: proxima-semibold;
-}
 
 #footer .region-footer-third #block-views-partenaires-block-2 h2 {
   padding-top: 20px;
@@ -364,11 +343,6 @@
   text-decoration: underline;
 }
 
-#footer .region-footer-fourth h2 {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
 
 #footer .content ul.menu,
 #footer #block-block-3 .content ul {

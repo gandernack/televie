@@ -1,5 +1,6 @@
 # Global
 - Bloc logo - ok
+- @GAN Skip-link pointe sur une ancre qui n'existe pas
 
 # Home
 - Update des blocks de la home (des deux funnels)

@@ -84,15 +84,15 @@
 
   <a class="node-article-back" href="javascript:history.back()"><?php print t("Retour"); ?> </a>
 
-  <span class="node-article-date">
-  <?php  print format_date($created,'custom','j F Y'); ?>
-  </span>
+  <time class="node-article-date">
+    <?php  print format_date($created,'custom','j F Y'); ?>
+  </time>
 
   <?php print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
   <?php //if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+    <h1 class="heading1 c-red"<?php print $title_attributes; ?>><?php print $title; ?></h1>
   <?php //endif; ?>
   <?php print render($title_suffix); ?>
 
