@@ -45,10 +45,6 @@ function vue_chercheurs_views_default_views() {
     'thousand_separator' => ' ',
     'prefix_suffix' => 1,
   );
-  /* Critère de tri: Contenu : Groupe (field_groupement) */
-  $handler->display->display_options['sorts']['field_groupement_value']['id'] = 'field_groupement_value';
-  $handler->display->display_options['sorts']['field_groupement_value']['table'] = 'field_data_field_groupement';
-  $handler->display->display_options['sorts']['field_groupement_value']['field'] = 'field_groupement_value';
   /* Critère de tri: Contenu : Nombre (field_nombre) */
   $handler->display->display_options['sorts']['field_nombre_value']['id'] = 'field_nombre_value';
   $handler->display->display_options['sorts']['field_nombre_value']['table'] = 'field_data_field_nombre';
@@ -68,12 +64,6 @@ function vue_chercheurs_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'chercheurs' => 'chercheurs',
   );
-  /* Critère de filtrage: Contenu : Nombre (field_nombre) */
-  $handler->display->display_options['filters']['field_nombre_value']['id'] = 'field_nombre_value';
-  $handler->display->display_options['filters']['field_nombre_value']['table'] = 'field_data_field_nombre';
-  $handler->display->display_options['filters']['field_nombre_value']['field'] = 'field_nombre_value';
-  $handler->display->display_options['filters']['field_nombre_value']['operator'] = '>';
-  $handler->display->display_options['filters']['field_nombre_value']['value']['value'] = '0';
 
   /* Display: Bloc images */
   $handler = $view->new_display('block', 'Bloc images', 'block_chercheurs_images');
@@ -89,12 +79,11 @@ function vue_chercheurs_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Entête: Global : Zone de texte */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<span class="header-view">Répartition des chercheurs Télévie</span>';
-  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Entête: Global : Zone de vue */
+  $handler->display->display_options['header']['view']['id'] = 'view';
+  $handler->display->display_options['header']['view']['table'] = 'views';
+  $handler->display->display_options['header']['view']['field'] = 'view';
+  $handler->display->display_options['header']['view']['view_to_insert'] = 'chercheurs:block_chercheurs_titres';
   /* Entête: Global : PHP */
   $handler->display->display_options['header']['php']['id'] = 'php';
   $handler->display->display_options['header']['php']['table'] = 'views';
@@ -108,31 +97,15 @@ foreach ($results as $id => $row) {
 print $total . " chercheurs";;
 ?>
 </span>';
-  $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Pied de page: Global : Zone de vue */
-  $handler->display->display_options['footer']['view']['id'] = 'view';
-  $handler->display->display_options['footer']['view']['table'] = 'views';
-  $handler->display->display_options['footer']['view']['field'] = 'view';
-  $handler->display->display_options['footer']['view']['view_to_insert'] = 'chercheurs:block_chercheurs_titres';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu : Titre */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Champ: Contenu : Nombre */
   $handler->display->display_options['fields']['field_nombre']['id'] = 'field_nombre';
   $handler->display->display_options['fields']['field_nombre']['table'] = 'field_data_field_nombre';
   $handler->display->display_options['fields']['field_nombre']['field'] = 'field_nombre';
   $handler->display->display_options['fields']['field_nombre']['label'] = '';
-  $handler->display->display_options['fields']['field_nombre']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_nombre']['alter']['text'] = '[field_nombre]-[title]';
+  $handler->display->display_options['fields']['field_nombre']['alter']['text'] = '<span class="nombre">[field_nombre]</span>';
   $handler->display->display_options['fields']['field_nombre']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nombre']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_nombre']['type'] = 'number_unformatted';
   $handler->display->display_options['fields']['field_nombre']['settings'] = array(
     'thousand_separator' => ' ',
     'prefix_suffix' => 1,
@@ -153,12 +126,6 @@ print $total . " chercheurs";;
   $handler->display->display_options['filters']['type']['value'] = array(
     'chercheurs' => 'chercheurs',
   );
-  /* Critère de filtrage: Contenu : Nombre (field_nombre) */
-  $handler->display->display_options['filters']['field_nombre_value']['id'] = 'field_nombre_value';
-  $handler->display->display_options['filters']['field_nombre_value']['table'] = 'field_data_field_nombre';
-  $handler->display->display_options['filters']['field_nombre_value']['field'] = 'field_nombre_value';
-  $handler->display->display_options['filters']['field_nombre_value']['operator'] = '>';
-  $handler->display->display_options['filters']['field_nombre_value']['value']['value'] = '0';
 
   /* Display: Bloc Titres */
   $handler = $view->new_display('block', 'Bloc Titres', 'block_chercheurs_titres');
@@ -172,28 +139,21 @@ print $total . " chercheurs";;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Entête: Global : Zone de texte */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2>Répartition des chercheurs Télévie</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Champ: Contenu : Nombre */
-  $handler->display->display_options['fields']['field_nombre']['id'] = 'field_nombre';
-  $handler->display->display_options['fields']['field_nombre']['table'] = 'field_data_field_nombre';
-  $handler->display->display_options['fields']['field_nombre']['field'] = 'field_nombre';
-  $handler->display->display_options['fields']['field_nombre']['label'] = '';
-  $handler->display->display_options['fields']['field_nombre']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_nombre']['alter']['text'] = '[title] : [field_nombre] chercheur(s)';
-  $handler->display->display_options['fields']['field_nombre']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_nombre']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_nombre']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
   $export['chercheurs'] = $view;
 
   return $export;
