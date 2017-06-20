@@ -123,7 +123,7 @@
   transform: skewX(0deg) skewY(0deg);
 }
 
-.infos-total #infos-utiles #slide2 h2, 
+.infos-total #infos-utiles #slide2 h2,
 .infos-total #infos-utiles #slide2 h3
 {
   color: white;
@@ -497,17 +497,13 @@
   width: 250px;
 }
 
-.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span {
-  display: block;
-}
-
-.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span.title {
+.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text .title {
   color: #166e9b;
   font-size: 3.8em;
   font-family: proxima-excn-light;
 }
 
-.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span.subtitle {
+.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text .subtitle {
   font-size: 2.3em;
   font-family: 'proxima-excn-semibold';
   border-bottom: 1px solid rgb(220, 219, 219);
@@ -619,7 +615,8 @@ span.header-view {font-size: 3em; margin-bottom: 30px; font-family: proxima-excn
   margin: 8% 0;
 }
 
-.infos-total #infos-utiles .slide6 .wrapper .content h2 {
+.infos-total #infos-utiles .slide6 .wrapper .content h2,
+.infos-total #infos-utiles .slide6 .wrapper .content blockquote, {
   font-family: proxima-excn-light;
 }
 

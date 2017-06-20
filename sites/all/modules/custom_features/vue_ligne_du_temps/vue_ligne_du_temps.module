@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vue Ligne du temps feature.
+ */
+
+include_once 'vue_ligne_du_temps.features.inc';

@@ -28,8 +28,7 @@
 <div class="trait"></div>
 <div class="visu"><?php print $fields['field_image']->content;?></div>
 <div class="text">
-  <span class="title"><?php print $fields['field_annee']->content; ?></span>
-  <span class="subtitle"><?php print $fields['title']->content; ?></span>
-  <span class="desc"><?php print $fields['body']->content; ?></span>
+  <time class="title"><?php print $fields['field_annee']->content; ?></time>
+  <h3 class="subtitle"><?php print $fields['title']->content; ?></h3>
+  <p class="desc"><?php print $fields['body']->content; ?></p>
 </div>
-

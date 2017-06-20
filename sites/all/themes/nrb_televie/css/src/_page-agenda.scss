@@ -212,6 +212,7 @@
 
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 
   position: absolute;
 }
@@ -588,6 +589,10 @@
   height: 310px;
   overflow: hidden;
   box-sizing: border-box;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 

@@ -3769,15 +3769,12 @@ a.link-type-search:focus {
   position: absolute;
   width: 250px; }
 
-.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span {
-  display: block; }
-
-.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span.title {
+.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text .title {
   color: #166e9b;
   font-size: 3.8em;
   font-family: proxima-excn-light; }
 
-.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text span.subtitle {
+.infos-total #infos-utiles #slide4 .wrapper .content .ligne-temps .views-row .text .subtitle {
   font-size: 2.3em;
   font-family: 'proxima-excn-semibold';
   border-bottom: 1px solid #dcdbdb;
@@ -3908,7 +3905,8 @@ span.header-view {
   float: right;
   margin: 8% 0; }
 
-.infos-total #infos-utiles .slide6 .wrapper .content h2 {
+.infos-total #infos-utiles .slide6 .wrapper .content h2,
+.infos-total #infos-utiles .slide6 .wrapper .content blockquote {
   font-family: proxima-excn-light; }
 
 .infos-total #infos-utiles .slide6 .wrapper .content h2 strong {
@@ -4245,6 +4243,7 @@ span.header-view {
   height: 100%;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: absolute; }
 
 #agenda .agenda-header .event-highlight a .part2 .content {
@@ -4498,7 +4497,10 @@ span.header-view {
 #agenda .agenda-result .masonry-item a .visu {
   height: 310px;
   overflow: hidden;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*
 #agenda .agenda-result .masonry-item.views-row-odd a .visu { height: 310px; overflow: hidden; }
