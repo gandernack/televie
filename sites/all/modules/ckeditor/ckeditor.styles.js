@@ -8,25 +8,30 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
  * The 'Styles' button is not enabled by default in DrupalFull and DrupalFiltered toolbars.
  */
 if(typeof(CKEDITOR) !== 'undefined') {
-	
+
     CKEDITOR.stylesSet.add( 'my_styles', [
-    { name : 'Titre 1'		, element : 'h2', attributes : { 'class' : 'titre01' } },
-            { name : 'Intro'		, element : 'h3', attributes : { 'class' : 'intro01' } },
-            { name : 'Texte gris'	, element : 'span', attributes : { 'class' : 'txt01' } },
-            { name : 'Texte gris gras'	, element : 'span', attributes : { 'class' : 'txt01b' } },
-            { name : 'Texte rouge'	, element : 'span', attributes : { 'class' : 'txt02' } },
-            { name : 'Texte rouge gras'	, element : 'span', attributes : { 'class' : 'txt02b' } },
-            { name : 'Texte bleu'	, element : 'span', attributes : { 'class' : 'txt03' } },
-            { name : 'Texte bleu gras'	, element : 'span', attributes : { 'class' : 'txt03b' } },
-            { name : 'Lien fond rouge'         , element : 'span', attributes : { 'class' : 'btn01' } },
-            { name : 'Lien fond bleu'         , element : 'span', attributes : { 'class' : 'btn02' } },
-            { name : 'Citation'         , element : 'span', attributes : { 'class' : 'cita01' } },
-            { name : 'Box beige clair'         , element : 'span', attributes : { 'class' : 'box01' } },
-            { name : 'Box beige moyen'         , element : 'span', attributes : { 'class' : 'box02' } },
-            { name : 'Box blanc'         , element : 'span', attributes : { 'class' : 'box03' } },
-            { name : 'Box rouge'         , element : 'span', attributes : { 'class' : 'box04' } },
-            { name : 'Box bleu'         , element : 'span', attributes : { 'class' : 'box05' } },
-            { name : 'Liste grande fleche'         , element : 'span', attributes : { 'class' : 'li01' } }
+			{ name : 'Titre 2 - Noir',        element : 'h2',   attributes : { 'class' : 'titre02-noir' } },
+			{ name : 'Titre 2 - Rouge',       element : 'h2',   attributes : { 'class' : 'titre02-rouge' } },
+			{ name : 'Titre 3 - Noir',        element : 'h2',   attributes : { 'class' : 'titre03-noir' } },
+			{ name : 'Titre 3 - Rouge',       element : 'h2',   attributes : { 'class' : 'titre03-rouge' } },
+			{ name : 'Chapeau - Noir',        element : 'p',    attributes : { 'class' : 'intro01-noir' } },
+			{ name : 'Chapeau - Rouge',       element : 'p',    attributes : { 'class' : 'intro01-rouge' } },
+
+      { name : 'Texte gris'	, element : 'span', attributes : { 'class' : 'txt01' } },
+      { name : 'Texte gris gras'	, element : 'span', attributes : { 'class' : 'txt01b' } },
+      { name : 'Texte rouge'	, element : 'span', attributes : { 'class' : 'txt02' } },
+      { name : 'Texte rouge gras'	, element : 'span', attributes : { 'class' : 'txt02b' } },
+      { name : 'Texte bleu'	, element : 'span', attributes : { 'class' : 'txt03' } },
+      { name : 'Texte bleu gras'	, element : 'span', attributes : { 'class' : 'txt03b' } },
+      { name : 'Lien fond rouge'         , element : 'span', attributes : { 'class' : 'btn01' } },
+      { name : 'Lien fond bleu'         , element : 'span', attributes : { 'class' : 'btn02' } },
+      { name : 'Citation'         , element : 'span', attributes : { 'class' : 'cita01' } },
+      { name : 'Box beige clair'         , element : 'span', attributes : { 'class' : 'box01' } },
+      { name : 'Box beige moyen'         , element : 'span', attributes : { 'class' : 'box02' } },
+      { name : 'Box blanc'         , element : 'span', attributes : { 'class' : 'box03' } },
+      { name : 'Box rouge'         , element : 'span', attributes : { 'class' : 'box04' } },
+      { name : 'Box bleu'         , element : 'span', attributes : { 'class' : 'box05' } },
+      { name : 'Liste grande fleche'         , element : 'span', attributes : { 'class' : 'li01' } }
 
 ]);
 

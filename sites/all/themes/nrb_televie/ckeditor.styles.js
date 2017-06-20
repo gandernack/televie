@@ -27,11 +27,13 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Address'			, element : 'address' },
             */
 
-            { name : 'Titre 1', element : 'h2', attributes: { 'class' : 'titre01' } },
-            { name : 'Titre 2 noir', element : 'h2', attributes: { 'class' : 'titre02-noir' } },
-            { name : 'Titre 2 rouge', element : 'h2', attributes: { 'class' : 'titre02-rouge' } },
-            { name : 'Intro noire', element : 'h3', attributes: { 'class' : 'intro01' } },
-            { name : 'Intro rouge', element : 'h3', attributes: { 'class' : 'intro02' } },
+            { name : 'Titre 2 - Noir',        element : 'h2',   attributes : { 'class' : 'titre02-noir' } },
+          	{ name : 'Titre 2 - Rouge',       element : 'h2',   attributes : { 'class' : 'titre02-rouge' } },
+          	{ name : 'Titre 3 - Noir',        element : 'h2',   attributes : { 'class' : 'titre03-noir' } },
+          	{ name : 'Titre 3 - Rouge',       element : 'h2',   attributes : { 'class' : 'titre03-rouge' } },
+            { name : 'Chapeau - Noir',        element : 'p',    attributes : { 'class' : 'intro01-noir' } },
+            { name : 'Chapeau - Rouge',       element : 'p',    attributes : { 'class' : 'intro01-rouge' } },
+
             { name : 'Texte gris', element : 'span', attributes: { 'class' : 'txt01' } },
             { name : 'Texte gris gras', element : 'span', attributes: { 'class' : 'txt01b' } },
             { name : 'Texte rouge', element : 'span', attributes: { 'class' : 'txt02' } },
@@ -47,8 +49,8 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Box rouge', element : 'div', attributes: { 'class' : 'box04' } },
             { name : 'Box bleu', element : 'div', attributes: { 'class' : 'box05' } },
             { name : 'Liste grande fleche', element : 'span', attributes: { 'class' : 'li01' } }
-            
-            
+
+
 
     ]);
 }

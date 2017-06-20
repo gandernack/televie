@@ -80,7 +80,7 @@
  * @ingroup themeable
  */
 ?>
-    <?php 
+    <?php
       // on va tester si l'event sélectionné est master ou pas
       $a_master = field_get_items('node',$node,'field_master_event');
       // si il est master, on prendra directement ses informations
@@ -118,116 +118,116 @@
           <div class="content">
             <div class="col col-left">
               <div class="desc">
-                <?php 
+                <?php
                   if($entity == "node") {
                     $render_field = field_view_field('node',$node,'body',array('label'=>'hidden'));
                   } else {
-                    $render_field = field_view_field('node',$node_master,'body',array('label'=>'hidden')); 
+                    $render_field = field_view_field('node',$node_master,'body',array('label'=>'hidden'));
                   }
-                  print render($render_field); 
+                  print render($render_field);
                 ?>
               </div>
               <div class="resume">
-                <?php 
+                <?php
                   if($entity == "node") {
                     $render_field = field_view_field('node',$node,'field_participation');
                   } else {
-                    $render_field = field_view_field('node',$node_master,'field_participation'); 
+                    $render_field = field_view_field('node',$node_master,'field_participation');
                   }
-                  print render($render_field); 
+                  print render($render_field);
                 ?>
                 <div class="row row2">
-                  <h2>Contact</h2>
-                  <?php 
+                  <h2 class="heading2">Contact</h2>
+                  <?php
                     if($entity == "node") {
                       $render_field = field_view_field('node',$node,'field_nom_organisation',array('label'=>'hidden'));
                     } else {
-                      $render_field = field_view_field('node',$node_master,'field_nom_organisation',array('label'=>'hidden')); 
+                      $render_field = field_view_field('node',$node_master,'field_nom_organisation',array('label'=>'hidden'));
                     }
-                    print render($render_field); 
+                    print render($render_field);
                   ?>
-                  <?php 
+                  <?php
                     if($entity == "node") {
                       $render_field = field_view_field('node',$node,'field_responsable',array('label'=>'hidden'));
                     } else {
-                      $render_field = field_view_field('node',$node_master,'field_responsable',array('label'=>'hidden')); 
+                      $render_field = field_view_field('node',$node_master,'field_responsable',array('label'=>'hidden'));
                     }
-                    print render($render_field); 
+                    print render($render_field);
                   ?>
-                  <?php 
+                  <?php
                     if($entity == "node") {
                       $render_field = field_view_field('node',$node,'field_email_organisation',array('label'=>'hidden'));
                     } else {
-                      $render_field = field_view_field('node',$node_master,'field_email_organisation',array('label'=>'hidden')); 
+                      $render_field = field_view_field('node',$node_master,'field_email_organisation',array('label'=>'hidden'));
                     }
-                    print render($render_field); 
+                    print render($render_field);
                   ?>
-                  <?php 
+                  <?php
                     if($entity == "node") {
                       $render_field = field_view_field('node',$node,'field_telephone_organisation',array('label'=>'hidden'));
                     } else {
-                      $render_field = field_view_field('node',$node_master,'field_telephone_organisation',array('label'=>'hidden')); 
+                      $render_field = field_view_field('node',$node_master,'field_telephone_organisation',array('label'=>'hidden'));
                     }
-                    print render($render_field); 
+                    print render($render_field);
                   ?>
-                  <?php 
+                  <?php
                     if($entity == "node") {
                       $render_field = field_view_field('node',$node,'field_site_internet_organisation',array('label'=>'hidden'));
                     } else {
-                      $render_field = field_view_field('node',$node_master,'field_site_internet_organisation',array('label'=>'hidden')); 
+                      $render_field = field_view_field('node',$node_master,'field_site_internet_organisation',array('label'=>'hidden'));
                     }
-                    print render($render_field); 
+                    print render($render_field);
                   ?>
                 </div>
-                
+
               </div>
               <div class="link">
-                <?php 
+                <?php
                   if($entity == "node") {
                     $render_field = field_view_field('node',$node,'field_site_internet',array('label'=>'hidden'));
                   } else {
-                    $render_field = field_view_field('node',$node_master,'field_site_internet',array('label'=>'hidden')); 
+                    $render_field = field_view_field('node',$node_master,'field_site_internet',array('label'=>'hidden'));
                   }
-                  print render($render_field); 
+                  print render($render_field);
                 ?>
-                <?php 
+                <?php
                   if($entity == "node") {
                     $render_field = field_view_field('node',$node,'field_url_facebook',array('label'=>'hidden'));
                   } else {
-                    $render_field = field_view_field('node',$node_master,'field_url_facebook',array('label'=>'hidden')); 
+                    $render_field = field_view_field('node',$node_master,'field_url_facebook',array('label'=>'hidden'));
                   }
-                  print render($render_field); 
+                  print render($render_field);
                 ?>
               </div>
             </div>
             <div class="col col-right">
               <div class="pict">
-                <?php 
+                <?php
                   if($entity == "node") {
                     //$render_field = field_view_field('node',$node,'field_image',array('label'=>'hidden', 'settings' => array('file_view_mode' => 'image_agenda_detail')));
                     $render_field = field_view_field('node',$node,'field_image','image');
                   } else {
-                    //$render_field = field_view_field('node',$node_master,'field_image',array('label'=>'hidden', 'settings' => array('file_view_mode' => 'image_agenda_detail'))); 
-                    $render_field = field_view_field('node',$node_master,'field_image',array('label'=>'hidden', 'settings' => array('file_view_mode' => 'image_agenda_detail'))); 
+                    //$render_field = field_view_field('node',$node_master,'field_image',array('label'=>'hidden', 'settings' => array('file_view_mode' => 'image_agenda_detail')));
+                    $render_field = field_view_field('node',$node_master,'field_image',array('label'=>'hidden', 'settings' => array('file_view_mode' => 'image_agenda_detail')));
                   }
-                  print render($render_field); 
+                  print render($render_field);
                 ?>
               </div>
               <div class="equalheight">
-                <?php 
+                <?php
                   if($entity == "node") {
                     $render_field = field_view_field('node',$node,'field_dates');
                   } else {
-                    $render_field = field_view_field('node',$node_master,'field_dates'); 
+                    $render_field = field_view_field('node',$node_master,'field_dates');
                   }
-                  print render($render_field); 
+                  print render($render_field);
                 ?>
               </div>
             </div>
           </div>
         </div>
-        
-        
-        
+
+
+
       </div>
     </div>

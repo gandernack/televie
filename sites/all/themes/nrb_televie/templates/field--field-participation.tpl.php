@@ -52,7 +52,7 @@ HTML comment.
 -->
 <div class="row row1"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-  <h3><?php print $label ?></h3>
+  <h2 class="heading2"><?php print $label ?></h2>
   <?php endif; ?>
     <?php foreach ($items as $delta => $item): ?>
       <?php print $item_attributes[$delta]; ?><?php print render($item); ?>
