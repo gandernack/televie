@@ -20,10 +20,8 @@ function block_derni_res_news_hp_default_fe_block_settings() {
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
     'module' => 'views',
-    'node_types' => array(
-      0 => 'home_page',
-    ),
-    'pages' => '',
+    'node_types' => array(),
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -36,7 +34,7 @@ function block_derni_res_news_hp_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'nrb_televie',
-        'weight' => -13,
+        'weight' => -17,
       ),
       'seven' => array(
         'region' => '',
@@ -51,8 +49,8 @@ function block_derni_res_news_hp_default_fe_block_settings() {
         'weight' => -22,
       ),
     ),
-    'title' => '<none>',
-    'visibility' => 0,
+    'title' => '',
+    'visibility' => 1,
   );
 
   return $export;

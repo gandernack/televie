@@ -6,6 +6,7 @@ dependencies[] = ctools
 dependencies[] = date
 dependencies[] = email
 dependencies[] = features
+dependencies[] = field_base
 dependencies[] = field_group
 dependencies[] = image
 dependencies[] = link

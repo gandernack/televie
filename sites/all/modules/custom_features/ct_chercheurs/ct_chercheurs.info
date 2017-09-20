@@ -4,6 +4,7 @@ package = Custom features
 version = 7.x-1.0
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = field_base
 dependencies[] = node
 dependencies[] = number
 dependencies[] = strongarm

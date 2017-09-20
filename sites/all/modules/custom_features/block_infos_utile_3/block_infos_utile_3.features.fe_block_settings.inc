@@ -34,7 +34,7 @@ function block_infos_utile_3_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'nrb_televie',
-        'weight' => -25,
+        'weight' => -26,
       ),
       'seven' => array(
         'region' => '',

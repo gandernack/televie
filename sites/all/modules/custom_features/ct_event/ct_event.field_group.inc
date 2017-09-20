@@ -38,7 +38,7 @@ function ct_event_field_group_info() {
       ),
     ),
   );
-  $field_groups['group_date|node|event|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -72,7 +72,7 @@ Seuls les champs du titre, des dates et des lieux des activités "Esclaves" sero
       'formatter' => 'collapsible',
     ),
   );
-  $field_groups['group_groupement|node|event|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -104,7 +104,7 @@ Seuls les champs du titre, des dates et des lieux des activités "Esclaves" sero
       ),
     ),
   );
-  $field_groups['group_lieu|node|event|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -135,7 +135,7 @@ Seuls les champs du titre, des dates et des lieux des activités "Esclaves" sero
       ),
     ),
   );
-  $field_groups['group_organisation|node|event|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.

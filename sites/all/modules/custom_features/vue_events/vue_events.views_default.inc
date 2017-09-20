@@ -256,7 +256,7 @@ function vue_events_views_default_views() {
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['relationship'] = 'field_date_horaire_value';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Filtre contextuel: Contenu : Groupe (field_groupement) */
+  /* Filtre contextuel: Contenu : ID pour regrouper les activités (field_groupement) */
   $handler->display->display_options['arguments']['field_groupement_value']['id'] = 'field_groupement_value';
   $handler->display->display_options['arguments']['field_groupement_value']['table'] = 'field_data_field_groupement';
   $handler->display->display_options['arguments']['field_groupement_value']['field'] = 'field_groupement_value';
@@ -964,11 +964,10 @@ mois+6|Dans 6 mois';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Champ: Contenu : Groupe */
+  /* Champ: Contenu : ID pour regrouper les activités */
   $handler->display->display_options['fields']['field_groupement']['id'] = 'field_groupement';
   $handler->display->display_options['fields']['field_groupement']['table'] = 'field_data_field_groupement';
   $handler->display->display_options['fields']['field_groupement']['field'] = 'field_groupement';
-  $handler->display->display_options['fields']['field_groupement']['label'] = 'ID pour regrouper les activités';
   /* Champ: Contenu : Top */
   $handler->display->display_options['fields']['field_top']['id'] = 'field_top';
   $handler->display->display_options['fields']['field_top']['table'] = 'field_data_field_top';
@@ -1069,7 +1068,7 @@ mois+6|Dans 6 mois';
     5 => 0,
     6 => 0,
   );
-  /* Critère de filtrage: Contenu : Groupe (field_groupement) */
+  /* Critère de filtrage: Contenu : ID pour regrouper les activités (field_groupement) */
   $handler->display->display_options['filters']['field_groupement_value']['id'] = 'field_groupement_value';
   $handler->display->display_options['filters']['field_groupement_value']['table'] = 'field_data_field_groupement';
   $handler->display->display_options['filters']['field_groupement_value']['field'] = 'field_groupement_value';

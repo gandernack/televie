@@ -37,7 +37,7 @@ soiree
         'region' => 'content',
         'status' => 1,
         'theme' => 'nrb_televie',
-        'weight' => -18,
+        'weight' => -20,
       ),
       'seven' => array(
         'region' => '',

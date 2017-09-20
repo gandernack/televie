@@ -20,10 +20,8 @@ function block_prochaines_activit_s_hp_default_fe_block_settings() {
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
     'module' => 'views',
-    'node_types' => array(
-      0 => 'home_page',
-    ),
-    'pages' => '',
+    'node_types' => array(),
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -36,7 +34,7 @@ function block_prochaines_activit_s_hp_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'nrb_televie',
-        'weight' => -12,
+        'weight' => -16,
       ),
       'seven' => array(
         'region' => '',

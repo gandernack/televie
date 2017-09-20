@@ -49,7 +49,7 @@ function bloc_logo_rtl_tvi_bel_rtl_frs_fnrs_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Télévie powered by',
+    'title' => '',
     'visibility' => 0,
   );
 

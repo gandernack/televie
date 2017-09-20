@@ -68,19 +68,13 @@ function ct_chercheurs_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'locations' => array(
-          'weight' => '2',
+          'weight' => '30',
         ),
         'title' => array(
-          'weight' => '0',
+          'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '1',
-        ),
-        'metatags' => array(
-          'weight' => '6',
-        ),
-        'redirect' => array(
-          'weight' => '3',
+          'weight' => '30',
         ),
       ),
       'display' => array(),
