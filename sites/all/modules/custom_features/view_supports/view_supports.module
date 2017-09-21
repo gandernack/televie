@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the View - Supports feature.
+ */
+
+include_once 'view_supports.features.inc';

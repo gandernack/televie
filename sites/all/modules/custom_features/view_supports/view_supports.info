@@ -1,0 +1,13 @@
+name = View - Supports
+core = 7.x
+package = Custom features
+version = 7.x-1.0
+dependencies[] = fe_block
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = views-facons_d_aider-block_1
+features[fe_block_settings][] = views-facons_d_aider-block_2
+features[fe_block_settings][] = views-facons_d_aider-block_3
+features[features_api][] = api:2
+features[views_view][] = facons_d_aider
+features_exclude[dependencies][ctools] = ctools
